@@ -1,0 +1,95 @@
+<!--meta
+{
+  "path": "universities.html",
+  "crumb": "Universities in Germany",
+  "title": "All {{DE_COUNT}} Universities in Germany: Search, Fees & Programmes",
+  "description": "Search {{DE_COUNT}} German universities by state, subject and fees: TU9, research, applied sciences and private, with tuition rules and English programmes.",
+  "keywords": "list of universities in Germany, universities in Germany for Pakistani students, tuition free universities in Germany, public universities in Germany for international students, universities of applied sciences Germany list, TU9 universities, English taught masters Germany, private universities Germany, cheapest universities in Germany, German university search",
+  "schema": [{{DE_SCHEMA}}]
+}
+-->
+    <section class="page-hero grain">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="stars-bg" aria-hidden="true"></div>
+      <div class="container">
+        <ol class="breadcrumbs reveal"><li><a href="index.html">Home</a></li><li>Universities in Germany</li></ol>
+        <p class="eyebrow reveal">University explorer</p>
+        <h1 data-split>{{DE_COUNT}} German universities, <span class="accent">one search away.</span></h1>
+        <p class="lead reveal" style="--d:.4s">From the TU9 engineering giants to friendly universities of applied sciences, art academies and private business schools. Filter by state, subject and fees, then jump straight to English-taught programmes.</p>
+        <div class="hero-chips reveal" style="--d:.55s"><span class="chip">🏛️ {{DE_COUNT}} institutions · 16 states</span><span class="chip">💶 {{DE_FREE_COUNT}} with no tuition fees</span><span class="chip">⚙️ {{DE_UAS_COUNT}} universities of applied sciences</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="explorer-title" style="padding-top:48px">
+      <div class="container" data-explorer data-page="30">
+        <h2 id="explorer-title" class="sr-only">Search universities in Germany</h2>
+        <div class="explorer-bar reveal">
+          <label class="search-box"><span aria-hidden="true">🔎</span><span class="sr-only">Search</span><input type="search" data-q placeholder="Search name, city or programme, e.g. Mechatronics, Munich…"></label>
+          <div class="explorer-selects">
+            <label><span class="sr-only">State</span><select class="select" data-f="state"><option value="">All states</option>{{DE_STATE_OPTIONS}}</select></label>
+            <label><span class="sr-only">Type</span><select class="select" data-f="kind"><option value="">All types</option>{{DE_KIND_OPTIONS}}</select></label>
+            <label><span class="sr-only">Subject</span><select class="select" data-f="areas" data-mode="contains"><option value="">All subjects</option>{{DE_AREA_OPTIONS}}</select></label>
+            <label><span class="sr-only">Sector</span><select class="select" data-f="sector"><option value="">Public &amp; private</option><option value="pub">Public</option><option value="priv">Private</option><option value="church">Church-run</option></select></label>
+          </div>
+          <div class="explorer-toggles">
+            <label class="toggle-chip"><input type="checkbox" data-f="free" value="1"><span>💶 No tuition</span></label>
+            <label class="toggle-chip"><input type="checkbox" data-f="flags" data-mode="word" value="pk"><span>🇵🇰 Popular with Pakistanis</span></label>
+            <label class="toggle-chip"><input type="checkbox" data-f="flags" data-mode="word" value="tu9"><span>🏆 TU9</span></label>
+            <label class="toggle-chip"><input type="checkbox" data-f="flags" data-mode="word" value="med"><span>🩺 Medical faculty</span></label>
+            <button type="button" class="link-reset" data-reset>Reset</button>
+          </div>
+          <p class="explorer-count" aria-live="polite"><span data-count>{{DE_COUNT}}</span> of {{DE_COUNT}} universities</p>
+        </div>
+
+        <div class="grid grid-3" data-items>
+{{DE_CARDS}}
+        </div>
+        <p class="empty-state" data-empty hidden>No matches. Try fewer filters, or <a class="link-arrow" href="contact.html">ask a counsellor</a> to find the right programme for you.</p>
+        <div class="center" style="margin-top:34px"><button type="button" class="btn btn-dark" data-more>Show more universities</button></div>
+        <p style="margin-top:28px;font-size:.86rem;color:var(--muted)">Tuition shown is the general rule for non-EU students and excludes the semester contribution (roughly €100–€400). Fees and programme lists change, so always confirm on the university's website and the DAAD database. For private institutions, check state recognition and anabin status before you apply. University list seeded from the open <a href="https://github.com/Hipo/university-domains-list" target="_blank" rel="noopener nofollow">university-domains-list</a> (MIT licence) and curated by DeutschDreams.</p>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-labelledby="types-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Know the difference</p>
+          <h2 id="types-title" class="h-xl reveal">Which kind of university <span class="accent">fits you?</span></h2>
+        </div>
+        <div class="grid grid-3" data-stagger="0.1">
+          <article class="card reveal tilt"><div class="card-icon bg-sky">🔬</div><h3>Research universities &amp; TUs</h3><p>Theory-heavy, research-driven and globally ranked. Ideal if you want a PhD or an R&amp;D career. Usually the most competitive on grades.</p></article>
+          <article class="card reveal tilt"><div class="card-icon bg-gold">⚙️</div><h3>Universities of Applied Sciences</h3><p>Practical, project-based and industry-connected, with internships built in. Often more open to students with an average CGPA and real experience.</p></article>
+          <article class="card reveal tilt"><div class="card-icon bg-coral">💼</div><h3>Private universities</h3><p>English-taught, flexible and fast, with several intakes a year. Tuition applies, so check state recognition and the total cost before applying.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ufaq-title">
+      <div class="container-narrow">
+        <div class="section-head center">
+          <p class="eyebrow reveal">FAQ</p>
+          <h2 id="ufaq-title" class="h-xl reveal">German universities: <span class="accent">quick answers</span></h2>
+        </div>
+        <div class="faq">
+          <details><summary>How many universities are there in Germany?</summary><div class="faq-body"><p>Germany has around 400 state-recognised higher-education institutions: research universities, technical universities, universities of applied sciences, art and music academies, and private and church-run universities. Our explorer lists {{DE_COUNT}} of them.</p></div></details>
+          <details><summary>Which German universities are tuition-free for Pakistani students?</summary><div class="faq-body"><p>Most public universities outside Baden-Württemberg charge no tuition fees, only a semester contribution. Public universities in Baden-Württemberg charge non-EU students €1,500 per semester, TU Munich charges international tuition, and private universities charge fees. Use the "No tuition" filter above.</p></div></details>
+          <details><summary>Which universities are popular with Pakistani students?</summary><div class="faq-body"><p>Popular choices include TU Chemnitz, University of Duisburg-Essen, Otto von Guericke University Magdeburg, BTU Cottbus-Senftenberg, University of Siegen, Rhine-Waal University of Applied Sciences, Deggendorf Institute of Technology, RWTH Aachen and TU Munich. Switch on the "Popular with Pakistanis" filter to see them all.</p></div></details>
+          <details><summary>Are private universities in Germany recognised?</summary><div class="faq-body"><p>Many are state-recognised and award German degrees, but not all. Some award degrees from partner universities abroad. Before applying, check the institution's state recognition and its anabin status, and make sure your visa plan fits the programme.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="cta-band reveal zoom">
+          <span class="ring a" aria-hidden="true"></span><span class="ring b" aria-hidden="true"></span>
+          <span class="plane-fly" aria-hidden="true">✈️</span>
+          <h2>Not sure which of these will accept you?</h2>
+          <p>Let the AI Profile Analyzer match your CGPA, English and budget against all {{DE_COUNT}} universities, then get a personal shortlist from a counsellor.</p>
+          <div class="btn-row">
+            <a class="btn btn-dark btn-lg magnetic" href="profile-analyzer.html">Run the AI analysis {ARROW}</a>
+            <a class="btn btn-ghost btn-lg" href="packages.html#kickstart">Get a shortlist</a>
+          </div>
+        </div>
+      </div>
+    </section>

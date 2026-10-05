@@ -1,0 +1,367 @@
+# German higher-education institutions, one per line (check each private institution's state recognition / anabin status before applying):
+# name | short | city | state | kind | sector | domain | areas | programme examples (;) | flags
+#
+# kind:   U university · T technical university · H university of applied sciences
+#         K art/music/film · P university of education · M medical/veterinary
+#         B business school / private university · R theology · D dual/distance
+# sector: pub · priv · church
+# areas (blank = default for kind): E engineering · C computer science · B business/economics
+#         N natural sciences · M medicine/health · L law · H humanities/social sciences
+#         A arts/design/music · G agriculture/environment · D teaching/education · S social work
+# flags:  tu9 · pk (popular with Pakistani students) · med (medical faculty) · partner (degrees awarded by a partner university)
+#
+# Seeded from the Hipo university-domains-list (MIT licence), then cleaned, de-duplicated,
+# renamed to current official names and enriched by hand. Verify details on the official site.
+
+## Baden-Württemberg
+Heidelberg University | UHD | Heidelberg | Baden-Württemberg | U | pub | uni-heidelberg.de | NMHLBC | Molecular Biosciences;Physics;Scientific Computing;Health & Society in South Asia | med
+University of Freiburg | UFR | Freiburg | Baden-Württemberg | U | pub | uni-freiburg.de | NMHLBEG | Renewable Energy Engineering & Management;Environmental Governance;Embedded Systems Engineering | med
+University of Tübingen | UT | Tübingen | Baden-Württemberg | U | pub | uni-tuebingen.de | NMHLBC | Machine Learning;Neural & Behavioural Sciences;Economics | med
+Karlsruhe Institute of Technology | KIT | Karlsruhe | Baden-Württemberg | T | pub | kit.edu | ECNB | Energy Engineering & Management;Optics & Photonics;Remote Sensing & Geoinformatics | tu9
+University of Stuttgart | USTU | Stuttgart | Baden-Württemberg | T | pub | uni-stuttgart.de | ECNB | Infrastructure Planning;Information Technology (INFOTECH);Computational Mechanics of Materials;WASTE | tu9 pk
+Ulm University | UULM | Ulm | Baden-Württemberg | U | pub | uni-ulm.de | NMECB | Advanced Materials;Communications Technology;Energy Science & Technology | med
+University of Mannheim | UMA | Mannheim | Baden-Württemberg | U | pub | uni-mannheim.de | BHLC | Mannheim Master in Management;Economics;Data Science |
+University of Konstanz | UKN | Konstanz | Baden-Württemberg | U | pub | uni-konstanz.de | NHBC | Computer & Information Science;Social & Economic Data Science |
+University of Hohenheim | UHOH | Stuttgart | Baden-Württemberg | U | pub | uni-hohenheim.de | GNB | Agricultural Sciences in the Tropics and Subtropics;Environmental Protection & Agricultural Food Production;Bioeconomy |
+Baden-Württemberg Cooperative State University (DHBW) | DHBW | Stuttgart (9 campuses) | Baden-Württemberg | D | pub | dhbw.de | EBCS | |
+Aalen University | HSAA | Aalen | Baden-Württemberg | H | pub | hs-aalen.de | EBC | Advanced Materials & Manufacturing;Photonics |
+Albstadt-Sigmaringen University | HSAS | Sigmaringen | Baden-Württemberg | H | pub | hs-albsig.de | EBCN | Systems Engineering |
+Biberach University of Applied Sciences | HBC | Biberach | Baden-Württemberg | H | pub | hochschule-biberach.de | EBN | |
+Esslingen University | HE | Esslingen | Baden-Württemberg | H | pub | hs-esslingen.de | EBCS | Automotive Systems;Design & Development in Automotive & Mechanical Engineering |
+Furtwangen University | HFU | Furtwangen | Baden-Württemberg | H | pub | hs-furtwangen.de | ECBM | Biomedical Engineering;International Business Management |
+Heilbronn University | HHN | Heilbronn | Baden-Württemberg | H | pub | hs-heilbronn.de | EBC | Mechanical & Electrical Engineering;International Business & Intercultural Management |
+Karlsruhe University of Applied Sciences | HKA | Karlsruhe | Baden-Württemberg | H | pub | h-ka.de | EBC | Sensor Systems Technology;Mechatronics |
+Kempten University of Applied Sciences | HSKE | Kempten | Bavaria | H | pub | hs-kempten.de | EBCM | |
+HTWG Konstanz | HTWG | Konstanz | Baden-Württemberg | H | pub | htwg-konstanz.de | EBCA | Mechatronics;Business Administration |
+Mannheim University of Applied Sciences | HSMA | Mannheim | Baden-Württemberg | H | pub | hs-mannheim.de | EBCS | |
+Nürtingen-Geislingen University | HfWU | Nürtingen | Baden-Württemberg | H | pub | hfwu.de | BGA | International Finance;Sustainable Mobilities |
+Offenburg University | HSO | Offenburg | Baden-Württemberg | H | pub | hs-offenburg.de | ECB | Communication & Media Engineering;Energy Conversion & Management | pk
+Pforzheim University | HSPF | Pforzheim | Baden-Württemberg | H | pub | hs-pforzheim.de | BEA | Engineering & Management;MBA International Management |
+Reutlingen University | RU | Reutlingen | Baden-Württemberg | H | pub | reutlingen-university.de | BECN | International Management;Human-Centered Computing |
+Rottenburg University of Applied Forest Sciences | HFR | Rottenburg | Baden-Württemberg | H | pub | hs-rottenburg.net | G | Resource Efficient Wood Engineering |
+Ravensburg-Weingarten University | RWU | Weingarten | Baden-Württemberg | H | pub | rwu.de | ECBM | Mechatronics;Electrical Engineering & Embedded Systems |
+Stuttgart Media University | HdM | Stuttgart | Baden-Württemberg | H | pub | hdm-stuttgart.de | CAB | |
+Stuttgart University of Applied Sciences (HFT) | HFT | Stuttgart | Baden-Württemberg | H | pub | hft-stuttgart.de | EBN | Photogrammetry & Geoinformatics;International Project Management |
+Ulm University of Applied Sciences | THU | Ulm | Baden-Württemberg | H | pub | thu.de | ECBM | |
+Schwäbisch Gmünd University of Design (HfG) | HfG SG | Schwäbisch Gmünd | Baden-Württemberg | K | pub | hfg-gmuend.de | A | |
+Heidelberg University of Education | PH HD | Heidelberg | Baden-Württemberg | P | pub | ph-heidelberg.de | | |
+Freiburg University of Education | PH FR | Freiburg | Baden-Württemberg | P | pub | ph-freiburg.de | | |
+Karlsruhe University of Education | PH KA | Karlsruhe | Baden-Württemberg | P | pub | ph-karlsruhe.de | | |
+Ludwigsburg University of Education | PH LB | Ludwigsburg | Baden-Württemberg | P | pub | ph-ludwigsburg.de | | |
+Schwäbisch Gmünd University of Education | PH SG | Schwäbisch Gmünd | Baden-Württemberg | P | pub | ph-gmuend.de | | |
+Weingarten University of Education | PH WG | Weingarten | Baden-Württemberg | P | pub | ph-weingarten.de | | |
+Stuttgart State Academy of Art and Design | ABK | Stuttgart | Baden-Württemberg | K | pub | abk-stuttgart.de | A | |
+Stuttgart University of Music and Performing Arts | HMDK | Stuttgart | Baden-Württemberg | K | pub | hmdk-stuttgart.de | A | |
+Freiburg University of Music | HfM FR | Freiburg | Baden-Württemberg | K | pub | mh-freiburg.de | A | |
+Karlsruhe University of Music | HfM KA | Karlsruhe | Baden-Württemberg | K | pub | hfm-karlsruhe.de | A | |
+Mannheim University of Music and Performing Arts | HfMDK MA | Mannheim | Baden-Württemberg | K | pub | muho-mannheim.de | A | |
+Trossingen University of Music | HfM TR | Trossingen | Baden-Württemberg | K | pub | mh-trossingen.de | A | |
+Karlsruhe University of Arts and Design (HfG) | HfG KA | Karlsruhe | Baden-Württemberg | K | pub | hfg-karlsruhe.de | A | |
+Popakademie Baden-Württemberg | POP | Mannheim | Baden-Württemberg | K | pub | popakademie.de | AB | |
+Merz Akademie | MERZ | Stuttgart | Baden-Württemberg | K | priv | merz-akademie.de | A | |
+Zeppelin University | ZU | Friedrichshafen | Baden-Württemberg | B | priv | zu.de | BHC | |
+Karlshochschule International University | KHS | Karlsruhe | Baden-Württemberg | B | priv | karlshochschule.de | BH | |
+SRH University of Applied Sciences | SRH | Heidelberg (and other cities) | Baden-Württemberg | B | priv | srh-university.de | BCEM | Information Technology;Applied Data Science & Analytics;International Business | pk
+Catholic University of Applied Sciences Freiburg | KH FR | Freiburg | Baden-Württemberg | H | church | kh-freiburg.de | SM | |
+Protestant University of Applied Sciences Freiburg | EH FR | Freiburg | Baden-Württemberg | H | church | eh-freiburg.de | SM | |
+Protestant University Ludwigsburg | EH LB | Ludwigsburg | Baden-Württemberg | H | church | eh-ludwigsburg.de | SM | |
+Heidelberg School of Jewish Studies | HfJS | Heidelberg | Baden-Württemberg | R | priv | hfjs.eu | H | |
+University of Art Therapy Nürtingen | HKT | Nürtingen | Baden-Württemberg | K | priv | hkt-nuertingen.de | AM | |
+German University of Administrative Sciences Speyer | DUV | Speyer | Rhineland-Palatinate | U | pub | uni-speyer.de | LH | |
+
+## Bavaria
+Technical University of Munich | TUM | Munich | Bavaria | T | pub | tum.de | ECNBM | Informatics;Mechanical Engineering;Management & Technology;Data Engineering & Analytics | tu9 med pk
+LMU Munich | LMU | Munich | Bavaria | U | pub | lmu.de | NMHLBC | Economics;Data Science;Neuroscience | med
+Friedrich-Alexander-Universität Erlangen-Nürnberg | FAU | Erlangen | Bavaria | U | pub | fau.de | ENMBHC | Artificial Intelligence;Computational Engineering;Communications & Multimedia Engineering;Medical Engineering | med pk
+Julius-Maximilians-Universität Würzburg | JMU | Würzburg | Bavaria | U | pub | uni-wuerzburg.de | NMHC | Satellite Technology;Space Science & Technology | med
+University of Regensburg | UR | Regensburg | Bavaria | U | pub | uni-regensburg.de | NMHLB | | med
+University of Bayreuth | UBT | Bayreuth | Bavaria | U | pub | uni-bayreuth.de | NBHEL | Environmental Geography;Biofabrication;Global Food, Nutrition & Health |
+University of Augsburg | UNIA | Augsburg | Bavaria | U | pub | uni-augsburg.de | BNCHM | Software Engineering;Finance & Information Management | med
+University of Passau | UP | Passau | Bavaria | U | pub | uni-passau.de | CBHL | Computer Science;Development Studies;International Economics & Business |
+University of Bamberg | UBA | Bamberg | Bavaria | U | pub | uni-bamberg.de | HCB | International Software Systems Science;Computing in the Humanities |
+Catholic University of Eichstätt-Ingolstadt | KU | Eichstätt | Bavaria | U | church | ku.de | HBD | |
+Bundeswehr University Munich | UniBw M | Munich | Bavaria | U | pub | unibw.de | ECB | |
+Munich University of Applied Sciences (HM) | HM | Munich | Bavaria | H | pub | hm.edu | ECBS | |
+OTH Regensburg | OTH R | Regensburg | Bavaria | H | pub | oth-regensburg.de | ECB | Electrical & Microsystems Engineering;Master of Applied Research in Engineering Sciences |
+Technische Hochschule Nürnberg Georg Simon Ohm | THN | Nuremberg | Bavaria | H | pub | th-nuernberg.de | ECBS | |
+Technical University of Applied Sciences Würzburg-Schweinfurt | THWS | Würzburg | Bavaria | H | pub | thws.de | ECB | Artificial Intelligence;Logistics;Mechatronics |
+Technische Hochschule Ingolstadt | THI | Ingolstadt | Bavaria | H | pub | thi.de | ECB | Automotive Engineering;International Automotive Engineering;Renewable Energy Systems | pk
+Deggendorf Institute of Technology | THD | Deggendorf | Bavaria | H | pub | th-deg.de | ECBM | Mechatronics & Cyber-Physical Systems;Artificial Intelligence & Data Science;Global Public Health;Industrial Engineering | pk
+Rosenheim Technical University of Applied Sciences | TH RO | Rosenheim | Bavaria | H | pub | th-rosenheim.de | ECB | Wood Technology;Applied Artificial Intelligence |
+Technical University of Applied Sciences Augsburg | THA | Augsburg | Bavaria | H | pub | tha.de | ECBA | |
+Landshut University of Applied Sciences | HAW LA | Landshut | Bavaria | H | pub | haw-landshut.de | ECBS | |
+Coburg University of Applied Sciences | HS CO | Coburg | Bavaria | H | pub | hs-coburg.de | ECBS | Analytical Instrumentation;Financial Management |
+Hof University of Applied Sciences | HOF | Hof | Bavaria | H | pub | hof-university.de | ECB | Software Engineering for Industrial Applications | pk
+Neu-Ulm University of Applied Sciences | HNU | Neu-Ulm | Bavaria | H | pub | hs-neu-ulm.de | BC | |
+Ansbach University of Applied Sciences | HS AN | Ansbach | Bavaria | H | pub | hs-ansbach.de | BEC | |
+Technische Hochschule Aschaffenburg | TH AB | Aschaffenburg | Bavaria | H | pub | th-ab.de | EB | |
+OTH Amberg-Weiden | OTH AW | Amberg | Bavaria | H | pub | oth-aw.de | ECBM | |
+Weihenstephan-Triesdorf University of Applied Sciences | HSWT | Freising | Bavaria | H | pub | hswt.de | GNB | Agricultural Management;Biotechnology |
+Munich University of Television and Film | HFF | Munich | Bavaria | K | pub | hff-muenchen.de | A | |
+University of Music and Performing Arts Munich | HMTM | Munich | Bavaria | K | pub | hmtm.de | A | |
+Academy of Fine Arts Munich | AdBK M | Munich | Bavaria | K | pub | adbk.de | A | |
+Academy of Fine Arts Nuremberg | AdBK N | Nuremberg | Bavaria | K | pub | adbk-nuernberg.de | A | |
+Nuremberg University of Music | HfM N | Nuremberg | Bavaria | K | pub | hfm-nuernberg.de | A | |
+University of Music Würzburg | HfM WÜ | Würzburg | Bavaria | K | pub | hfm-wuerzburg.de | A | |
+Munich School of Philosophy | HfPh | Munich | Bavaria | R | church | hfph.de | H | |
+Augustana University Neuendettelsau | AHN | Neuendettelsau | Bavaria | R | church | augustana.de | H | |
+Catholic University of Applied Sciences Munich | KSH | Munich | Bavaria | H | church | ksh-muenchen.de | SM | |
+Protestant University of Applied Sciences Nuremberg | EVHN | Nuremberg | Bavaria | H | church | evhn.de | SM | |
+Munich Business School | MBS | Munich | Bavaria | B | priv | munich-business-school.de | B | |
+
+## Berlin
+Freie Universität Berlin | FU | Berlin | Berlin | U | pub | fu-berlin.de | NHLBC | Computer Science;North American Studies;Polymer Science | pk
+Humboldt-Universität zu Berlin | HU | Berlin | Berlin | U | pub | hu-berlin.de | NHLBC | Economics & Management Science;Statistics;Global History |
+Technische Universität Berlin | TUB | Berlin | Berlin | T | pub | tu-berlin.de | ECNB | Computer Science;Urban Design;Global Production Engineering;Energy Engineering | tu9 pk
+Charité – Universitätsmedizin Berlin | CHA | Berlin | Berlin | M | pub | charite.de | M | International Health;Health Data Science | med
+Berlin University of the Arts | UdK | Berlin | Berlin | K | pub | udk-berlin.de | A | |
+HTW Berlin – University of Applied Sciences | HTW | Berlin | Berlin | H | pub | htw-berlin.de | ECBA | Business Intelligence & Process Management;Industrial Engineering | pk
+Berlin School of Economics and Law (HWR) | HWR | Berlin | Berlin | H | pub | hwr-berlin.de | BL | International Business Management;Global Supply Chain & Operations Management |
+Berliner Hochschule für Technik (BHT) | BHT | Berlin | Berlin | H | pub | bht-berlin.de | ECBN | Data Science |
+Alice Salomon University of Applied Sciences | ASH | Berlin | Berlin | H | pub | ash-berlin.eu | SM | Social Work as a Human Rights Profession |
+weißensee academy of art berlin | KHB | Berlin | Berlin | K | pub | kh-berlin.de | A | |
+Ernst Busch University of the Performing Arts | HfS | Berlin | Berlin | K | pub | hfs-berlin.de | A | |
+Hanns Eisler School of Music Berlin | HfM HE | Berlin | Berlin | K | pub | hfm-berlin.de | A | |
+Protestant University of Applied Sciences Berlin | EHB | Berlin | Berlin | H | church | eh-berlin.de | SM | |
+Catholic University of Applied Social Sciences Berlin | KHSB | Berlin | Berlin | H | church | khsb-berlin.de | SM | |
+Hertie School | HS | Berlin | Berlin | B | priv | hertie-school.org | HB | Public Policy;International Affairs;Data Science for Public Policy |
+ESMT Berlin | ESMT | Berlin | Berlin | B | priv | esmt.berlin | B | Master in Management;MBA |
+ESCP Business School Berlin | ESCP | Berlin | Berlin | B | priv | escp.eu | B | |
+Bard College Berlin | BCB | Berlin | Berlin | B | priv | berlin.bard.edu | H | |
+CODE University of Applied Sciences | CODE | Berlin | Berlin | B | priv | code.berlin | CA | Software Engineering;Interaction Design |
+Berlin School of Business and Innovation (BSBI) | BSBI | Berlin | Berlin | B | priv | berlinsbi.com | BC | MSc Data Analytics;MBA;International Business Management | pk partner
+University of Europe for Applied Sciences | UE | Berlin (also Hamburg, Potsdam, Iserlohn) | Berlin | B | priv | ue-germany.com | BCA | Software Engineering;Data Science;Digital Business | pk
+Berlin International University of Applied Sciences | BI | Berlin | Berlin | B | priv | berlin-international.de | BCA | |
+Steinbeis University | SHB | Berlin | Berlin | B | priv | steinbeis-hochschule.de | BE | |
+Quadriga University of Applied Sciences | QUA | Berlin | Berlin | B | priv | quadriga-hochschule.com | BH | |
+Psychologische Hochschule Berlin | PHB | Berlin | Berlin | B | priv | psychologische-hochschule.de | MH | |
+Medical School Berlin | MSB | Berlin | Berlin | B | priv | medicalschool-berlin.de | MH | |
+Touro University Berlin | TOU | Berlin | Berlin | B | priv | touroberlin.de | BH | |
+Macromedia University of Applied Sciences | MAC | Berlin (and other cities) | Berlin | B | priv | macromedia-fachhochschule.de | AB | | pk
+
+## Brandenburg
+University of Potsdam | UP | Potsdam | Brandenburg | U | pub | uni-potsdam.de | NHLBC | Cognitive Systems;IT-Systems Engineering (HPI);Climate, Earth, Water & Sustainability |
+European University Viadrina | EUV | Frankfurt (Oder) | Brandenburg | U | pub | europa-uni.de | BLH | International Business Administration;European Studies |
+Brandenburg University of Technology Cottbus-Senftenberg | BTU | Cottbus | Brandenburg | T | pub | b-tu.de | ECNB | Power Engineering;Environmental & Resource Management;Artificial Intelligence;Civil Engineering | pk
+Film University Babelsberg Konrad Wolf | FILM | Potsdam | Brandenburg | K | pub | filmuniversitaet.de | A | |
+Technische Hochschule Wildau | THW | Wildau | Brandenburg | H | pub | th-wildau.de | ECB | Photonics | pk
+Technische Hochschule Brandenburg | THB | Brandenburg an der Havel | Brandenburg | H | pub | th-brandenburg.de | ECB | |
+University of Applied Sciences Potsdam | FHP | Potsdam | Brandenburg | H | pub | fh-potsdam.de | ASC | |
+Eberswalde University for Sustainable Development | HNEE | Eberswalde | Brandenburg | H | pub | hnee.de | GB | Global Change Management;Forest Information Technology |
+GISMA University of Applied Sciences | GISMA | Potsdam | Brandenburg | B | priv | gisma.com | BC | MSc Data Science, AI & Digital Business;MBA | pk
+Theologische Hochschule Friedensau | THF | Möckern-Friedensau | Saxony-Anhalt | R | church | thh-friedensau.de | HSM | |
+
+## Bremen
+University of Bremen | UB | Bremen | Bremen | U | pub | uni-bremen.de | NECHLB | Space Engineering;Medical Biometry;Ecology |
+Constructor University | CU | Bremen | Bremen | B | priv | constructor.university | CNBE | Data Science for Society & Business;Computer Science |
+Hochschule Bremen – City University of Applied Sciences | HSB | Bremen | Bremen | H | pub | hs-bremen.de | EBCS | Aeronautical Management;International Tourism Management |
+Hochschule Bremerhaven | HS BHV | Bremerhaven | Bremen | H | pub | hs-bremerhaven.de | EBN | Embedded Systems Design;Process Engineering & Energy Technology |
+University of the Arts Bremen | HfK | Bremen | Bremen | K | pub | hfk-bremen.de | A | |
+APOLLON University of Health Management | APO | Bremen | Bremen | B | priv | apollon-hochschule.de | MB | |
+
+## Hamburg
+University of Hamburg | UHH | Hamburg | Hamburg | U | pub | uni-hamburg.de | NHLBCM | Integrated Climate System Sciences;Economics;Informatics | med
+Hamburg University of Technology (TUHH) | TUHH | Hamburg | Hamburg | T | pub | tuhh.de | ECNB | Mechatronics;Information & Communication Systems;Environmental Engineering | pk
+HafenCity University Hamburg | HCU | Hamburg | Hamburg | U | pub | hcu-hamburg.de | EA | Resource Efficiency in Architecture & Planning |
+Hamburg University of Applied Sciences (HAW) | HAW | Hamburg | Hamburg | H | pub | haw-hamburg.de | ECBMS | Renewable Energy Systems;Aeronautical Engineering |
+Helmut Schmidt University | HSU | Hamburg | Hamburg | U | pub | hsu-hh.de | EBH | |
+Hamburg University of Music and Theatre | HfMT | Hamburg | Hamburg | K | pub | hfmt-hamburg.de | A | |
+University of Fine Arts of Hamburg (HFBK) | HFBK | Hamburg | Hamburg | K | pub | hfbk-hamburg.de | A | |
+Kühne Logistics University | KLU | Hamburg | Hamburg | B | priv | klu.org | B | Global Logistics & Supply Chain Management |
+Bucerius Law School | BLS | Hamburg | Hamburg | B | priv | law-school.de | L | Master of Law & Business |
+HSBA Hamburg School of Business Administration | HSBA | Hamburg | Hamburg | B | priv | hsba.de | B | |
+Euro-FH University of Applied Sciences | EFH | Hamburg | Hamburg | D | priv | euro-fh.de | B | |
+Hamburger Fern-Hochschule (HFH) | HFH | Hamburg | Hamburg | D | priv | hfh-fernstudium.de | BEM | |
+Evangelische Hochschule Rauhes Haus | EHRH | Hamburg | Hamburg | H | church | ev-hochschule-hh.de | S | |
+MSH Medical School Hamburg | MSH | Hamburg | Hamburg | B | priv | medicalschool-hamburg.de | MH | |
+NBS Northern Business School | NBS | Hamburg | Hamburg | B | priv | nbs.de | B | |
+Brand University of Applied Sciences | BRAND | Hamburg | Hamburg | B | priv | brand-university.de | BA | |
+
+## Hesse
+Goethe University Frankfurt | GU | Frankfurt | Hesse | U | pub | uni-frankfurt.de | NMHLBC | Money, Finance & Management;Economics;Computer Science | med
+Technical University of Darmstadt | TUDa | Darmstadt | Hesse | T | pub | tu-darmstadt.de | ECNB | Distributed Software Systems;Information & Communication Engineering;Mechanical & Process Engineering | tu9 pk
+Justus Liebig University Giessen | JLU | Giessen | Hesse | U | pub | uni-giessen.de | NMGHLB | Agrobiotechnology;Transition Management | med
+Philipps-Universität Marburg | UMR | Marburg | Hesse | U | pub | uni-marburg.de | NMHLB | Data Science;Peace & Conflict Studies | med
+University of Kassel | UNIK | Kassel | Hesse | U | pub | uni-kassel.de | ENGBHA | Renewable Energy & Energy Efficiency (REMENA);Global Political Economy;International Food Business & Consumer Studies |
+Darmstadt University of Applied Sciences (h_da) | h_da | Darmstadt | Hesse | H | pub | h-da.de | ECBA | Electrical Engineering & Information Technology;Computer Science |
+Frankfurt University of Applied Sciences | Frankfurt UAS | Frankfurt | Hesse | H | pub | frankfurt-university.de | ECBS | High Integrity Systems;Information Technology;Geodesy & Geoinformation | pk
+Technische Hochschule Mittelhessen (THM) | THM | Giessen | Hesse | H | pub | thm.de | ECBM | |
+Fulda University of Applied Sciences | HS FD | Fulda | Hesse | H | pub | hs-fulda.de | BCMS | Global Software Development;Public Health |
+RheinMain University of Applied Sciences | HSRM | Wiesbaden | Hesse | H | pub | hs-rm.de | ECBA | |
+Geisenheim University | HGU | Geisenheim | Hesse | U | pub | hs-geisenheim.de | GN | Vinifera EuroMaster;Horticultural Science |
+Städelschule – Academy of Fine Arts Frankfurt | STÄ | Frankfurt | Hesse | K | pub | staedelschule.de | A | |
+Frankfurt University of Music and Performing Arts | HfMDK | Frankfurt | Hesse | K | pub | hfmdk-frankfurt.de | A | |
+HfG Offenbach University of Art and Design | HfG OF | Offenbach | Hesse | K | pub | hfg-offenbach.de | A | |
+Protestant University of Applied Sciences Darmstadt | EHD | Darmstadt | Hesse | H | church | eh-darmstadt.de | SM | |
+Frankfurt School of Finance & Management | FS | Frankfurt | Hesse | B | priv | frankfurt-school.de | B | Master in Finance;Master in Management;MBA |
+EBS Universität | EBS | Oestrich-Winkel | Hesse | B | priv | ebs.edu | BL | |
+Hochschule Fresenius | HSF | Idstein (and other cities) | Hesse | B | priv | hs-fresenius.de | BMCN | |
+Provadis School of International Management and Technology | PRO | Frankfurt | Hesse | B | priv | provadis-hochschule.de | BEN | |
+Wilhelm Büchner University of Applied Sciences | WBH | Darmstadt | Hesse | D | priv | wb-fernstudium.de | EC | |
+Sankt Georgen Graduate School of Philosophy and Theology | PTH SG | Frankfurt | Hesse | R | church | sankt-georgen.de | H | |
+Lutheran Theological University Oberursel | LThH | Oberursel | Hesse | R | church | lthh-oberursel.de | H | |
+
+## Lower Saxony
+University of Göttingen | UGOE | Göttingen | Lower Saxony | U | pub | uni-goettingen.de | NMGHLBC | Sustainable International Agriculture;Development Economics;Applied Computer Science | med
+Leibniz University Hannover | LUH | Hannover | Lower Saxony | T | pub | uni-hannover.de | ECNBL | Water Resources & Environmental Management;Optical Technologies;Computer Science | tu9 pk
+Technische Universität Braunschweig | TU BS | Braunschweig | Lower Saxony | T | pub | tu-braunschweig.de | ECNB | Computational Sciences in Engineering;Electrical Engineering | tu9
+Carl von Ossietzky University of Oldenburg | UOL | Oldenburg | Lower Saxony | U | pub | uol.de | NHMBE | Renewable Energy (PPRE);Environmental Modelling | med
+Osnabrück University | UOS | Osnabrück | Lower Saxony | U | pub | uni-osnabrueck.de | NHCB | Cognitive Science |
+University of Hildesheim | UHI | Hildesheim | Lower Saxony | U | pub | uni-hildesheim.de | HDC | Data Analytics |
+Leuphana University Lüneburg | LEU | Lüneburg | Lower Saxony | U | pub | leuphana.de | BHG | Sustainability Science;Management & Entrepreneurship |
+Clausthal University of Technology | TUC | Clausthal-Zellerfeld | Lower Saxony | T | pub | tu-clausthal.de | ENB | Petroleum Engineering;Energy & Raw Materials;Mining Engineering | pk
+University of Vechta | UV | Vechta | Lower Saxony | U | pub | uni-vechta.de | HD | |
+Hannover Medical School (MHH) | MHH | Hannover | Lower Saxony | M | pub | mhh.de | M | Biomedicine | med
+University of Veterinary Medicine Hannover | TiHo | Hannover | Lower Saxony | M | pub | tiho-hannover.de | MN | |
+Braunschweig University of Art | HBK BS | Braunschweig | Lower Saxony | K | pub | hbk-bs.de | A | |
+Hannover University of Music, Drama and Media | HMTMH | Hannover | Lower Saxony | K | pub | hmtm-hannover.de | A | |
+Hochschule Hannover | HsH | Hannover | Lower Saxony | H | pub | hs-hannover.de | ECBAS | |
+Ostfalia University of Applied Sciences | OST | Wolfenbüttel | Lower Saxony | H | pub | ostfalia.de | ECBMS | |
+HAWK University of Applied Sciences and Arts | HAWK | Hildesheim | Lower Saxony | H | pub | hawk.de | EAGMS | Regional Management & Economic Development |
+Jade University of Applied Sciences | JADE | Wilhelmshaven | Lower Saxony | H | pub | jade-hs.de | EBC | |
+Hochschule Emden/Leer | HSEL | Emden | Lower Saxony | H | pub | hs-emden-leer.de | EBNS | |
+Osnabrück University of Applied Sciences | HS OS | Osnabrück | Lower Saxony | H | pub | hs-osnabrueck.de | EBGM | |
+PFH Private University of Applied Sciences Göttingen | PFH | Göttingen | Lower Saxony | B | priv | pfh.de | BEM | |
+Hochschule Weserbergland | HSW | Hameln | Lower Saxony | B | priv | hsw-hameln.de | BC | |
+Hochschule 21 | HS21 | Buxtehude | Lower Saxony | B | priv | hs21.de | EM | |
+Hochschule für Künste im Sozialen Ottersberg | HKS | Ottersberg | Lower Saxony | K | priv | hks-ottersberg.de | AS | |
+FHDW University of Applied Sciences Hannover | FHDW H | Hannover | Lower Saxony | B | priv | fhdw-hannover.de | BC | |
+Catholic University of Applied Sciences Northern Germany | KHN | Osnabrück | Lower Saxony | H | church | kath-fh-nord.de | SM | |
+
+## Mecklenburg-Vorpommern
+University of Rostock | UR | Rostock | Mecklenburg-Vorpommern | U | pub | uni-rostock.de | NMEHLB | Computational Engineering;Agricultural Economics;Visual Computing | med
+University of Greifswald | UG | Greifswald | Mecklenburg-Vorpommern | U | pub | uni-greifswald.de | NMHL | Landscape Ecology & Nature Conservation;Baltic Sea Region Studies | med
+Hochschule Wismar | HSWI | Wismar | Mecklenburg-Vorpommern | H | pub | hs-wismar.de | EBAC | Architectural Lighting Design |
+Stralsund University of Applied Sciences | HOST | Stralsund | Mecklenburg-Vorpommern | H | pub | hochschule-stralsund.de | ECB | |
+Neubrandenburg University of Applied Sciences | HSNB | Neubrandenburg | Mecklenburg-Vorpommern | H | pub | hs-nb.de | GMSB | |
+Rostock University of Music and Drama | HMT R | Rostock | Mecklenburg-Vorpommern | K | pub | hmt-rostock.de | A | |
+
+## North Rhine-Westphalia
+RWTH Aachen University | RWTH | Aachen | North Rhine-Westphalia | T | pub | rwth-aachen.de | ECNBM | Computer Science;Electrical Power Engineering;Automotive Engineering;Data Science | tu9 med pk
+University of Cologne | UoC | Cologne | North Rhine-Westphalia | U | pub | uni-koeln.de | NMHLBC | Economics;Information Systems;Earth System Sciences | med
+University of Bonn | UB | Bonn | North Rhine-Westphalia | U | pub | uni-bonn.de | NMHLBG | Economics;Mathematics;Agricultural & Food Economics | med
+University of Münster | UM | Münster | North Rhine-Westphalia | U | pub | uni-muenster.de | NMHLB | Geospatial Technologies;Chemistry | med
+Ruhr University Bochum | RUB | Bochum | North Rhine-Westphalia | U | pub | ruhr-uni-bochum.de | ENMHLBC | Materials Science & Simulation;IT Security;Development Management | med
+TU Dortmund University | TU DO | Dortmund | North Rhine-Westphalia | T | pub | tu-dortmund.de | ECNBD | Automation & Robotics;Manufacturing Technology;SPRING | pk
+University of Duisburg-Essen | UDE | Essen | North Rhine-Westphalia | U | pub | uni-duisburg-essen.de | ECNBHM | Embedded Systems Engineering;Mechanical Engineering;Computer Engineering | med pk
+Heinrich Heine University Düsseldorf | HHU | Düsseldorf | North Rhine-Westphalia | U | pub | hhu.de | NMHLB | | med
+University of Wuppertal | BUW | Wuppertal | North Rhine-Westphalia | U | pub | uni-wuppertal.de | ENHBD | |
+University of Siegen | USI | Siegen | North Rhine-Westphalia | U | pub | uni-siegen.de | ECBHN | Mechatronics;Computer Science;Business Informatics | pk
+Paderborn University | UPB | Paderborn | North Rhine-Westphalia | U | pub | uni-paderborn.de | ECBHN | Electrical Systems Engineering;Computer Science;Industrial Engineering | pk
+Bielefeld University | UNI BI | Bielefeld | North Rhine-Westphalia | U | pub | uni-bielefeld.de | NHBCM | Intelligent Interactive Systems;Data Science;Public Health | med
+FernUniversität in Hagen | FUH | Hagen | North Rhine-Westphalia | D | pub | fernuni-hagen.de | BCHL | |
+Witten/Herdecke University | UW/H | Witten | North Rhine-Westphalia | B | priv | uni-wh.de | MB | | med
+German Sport University Cologne | DSHS | Cologne | North Rhine-Westphalia | U | pub | dshs-koeln.de | MH | |
+Kunstakademie Düsseldorf | KAD | Düsseldorf | North Rhine-Westphalia | K | pub | kunstakademie-duesseldorf.de | A | |
+Academy of Media Arts Cologne | KHM | Cologne | North Rhine-Westphalia | K | pub | khm.de | A | |
+Folkwang University of the Arts | FOLK | Essen | North Rhine-Westphalia | K | pub | folkwang-uni.de | A | |
+Detmold University of Music | HfM DT | Detmold | North Rhine-Westphalia | K | pub | hfm-detmold.de | A | |
+Cologne University of Music and Dance | HfMT K | Cologne | North Rhine-Westphalia | K | pub | hfmt-koeln.de | A | |
+Robert Schumann Hochschule Düsseldorf | RSH | Düsseldorf | North Rhine-Westphalia | K | pub | rsh-duesseldorf.de | A | |
+Kunstakademie Münster | KAM | Münster | North Rhine-Westphalia | K | pub | kunstakademie-muenster.de | A | |
+FH Aachen University of Applied Sciences | FHAC | Aachen | North Rhine-Westphalia | H | pub | fh-aachen.de | ECBN | Mechatronics;Aerospace Engineering;Energy Systems | pk
+TH Köln – University of Applied Sciences | THK | Cologne | North Rhine-Westphalia | H | pub | th-koeln.de | ECBAS | Automation & IT;Renewable Energy Management;Communication Systems & Networks | pk
+Hochschule Düsseldorf | HSD | Düsseldorf | North Rhine-Westphalia | H | pub | hs-duesseldorf.de | EBAS | |
+Hochschule Bonn-Rhein-Sieg | H-BRS | Sankt Augustin | North Rhine-Westphalia | H | pub | h-brs.de | ECBN | Autonomous Systems;Analytical Chemistry;Business Informatics |
+Fachhochschule Dortmund | FH DO | Dortmund | North Rhine-Westphalia | H | pub | fh-dortmund.de | ECBAS | Embedded Systems for Mechatronics;Digital Transformation | pk
+Bochum University of Applied Sciences | BO | Bochum | North Rhine-Westphalia | H | pub | hs-bochum.de | EBC | |
+Westphalian University of Applied Sciences | WH | Gelsenkirchen | North Rhine-Westphalia | H | pub | w-hs.de | ECB | |
+Münster University of Applied Sciences | FHMS | Münster | North Rhine-Westphalia | H | pub | fh-muenster.de | ECBAMS | |
+Bielefeld University of Applied Sciences and Arts (HSBI) | HSBI | Bielefeld | North Rhine-Westphalia | H | pub | hsbi.de | ECBAM | |
+Hochschule Niederrhein | HSNR | Krefeld | North Rhine-Westphalia | H | pub | hs-niederrhein.de | EBAS | Textile & Clothing Management |
+OWL University of Applied Sciences and Arts | TH OWL | Lemgo | North Rhine-Westphalia | H | pub | th-owl.de | ECAB | Information Technology;Data Science |
+South Westphalia University of Applied Sciences | FH SWF | Iserlohn | North Rhine-Westphalia | H | pub | fh-swf.de | ECBG | Systems Engineering & Engineering Management |
+Rhine-Waal University of Applied Sciences | HSRW | Kleve | North Rhine-Westphalia | H | pub | hochschule-rhein-waal.de | ECBNG | Mechatronic Systems Engineering;Bioengineering;Information Engineering & Computer Science;International Management | pk
+Hamm-Lippstadt University of Applied Sciences | HSHL | Hamm | North Rhine-Westphalia | H | pub | hshl.de | ECB | Mechatronics;Business & Systems Engineering | pk
+Ruhr West University of Applied Sciences | HRW | Mülheim an der Ruhr | North Rhine-Westphalia | H | pub | hs-ruhrwest.de | ECB | |
+TH Georg Agricola University | THGA | Bochum | North Rhine-Westphalia | H | priv | thga.de | EG | |
+Catholic University of Applied Sciences NRW | KatHO | Cologne | North Rhine-Westphalia | H | church | katho-nrw.de | SM | |
+Protestant University of Applied Sciences RWL | EvH | Bochum | North Rhine-Westphalia | H | church | evh-bochum.de | SM | |
+Rheinische Hochschule Köln | RH | Cologne | North Rhine-Westphalia | B | priv | rh-koeln.de | EBM | |
+International School of Management (ISM) | ISM | Dortmund | North Rhine-Westphalia | B | priv | ism.de | B | International Management;Finance | pk
+Cologne Business School | CBS | Cologne | North Rhine-Westphalia | B | priv | cbs.de | B | International Business;Sustainable Business |
+FOM University of Applied Sciences | FOM | Essen (35+ centres) | North Rhine-Westphalia | B | priv | fom.de | BCEM | |
+FHDW University of Applied Sciences Paderborn | FHDW | Paderborn | North Rhine-Westphalia | B | priv | fhdw.de | BC | |
+EUFH Europäische Fachhochschule | EUFH | Brühl | North Rhine-Westphalia | B | priv | eufh.de | BM | |
+IST University of Applied Sciences | IST | Düsseldorf | North Rhine-Westphalia | D | priv | ist-hochschule.de | B | |
+Theological Faculty Paderborn | TF PB | Paderborn | North Rhine-Westphalia | R | church | thf-paderborn.de | H | |
+Philosophical-Theological University Münster | PTH MS | Münster | North Rhine-Westphalia | R | church | pth-muenster.de | H | |
+Kirchliche Hochschule Wuppertal/Bethel | KiHo | Wuppertal | North Rhine-Westphalia | R | church | kiho-wb.de | H | |
+NORDAKADEMIE University of Applied Sciences | NAK | Elmshorn | Schleswig-Holstein | D | priv | nordakademie.de | BC | |
+
+## Rhineland-Palatinate
+Johannes Gutenberg University Mainz | JGU | Mainz | Rhineland-Palatinate | U | pub | uni-mainz.de | NMHLBC | Physics | med
+RPTU Kaiserslautern-Landau | RPTU | Kaiserslautern | Rhineland-Palatinate | T | pub | rptu.de | ECNBD | Commercial Vehicle Technology;Computer Science;Electrical & Computer Engineering |
+Trier University | UT | Trier | Rhineland-Palatinate | U | pub | uni-trier.de | HBLC | |
+University of Koblenz | UKO | Koblenz | Rhineland-Palatinate | U | pub | uni-koblenz.de | CHD | Web & Data Science |
+Mainz University of Applied Sciences | HS MZ | Mainz | Rhineland-Palatinate | H | pub | hs-mainz.de | EBA | |
+Trier University of Applied Sciences | HS TR | Trier | Rhineland-Palatinate | H | pub | hochschule-trier.de | ECBAG | International Material Flow Management |
+Koblenz University of Applied Sciences | HS KO | Koblenz | Rhineland-Palatinate | H | pub | hs-koblenz.de | EBS | |
+Kaiserslautern University of Applied Sciences | HS KL | Kaiserslautern | Rhineland-Palatinate | H | pub | hs-kl.de | ECBA | |
+Worms University of Applied Sciences | HS WO | Worms | Rhineland-Palatinate | H | pub | hs-worms.de | BC | |
+Technische Hochschule Bingen | TH BI | Bingen | Rhineland-Palatinate | H | pub | th-bingen.de | ECG | |
+Ludwigshafen University of Business and Society | HWG LU | Ludwigshafen | Rhineland-Palatinate | H | pub | hwg-lu.de | BS | |
+WHU – Otto Beisheim School of Management | WHU | Vallendar | Rhineland-Palatinate | B | priv | whu.edu | B | Master in Management;MSc in Finance;MBA |
+Catholic University of Applied Sciences Mainz | KH MZ | Mainz | Rhineland-Palatinate | H | church | kh-mz.de | SM | |
+Vallendar University of Philosophy and Theology | PTHV | Vallendar | Rhineland-Palatinate | R | church | pthv.de | HM | |
+
+## Saarland
+Saarland University | UdS | Saarbrücken | Saarland | U | pub | uni-saarland.de | CNMHLB | Computer Science;Visual Computing;Embedded Systems | med
+htw saar – Saarland University of Applied Sciences | htw saar | Saarbrücken | Saarland | H | pub | htwsaar.de | ECBS | |
+Saar College of Fine Arts | HBKsaar | Saarbrücken | Saarland | K | pub | hbksaar.de | A | |
+University of Music Saar | HfM Saar | Saarbrücken | Saarland | K | pub | hfm.saarland.de | A | |
+
+## Saxony
+TU Dresden | TUD | Dresden | Saxony | T | pub | tu-dresden.de | ECNMBH | Nanoelectronic Systems;Computational Modelling & Simulation;Hydro Science & Engineering | tu9 med pk
+Chemnitz University of Technology | TUC | Chemnitz | Saxony | T | pub | tu-chemnitz.de | ECNBH | Automotive Software Engineering;Web Engineering;Embedded Systems;Advanced Manufacturing | pk
+Leipzig University | UL | Leipzig | Saxony | U | pub | uni-leipzig.de | NMHLBC | Data Science;Global Studies | med
+TU Bergakademie Freiberg | TUBAF | Freiberg | Saxony | T | pub | tu-freiberg.de | ENB | Sustainable Mining & Remediation Management;Advanced Materials Analysis;International Management of Resources & Environment | pk
+HTW Dresden – University of Applied Sciences | HTWD | Dresden | Saxony | H | pub | htw-dresden.de | ECBG | |
+HTWK Leipzig – University of Applied Sciences | HTWK | Leipzig | Saxony | H | pub | htwk-leipzig.de | ECBA | |
+Mittweida University of Applied Sciences | HSMW | Mittweida | Saxony | H | pub | hs-mittweida.de | ECBA | |
+West Saxon University of Zwickau | WHZ | Zwickau | Saxony | H | pub | fh-zwickau.de | EBMA | |
+Zittau/Görlitz University of Applied Sciences | HSZG | Zittau | Saxony | H | pub | hszg.de | EBCS | |
+Palucca University of Dance Dresden | PAL | Dresden | Saxony | K | pub | palucca.eu | A | |
+Dresden Academy of Fine Arts (HfBK) | HfBK DD | Dresden | Saxony | K | pub | hfbk-dresden.de | A | |
+Academy of Fine Arts Leipzig (HGB) | HGB | Leipzig | Saxony | K | pub | hgb-leipzig.de | A | |
+Dresden University of Music Carl Maria von Weber | HfM DD | Dresden | Saxony | K | pub | hfmdd.de | A | |
+University of Music and Theatre Leipzig | HMT L | Leipzig | Saxony | K | pub | hmt-leipzig.de | A | |
+Protestant University of Applied Sciences Dresden | EHS | Dresden | Saxony | H | church | ehs-dresden.de | SM | |
+Protestant University of Applied Sciences Moritzburg | EHM | Moritzburg | Saxony | H | church | eh-moritzburg.de | SD | |
+HHL Leipzig Graduate School of Management | HHL | Leipzig | Saxony | B | priv | hhl.de | B | MSc in Management;MBA |
+Duale Hochschule Sachsen (Saxon Cooperative State University) | DHSN | Dresden (7 sites) | Saxony | D | pub | ba-sachsen.de | BEC | |
+DIPLOMA University of Applied Sciences | DIPL | Bad Sooden-Allendorf | Hesse | D | priv | diploma.de | BMA | |
+
+## Saxony-Anhalt
+Martin Luther University Halle-Wittenberg | MLU | Halle | Saxony-Anhalt | U | pub | uni-halle.de | NMHLBG | | med
+Otto von Guericke University Magdeburg | OVGU | Magdeburg | Saxony-Anhalt | U | pub | ovgu.de | ECNMB | Data & Knowledge Engineering;Digital Engineering;Mechanical Engineering;Electrical Engineering & IT | med pk
+Magdeburg-Stendal University of Applied Sciences | H2 | Magdeburg | Saxony-Anhalt | H | pub | h2.de | EBSM | Water Engineering |
+Anhalt University of Applied Sciences | HSA | Köthen | Saxony-Anhalt | H | pub | hs-anhalt.de | ECBGA | Biomedical Engineering;Food & Agribusiness;Architecture (DIA) | pk
+Harz University of Applied Sciences | HS Harz | Wernigerode | Saxony-Anhalt | H | pub | hs-harz.de | BCH | |
+Merseburg University of Applied Sciences | HoMe | Merseburg | Saxony-Anhalt | H | pub | hs-merseburg.de | ECBS | |
+Burg Giebichenstein University of Art and Design | BURG | Halle | Saxony-Anhalt | K | pub | burg-halle.de | A | |
+
+## Schleswig-Holstein
+Kiel University | CAU | Kiel | Schleswig-Holstein | U | pub | uni-kiel.de | NMHLBG | Environmental Management;Agricultural Economics | med
+University of Lübeck | UzL | Lübeck | Schleswig-Holstein | U | pub | uni-luebeck.de | MCN | Infection Biology | med
+Europa-Universität Flensburg | EUF | Flensburg | Schleswig-Holstein | U | pub | uni-flensburg.de | DHB | Energy & Environmental Management |
+Kiel University of Applied Sciences | FH Kiel | Kiel | Schleswig-Holstein | H | pub | fh-kiel.de | EBGS | |
+Technische Hochschule Lübeck | THL | Lübeck | Schleswig-Holstein | H | pub | th-luebeck.de | ECB | |
+West Coast University of Applied Sciences | FHW | Heide | Schleswig-Holstein | H | pub | fh-westkueste.de | EB | |
+Flensburg University of Applied Sciences | HS FL | Flensburg | Schleswig-Holstein | H | pub | hs-flensburg.de | ECB | Wind Engineering;Biotechnology |
+Muthesius University of Fine Arts and Design | MKH | Kiel | Schleswig-Holstein | K | pub | muthesius-kunsthochschule.de | A | |
+Lübeck Academy of Music | MHL | Lübeck | Schleswig-Holstein | K | pub | mh-luebeck.de | A | |
+Wedel University of Applied Sciences | FHW | Wedel | Schleswig-Holstein | H | priv | fh-wedel.de | CEB | |
+
+## Thuringia
+Friedrich Schiller University Jena | FSU | Jena | Thuringia | U | pub | uni-jena.de | NMHLB | Photonics;Microbiology;Economics | med
+Technische Universität Ilmenau | TU IL | Ilmenau | Thuringia | T | pub | tu-ilmenau.de | ECNB | Communications & Signal Processing;Micro- & Nanotechnologies;Research in Computer & Systems Engineering | pk
+Bauhaus-Universität Weimar | BUW | Weimar | Thuringia | U | pub | uni-weimar.de | EAC | Natural Hazards & Risks in Structural Engineering;Digital Engineering;Media Architecture |
+University of Erfurt | UE | Erfurt | Thuringia | U | pub | uni-erfurt.de | HDB | Public Policy (Willy Brandt School) |
+Erfurt University of Applied Sciences | FHE | Erfurt | Thuringia | H | pub | fh-erfurt.de | EBAS | |
+Ernst-Abbe-Hochschule Jena | EAH | Jena | Thuringia | H | pub | eah-jena.de | ECBM | Photonics;Scientific Instrumentation |
+Nordhausen University of Applied Sciences | HSN | Nordhausen | Thuringia | H | pub | hs-nordhausen.de | EBS | |
+Schmalkalden University of Applied Sciences | HSM | Schmalkalden | Thuringia | H | pub | hs-schmalkalden.de | ECB | |
+University of Music Franz Liszt Weimar | HfM W | Weimar | Thuringia | K | pub | hfm-weimar.de | A | |
+IU International University of Applied Sciences | IU | Erfurt (and 30+ cities, online) | Thuringia | B | priv | iu.org | BCM | MSc Computer Science;MBA;Data Science | pk
+AKAD University | AKAD | Stuttgart | Baden-Württemberg | D | priv | akad.de | BE | |

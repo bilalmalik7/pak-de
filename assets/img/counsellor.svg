@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-labelledby="t d">
+  <title id="t">DeutschDreams counsellor</title>
+  <desc id="d">Illustration of a smiling counsellor in a hijab at her desk, with a laptop, study booklets and Pakistani and German flags, in front of an arched window showing Berlin's skyline at sunset while a paper plane flies from Pakistan to Germany.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d3a85"/>
+      <stop offset=".55" stop-color="#8a4a8f"/>
+      <stop offset=".8" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#ffc83d"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffc83d"/>
+      <stop offset=".5" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#e5484d"/>
+    </linearGradient>
+    <linearGradient id="kurta" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8a66"/>
+      <stop offset="1" stop-color="#e5484d"/>
+    </linearGradient>
+    <linearGradient id="hijab" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14b37c"/>
+      <stop offset="1" stop-color="#0a7a53"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff8ee"/>
+      <stop offset="1" stop-color="#f6e7cc"/>
+    </linearGradient>
+    <linearGradient id="laptop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef0f8"/>
+      <stop offset="1" stop-color="#c9cde0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffc83d" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffc83d" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="arch"><path d="M110 380 V200 a150 150 0 0 1 300 0 V380 Z"/></clipPath>
+    <style>
+      .float { animation: fl 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .float.b { animation-delay: -3s; }
+      .steam { animation: st 3s ease-in-out infinite; opacity: 0; }
+      .steam.b { animation-delay: -1.5s; }
+      .twinkle { animation: tw 3s ease-in-out infinite alternate; }
+      .twinkle.b { animation-delay: -1.5s; }
+      .leaf { animation: sw 5s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+      .dash { stroke-dasharray: 2 11; animation: dash 1.4s linear infinite; }
+      @keyframes fl { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+      @keyframes st { 0% { opacity: 0; transform: translateY(6px); } 40% { opacity: .7; } 100% { opacity: 0; transform: translateY(-14px); } }
+      @keyframes tw { from { opacity: .25; } to { opacity: 1; } }
+      @keyframes sw { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+      @keyframes dash { to { stroke-dashoffset: -26; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <!-- soft glow + backdrop blob -->
+  <circle cx="260" cy="250" r="235" fill="url(#glow)"/>
+  <path d="M60 300 C 40 170, 150 60, 280 62 C 420 64, 500 170, 470 300 C 445 420, 330 470, 240 462 C 140 455, 75 400, 60 300 Z" fill="#1b2350" opacity=".55"/>
+
+  <!-- arched window with sunset over Berlin -->
+  <path d="M100 384 V200 a160 160 0 0 1 320 0 V384 Z" fill="#fff8ee" opacity=".14"/>
+  <g clip-path="url(#arch)">
+    <rect x="100" y="40" width="320" height="350" fill="url(#sky)"/>
+    <circle cx="372" cy="292" r="36" fill="#ffd66b"/>
+    <circle cx="372" cy="292" r="54" fill="#ffd66b" opacity=".25"/>
+    <g fill="#fff">
+      <circle class="twinkle" cx="160" cy="120" r="2"/><circle class="twinkle b" cx="215" cy="85" r="1.6"/>
+      <circle class="twinkle" cx="330" cy="105" r="1.8"/><circle class="twinkle b" cx="380" cy="160" r="1.5"/>
+      <circle class="twinkle b" cx="140" cy="190" r="1.4"/>
+    </g>
+    <!-- skyline -->
+    <g fill="#1b2350">
+      <!-- Brandenburg Gate -->
+      <g transform="translate(0 -40)">
+      <rect x="108" y="296" width="76" height="9" rx="1.5"/>
+      <rect x="127" y="285" width="38" height="11" rx="1.5"/>
+      <path d="M139 285 l4.5 -8 h5 l4.5 8 z"/>
+      <rect x="111" y="305" width="6" height="32"/><rect x="123" y="305" width="6" height="32"/><rect x="135" y="305" width="6" height="32"/>
+      <rect x="151" y="305" width="6" height="32"/><rect x="163" y="305" width="6" height="32"/><rect x="175" y="305" width="6" height="32"/>
+      <rect x="104" y="335" width="84" height="103"/>
+      </g>
+      <rect x="186" y="318" width="20" height="80"/>
+      <rect x="318" y="324" width="24" height="74"/>
+      <!-- TV tower -->
+      <rect x="393" y="232" width="7" height="170"/><circle cx="396.5" cy="254" r="13"/>
+      <rect x="395.3" y="198" width="2.4" height="40"/><rect x="390" y="270" width="13" height="4" rx="2"/>
+      <rect x="344" y="330" width="30" height="68"/><rect x="372" y="312" width="18" height="86"/><rect x="404" y="334" width="16" height="64"/>
+    </g>
+    <g fill="#ffc83d">
+      <rect class="twinkle" x="112" y="346" width="5" height="6"/><rect class="twinkle b" x="192" y="330" width="5" height="6"/>
+      <rect class="twinkle" x="352" y="342" width="5" height="6"/><rect class="twinkle b" x="376" y="324" width="5" height="6"/>
+      <rect class="twinkle" x="324" y="336" width="5" height="6"/><rect x="391" y="252" width="11" height="3" opacity=".9"/>
+    </g>
+  </g>
+  <path d="M100 384 V200 a160 160 0 0 1 320 0 V384" fill="none" stroke="#fff8ee" stroke-width="7" opacity=".9"/>
+  <path d="M260 40 V384 M100 250 H420" stroke="#fff8ee" stroke-width="3" opacity=".35"/>
+
+  <g transform="translate(26 36.6) scale(.9)">
+  <!-- chair back -->
+  <rect x="186" y="214" width="148" height="190" rx="36" fill="#0e1430"/>
+  <rect x="198" y="226" width="124" height="170" rx="28" fill="#26306b"/>
+
+  <!-- counsellor -->
+  <g>
+    <!-- body / kurta -->
+    <path d="M194 300 C 196 262, 222 246, 260 246 C 298 246, 324 262, 326 300 L 334 380 H 186 Z" fill="url(#kurta)"/>
+    <!-- hijab drape over shoulders -->
+    <path d="M212 236 C 208 262, 214 292, 238 312 L 260 330 L 282 312 C 306 292, 312 262, 308 236 C 296 250, 280 256, 260 256 C 240 256, 224 250, 212 236 Z" fill="url(#hijab)"/>
+    <!-- head + hijab -->
+    <ellipse cx="260" cy="196" rx="47" ry="52" fill="url(#hijab)"/>
+    <ellipse cx="260" cy="203" rx="29" ry="34" fill="#c98b5e"/>
+    <path d="M231 196 C 232 170, 246 160, 260 160 C 274 160, 288 170, 289 196 C 280 182, 270 177, 260 177 C 250 177, 240 182, 231 196 Z" fill="#0a7a53"/>
+    <!-- face -->
+    <path d="M246 202 q5 -5 10 0" stroke="#3a2416" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M264 202 q5 -5 10 0" stroke="#3a2416" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M251 216 q9 8 18 0" stroke="#3a2416" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <circle cx="243" cy="213" r="5" fill="#ff7a59" opacity=".35"/>
+    <circle cx="277" cy="213" r="5" fill="#ff7a59" opacity=".35"/>
+    <!-- arms -->
+    <path d="M200 300 C 192 330, 200 352, 228 356" stroke="url(#kurta)" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <path d="M320 300 C 328 330, 320 352, 292 356" stroke="url(#kurta)" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <ellipse cx="232" cy="356" rx="11" ry="8" fill="#c98b5e"/>
+    <ellipse cx="288" cy="356" rx="11" ry="8" fill="#c98b5e"/>
+  </g>
+
+  <!-- laptop (back faces the viewer) -->
+  <path d="M206 296 H314 L320 362 H200 Z" fill="url(#laptop)"/>
+  <rect x="190" y="360" width="140" height="7" rx="3.5" fill="#aeb3cc"/>
+  <g transform="translate(244 312) scale(.5)">
+    <path d="M10 28 L32 20 L54 28 Z" fill="#26306b"/>
+    <rect x="9" y="28" width="46" height="5" fill="#26306b"/>
+    <rect x="12" y="35" width="5" height="15" fill="#26306b"/><rect x="22" y="35" width="5" height="15" fill="#26306b"/>
+    <rect x="30" y="35" width="5" height="15" fill="#ff7a59"/><rect x="38" y="35" width="5" height="15" fill="#26306b"/>
+    <rect x="47" y="35" width="5" height="15" fill="#26306b"/><rect x="8" y="51" width="48" height="4" fill="#26306b"/>
+  </g>
+
+  </g>
+
+  <!-- desk -->
+  <rect x="64" y="366" width="392" height="20" rx="8" fill="url(#desk)"/>
+  <path d="M84 386 H436 L428 470 H92 Z" fill="#f1dcb8"/>
+  <path d="M84 386 H436 L434 398 H86 Z" fill="#e6ccA0" opacity=".7"/>
+  <rect x="226" y="414" width="68" height="8" rx="4" fill="#d9bd8c"/>
+
+  <!-- booklets -->
+  <g class="float b">
+    <rect x="96" y="344" width="70" height="10" rx="2" fill="#26306b"/>
+    <rect x="100" y="334" width="64" height="10" rx="2" fill="#ff7a59"/>
+    <rect x="94" y="324" width="66" height="10" rx="2" fill="#0e9f6e"/>
+    <rect x="98" y="314" width="62" height="10" rx="2" fill="#ffc83d"/>
+  </g>
+  <rect x="94" y="354" width="74" height="12" rx="2" fill="#f2a900"/>
+
+  <!-- pen cup with Pakistani and German flags -->
+  <rect x="176" y="338" width="20" height="28" rx="4" fill="#26306b"/>
+  <line x1="181" y1="340" x2="174" y2="300" stroke="#8a8fa8" stroke-width="2"/>
+  <line x1="191" y1="340" x2="198" y2="298" stroke="#8a8fa8" stroke-width="2"/>
+  <g transform="translate(152 296) rotate(-6)">
+    <rect width="24" height="16" fill="#01411c"/><rect width="6" height="16" fill="#fff"/>
+    <circle cx="15.5" cy="8" r="4.2" fill="#fff"/><circle cx="17" cy="7.2" r="3.6" fill="#01411c"/>
+    <path d="M19.6 4.6 l.6 1.5 1.6 .1 -1.2 1 .4 1.6 -1.4 -.9 -1.4 .9 .4 -1.6 -1.2 -1 1.6 -.1 z" fill="#fff" transform="scale(.85) translate(3.5 1)"/>
+  </g>
+  <g transform="translate(196 294) rotate(5)">
+    <rect width="24" height="5.4" fill="#111"/><rect y="5.3" width="24" height="5.4" fill="#dd0000"/><rect y="10.6" width="24" height="5.4" fill="#ffce00"/>
+  </g>
+
+  <!-- chai mug -->
+  <path d="M352 340 H380 V360 a8 8 0 0 1 -8 8 H360 a8 8 0 0 1 -8 -8 Z" fill="#fff8ee"/>
+  <path d="M380 344 a8 8 0 0 1 0 14" stroke="#fff8ee" stroke-width="4" fill="none"/>
+  <rect x="352" y="346" width="28" height="5" fill="#ff7a59"/>
+  <path class="steam" d="M360 334 q-4 -6 0 -12 q4 -6 0 -12" stroke="#fff8ee" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path class="steam b" d="M372 334 q-4 -6 0 -12 q4 -6 0 -12" stroke="#fff8ee" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+  <!-- plant -->
+  <g>
+    <path class="leaf" d="M418 330 C 404 300, 410 274, 426 262 C 432 288, 430 310, 418 330 Z" fill="#0e9f6e"/>
+    <path class="leaf" d="M420 332 C 440 310, 458 304, 470 308 C 462 326, 444 336, 420 332 Z" fill="#14b37c"/>
+    <path class="leaf" d="M418 334 C 398 320, 384 306, 384 292 C 402 296, 414 312, 418 334 Z" fill="#0a7a53"/>
+    <path d="M400 332 H440 L434 366 H406 Z" fill="#e5484d"/>
+    <rect x="398" y="328" width="44" height="8" rx="3" fill="#ff7a59"/>
+  </g>
+
+  <!-- speech bubble -->
+  <g class="float">
+    <path d="M330 118 h120 a16 16 0 0 1 16 16 v28 a16 16 0 0 1 -16 16 h-84 l-16 16 v-16 h-20 a16 16 0 0 1 -16 -16 v-28 a16 16 0 0 1 16 -16 z" fill="#fff"/>
+    <g transform="translate(330 136)">
+      <rect width="22" height="5" fill="#111"/><rect y="5" width="22" height="5" fill="#dd0000"/><rect y="10" width="22" height="5" fill="#ffce00"/>
+    </g>
+    <text x="359" y="149" font-family="Fraunces, Georgia, serif" font-size="16" font-weight="700" fill="#0e1430">Willkommen!</text>
+  </g>
+
+  <!-- flight path Pakistan → Germany -->
+  <path id="fp" class="dash" d="M70 430 C 30 300, 90 120, 230 70 C 330 36, 420 70, 470 120" fill="none" stroke="url(#warm)" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="70" cy="430" r="7" fill="#0e9f6e" stroke="#fff" stroke-width="3"/>
+  <g>
+    <path d="M-15 -10 L17 0 L-15 10 L-8 0 Z" fill="#ffc83d"/>
+    <path d="M-8 0 L17 0 L-15 10 Z" fill="#f2a900"/>
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines=".45 0 .25 1">
+      <mpath href="#fp"/>
+    </animateMotion>
+  </g>
+</svg>

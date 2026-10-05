@@ -5,7 +5,8 @@
   // Edit these once and every WhatsApp / email link on the site updates.
   var SITE = {
     whatsapp: "4915563342092", // international format, no "+" or spaces
-    email: "hello@deutschdreams.pk"
+    email: "hello@deutschdreams.pk",
+    aiEndpoint: "/api/analyze" // AI Profile Analyzer endpoint; set to "" to always use the on-device report
   };
   window.DD_SITE = SITE;
 
@@ -275,35 +276,56 @@
     window.addEventListener("resize", function () { place(btns.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })[0]); });
   });
 
-  /* ---------- University filters + search ---------- */
-  var uniGrid = $("[data-uni-grid]");
-  if (uniGrid) {
-    var cards = $all(".uni-card", uniGrid);
-    var filterBtns = $all("[data-filter]");
-    var search = $("[data-uni-search]");
-    var empty = $(".empty-state", uniGrid);
-    var current = "all";
-    var apply = function () {
-      var q = search ? search.value.trim().toLowerCase() : "";
-      var shown = 0;
-      cards.forEach(function (c) {
-        var okF = current === "all" || (c.getAttribute("data-tags") || "").indexOf(current) > -1;
-        var okQ = !q || c.textContent.toLowerCase().indexOf(q) > -1;
-        c.hidden = !(okF && okQ);
-        if (!c.hidden) shown++;
-      });
-      if (empty) empty.hidden = shown > 0;
-    };
-    filterBtns.forEach(function (b) {
-      b.addEventListener("click", function () {
-        current = b.getAttribute("data-filter");
-        filterBtns.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
-        apply();
-      });
+  /* ---------- Explorers (university lists): search, filters, paging, URL prefill ---------- */
+  $all("[data-explorer]").forEach(function (ex) {
+    var items = $all("[data-items] > *", ex);
+    var q = $("[data-q]", ex), countEl = $("[data-count]", ex), more = $("[data-more]", ex), empty = $("[data-empty]", ex);
+    var controls = $all("[data-f]", ex);
+    var pageSize = parseInt(ex.getAttribute("data-page"), 10) || 30, limit = pageSize;
+    var params = new URLSearchParams(location.search);
+    if (q && params.get("q")) q.value = params.get("q");
+    controls.forEach(function (c) {
+      var v = params.get(c.getAttribute("data-f"));
+      if (v === null) return;
+      if (c.type === "checkbox") { if (v.split(",").indexOf(c.value) > -1) c.checked = true; }
+      else c.value = v;
     });
-    if (search) search.addEventListener("input", apply);
+    function matches(it) {
+      var term = q ? q.value.trim().toLowerCase() : "";
+      if (term && (it.getAttribute("data-search") || it.textContent.toLowerCase()).indexOf(term) === -1) return false;
+      for (var i = 0; i < controls.length; i++) {
+        var c = controls[i];
+        if (c.type === "checkbox" ? !c.checked : !c.value) continue;
+        var have = it.getAttribute("data-" + c.getAttribute("data-f")) || "";
+        var mode = c.getAttribute("data-mode");
+        var ok = mode === "contains" ? have.indexOf(c.value) > -1 : mode === "word" ? have.split(" ").indexOf(c.value) > -1 : have === c.value;
+        if (!ok) return false;
+      }
+      return true;
+    }
+    function apply() {
+      var total = 0;
+      items.forEach(function (it) {
+        var ok = matches(it);
+        if (ok) total++;
+        it.hidden = !ok || total > limit;
+      });
+      if (countEl) countEl.textContent = total;
+      if (more) more.hidden = total <= limit;
+      if (empty) empty.hidden = total > 0;
+    }
+    function reset() { limit = pageSize; apply(); }
+    if (q) q.addEventListener("input", reset);
+    controls.forEach(function (c) { c.addEventListener("change", reset); });
+    if (more) more.addEventListener("click", function () { limit += pageSize; apply(); });
+    var rs = $("[data-reset]", ex);
+    if (rs) rs.addEventListener("click", function () {
+      if (q) q.value = "";
+      controls.forEach(function (c) { if (c.type === "checkbox") c.checked = false; else c.value = ""; });
+      reset();
+    });
     apply();
-  }
+  });
 
   /* ---------- Flipbook (guides) ---------- */
   $all("[data-flipbook]").forEach(function (fb) {

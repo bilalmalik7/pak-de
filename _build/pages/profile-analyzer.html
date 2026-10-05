@@ -1,0 +1,252 @@
+<!--meta
+{
+  "path": "profile-analyzer.html",
+  "crumb": "Profile Analyzer",
+  "title": "AI Profile Analyzer & CGPA to German Grade Calculator",
+  "description": "Free AI analysis for Pakistani students: CGPA to German grade, a profile score, matches from {{DE_COUNT}} German universities and a personal study plan.",
+  "keywords": "AI profile analyzer study in Germany, AI university matcher Germany, CGPA to German grade calculator, Pakistani CGPA to German grade, Modified Bavarian formula calculator, eligibility to study in Germany from Pakistan, study in Germany eligibility check, German grade conversion Pakistan, can I study in Germany with 2.5 CGPA, profile evaluation Germany free",
+  "scripts": ["assets/js/analyzer.js"],
+  "schema": [{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "DeutschDreams AI Profile Analyzer",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any (web browser)",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "PKR"},
+    "description": "Free AI tool that converts Pakistani CGPA or percentage to the German grading scale, matches students with German universities and writes a personal study strategy."
+  }]
+}
+-->
+    <section class="page-hero grain">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="stars-bg" aria-hidden="true"></div>
+      <div class="container">
+        <ol class="breadcrumbs reveal"><li><a href="index.html">Home</a></li><li>Profile Analyzer</li></ol>
+        <p class="eyebrow reveal">AI student portal · Free</p>
+        <h1 data-split>Your AI counsellor, <span class="accent">in 2 minutes.</span></h1>
+        <p class="lead reveal" style="--d:.4s">Answer four quick steps. Our engine converts your grade, scores your profile and matches you against {{DE_COUNT}} German universities. Then an AI counsellor writes your personal report: strengths, risks, best-fit universities and a dated plan.</p>
+        <div class="hero-chips reveal" style="--d:.55s"><span class="chip">⏱️ 2 minutes</span><span class="chip">🏛️ {{DE_COUNT}} universities matched</span><span class="chip">🧮 Modified Bavarian Formula</span><span class="chip">🔒 No name or phone sent to AI</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Profile analyzer" style="padding-top:56px">
+      <div class="container analyzer">
+        <!-- ============ FORM ============ -->
+        <form id="analyzer-form" class="panel reveal from-left" novalidate>
+          <div class="steps-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+          <fieldset class="form-step" data-step="1" style="border:0;padding:0;margin:0">
+            <legend class="sr-only">Step 1 of 4: About you</legend>
+            <h3>👋 About you</h3>
+            <p class="hint">Step 1 of 4: let's start with your goal.</p>
+            <div class="field-row">
+              <div class="field"><label for="f-name">First name <small>(optional)</small></label><input class="input" id="f-name" name="name" autocomplete="given-name" placeholder="e.g. Ayesha"></div>
+              <div class="field"><label for="f-city">City</label>
+                <select class="select" id="f-city" name="city">
+                  <option value="">Select city</option><option>Lahore</option><option>Karachi</option><option>Islamabad</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Sialkot</option><option>Gujranwala</option><option>Quetta</option><option>Hyderabad</option><option>Bahawalpur</option><option>Sargodha</option><option>Abbottabad</option><option>Other</option>
+                </select></div>
+            </div>
+            <div class="field"><span class="label">What do you want to study in Germany?</span>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="target" value="master" required><span><em>🎓</em>Master's<small>MS / M.Sc. / MBA</small></span></label>
+                <label class="choice"><input type="radio" name="target" value="bachelor"><span><em>📚</em>Bachelor's<small>incl. Studienkolleg</small></span></label>
+                <label class="choice"><input type="radio" name="target" value="ausbildung"><span><em>🛠️</em>Ausbildung<small>Paid vocational training</small></span></label>
+                <label class="choice"><input type="radio" name="target" value="unsure"><span><em>🧭</em>Not sure yet<small>Show me options</small></span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="2" style="border:0;padding:0;margin:0">
+            <legend class="sr-only">Step 2 of 4: Academics</legend>
+            <h3>📖 Your academics</h3>
+            <p class="hint">Step 2 of 4: your last completed qualification.</p>
+            <div class="field"><label for="f-qual">Highest qualification</label>
+              <select class="select" id="f-qual" name="qualification" required data-msg="Please choose your qualification.">
+                <option value="">Select qualification</option>
+                <option value="matric">Matric / O-Levels</option>
+                <option value="fsc">Intermediate (FSc / ICS / ICom / FA)</option>
+                <option value="alevels">A-Levels</option>
+                <option value="ba14">14-year BA / BSc / BCom (2-year degree)</option>
+                <option value="bs16">16-year Bachelor's (BS / BE / BBA / MBBS / BA+MA)</option>
+                <option value="ms18">MS / MPhil / Master's (18 years)</option>
+              </select></div>
+            <div class="field"><span class="label">Grading system</span>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="gradeType" value="cgpa" checked><span>CGPA<small>out of 4.0</small></span></label>
+                <label class="choice"><input type="radio" name="gradeType" value="percent"><span>Percentage<small>out of 100%</small></span></label>
+              </div>
+            </div>
+            <div class="field"><label for="f-pkuni">Your university in Pakistan <small>(optional)</small></label><input class="input" id="f-pkuni" name="pkUni" list="pk-unis" autocomplete="organization" placeholder="Start typing, e.g. NUST, UET Lahore, Sukkur IBA…"><datalist id="pk-unis">{{PK_DATALIST}}</datalist></div>
+            <div class="field-row">
+              <div class="field"><label for="f-grade">Your grade</label><input class="input" id="f-grade" name="grade" type="number" inputmode="decimal" min="0" max="4" step="0.01" placeholder="e.g. 2.85" required data-msg="Please enter your CGPA or percentage."></div>
+              <div class="field"><label for="f-field">Field of study</label>
+                <select class="select" id="f-field" name="field">
+                  <option value="engineering">Engineering</option><option value="cs">Computer Science / IT</option><option value="business">Business / Economics</option><option value="sciences">Natural Sciences</option><option value="medicine">Medicine / Health</option><option value="social">Social Sciences / Arts</option><option value="other">Other</option>
+                </select></div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="3" style="border:0;padding:0;margin:0">
+            <legend class="sr-only">Step 3 of 4: Languages</legend>
+            <h3>🗣️ Languages</h3>
+            <p class="hint">Step 3 of 4: English and German.</p>
+            <div class="field-row">
+              <div class="field"><label for="f-eng">English proficiency</label>
+                <select class="select" id="f-eng" name="english">
+                  <option value="ielts">IELTS Academic</option><option value="pte">PTE Academic</option><option value="toefl">TOEFL iBT</option><option value="duolingo">Duolingo English Test</option><option value="moi">MOI letter only</option><option value="planning">Planning to take a test</option><option value="none">No English test</option>
+                </select></div>
+              <div class="field" id="eng-score-field"><label for="f-engscore">Score</label><input class="input" id="f-engscore" name="engScore" type="number" inputmode="decimal" min="0" step="0.5" placeholder="e.g. 6.5" data-msg="Please enter your test score."></div>
+            </div>
+            <div class="field"><span class="label">German level</span>
+              <div class="choice-grid" style="grid-template-columns:repeat(auto-fill,minmax(90px,1fr))">
+                <label class="choice"><input type="radio" name="german" value="none" checked><span>None</span></label>
+                <label class="choice"><input type="radio" name="german" value="a1"><span>A1</span></label>
+                <label class="choice"><input type="radio" name="german" value="a2"><span>A2</span></label>
+                <label class="choice"><input type="radio" name="german" value="b1"><span>B1</span></label>
+                <label class="choice"><input type="radio" name="german" value="b2"><span>B2</span></label>
+                <label class="choice"><input type="radio" name="german" value="c1"><span>C1+</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="4" style="border:0;padding:0;margin:0">
+            <legend class="sr-only">Step 4 of 4: Your profile</legend>
+            <h3>🧩 Your profile</h3>
+            <p class="hint">Step 4 of 4: gap, experience and budget.</p>
+            <div class="field-row">
+              <div class="field"><label for="f-gap">Study gap <span class="range-value" data-for="gap"></span></label><input class="range" id="f-gap" type="range" name="gap" min="0" max="8" value="0"></div>
+              <div class="field"><label for="f-work">Work experience <span class="range-value" data-for="work"></span></label><input class="range" id="f-work" type="range" name="work" min="0" max="8" value="0"></div>
+            </div>
+            <div class="field"><span class="label">Can you arrange the blocked account (~€11,904/year)?</span>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="finance" value="yes" required><span><em>✅</em>Yes<small>Funds are ready</small></span></label>
+                <label class="choice"><input type="radio" name="finance" value="family"><span><em>👨‍👩‍👧</em>With family<small>Sponsor will help</small></span></label>
+                <label class="choice"><input type="radio" name="finance" value="maybe"><span><em>🤔</em>Not sure<small>Need a plan</small></span></label>
+                <label class="choice"><input type="radio" name="finance" value="no"><span><em>⏳</em>Difficult now<small>Exploring options</small></span></label>
+              </div>
+            </div>
+            <div class="field"><label for="f-goal">Your goal in one line <small>(optional, helps the AI)</small></label><input class="input" id="f-goal" name="goal" maxlength="200" placeholder="e.g. Work in automotive software in Germany after my master's"></div>
+            <div class="field"><label for="f-intake">Target intake</label>
+              <select class="select" id="f-intake" name="intake">
+                <option>Summer 2027</option><option selected>Winter 2027/28</option><option>Summer 2028</option><option>Winter 2028/29</option><option>Not sure</option>
+              </select></div>
+          </fieldset>
+
+          <p class="form-error" role="alert" aria-live="polite"></p>
+          <div class="form-nav">
+            <button class="btn btn-ghost" data-prev-step type="button">← Back</button>
+            <span style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end">
+              <button class="btn btn-dark" data-next-step type="button">Next {ARROW}</button>
+              <button class="btn btn-primary" type="submit">Run AI analysis ✨</button>
+            </span>
+          </div>
+          <p class="disclaimer">Tip: you can run the analysis at any step after step 2. Your answers are processed on this page. If AI reports are switched on, an anonymous summary (no name, phone or email) is sent securely to generate your report, and nothing is stored.</p>
+        </form>
+
+        <!-- ============ RESULT ============ -->
+        <aside class="panel panel-sticky reveal from-right" id="result-panel" aria-live="polite" aria-label="Your results">
+          <div id="result-empty" class="result-empty">
+            <span class="big-emoji" aria-hidden="true">🧭</span>
+            <h3 style="margin-top:14px">Your personal report appears here</h3>
+            <p>German grade · profile score · best-fit routes · next steps</p>
+            <div class="grade-box" style="opacity:.55"><div><b>?.?</b><small>German grade</small></div><div><b>??</b><small>Profile score</small></div></div>
+          </div>
+
+          <div id="result-body" hidden>
+            <div class="score-ring">
+              <svg viewBox="0 0 200 200" aria-hidden="true"><defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffc83d"/><stop offset=".5" stop-color="#ff7a59"/><stop offset="1" stop-color="#e5484d"/></linearGradient></defs><circle class="track" cx="100" cy="100" r="90" fill="none" stroke-width="14"/><circle class="bar" cx="100" cy="100" r="90" fill="none" stroke-width="14"/></svg>
+              <div class="val"><div><b id="score-val">0</b><small>Profile score</small></div></div>
+            </div>
+            <div class="verdict"><h3 id="verdict-title">—</h3><p id="verdict-text"></p></div>
+            <div class="grade-box">
+              <div><b id="german-grade">—</b><small id="grade-label">German grade</small></div>
+              <div><b id="target-label">—</b><small>Recommended track</small></div>
+            </div>
+            <div class="meter" data-meter="academics"><div class="meter-head"><span>Academics</span><span>0</span></div><div class="meter-bar"><i></i></div></div>
+            <div class="meter" data-meter="language"><div class="meter-head"><span>Language</span><span>0</span></div><div class="meter-bar"><i></i></div></div>
+            <div class="meter" data-meter="finance"><div class="meter-head"><span>Finances</span><span>0</span></div><div class="meter-bar"><i></i></div></div>
+            <div class="meter" data-meter="profile"><div class="meter-head"><span>Timeline &amp; experience</span><span>0</span></div><div class="meter-bar"><i></i></div></div>
+            <div class="btn-row" style="margin-top:18px"><a class="btn btn-dark btn-sm" href="#ai-report">See full report ↓</a><button class="btn btn-ghost btn-sm" id="restart" type="button">Start over</button></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Full AI report -->
+    <section class="section-tight report-sec" id="ai-report" aria-live="polite" hidden>
+      <div class="container">
+        <div class="report">
+          <div class="report-head">
+            <span class="report-badge" id="report-source">✨ AI counsellor report</span>
+            <h2 class="h-xl" id="report-headline">Analysing your profile…</h2>
+            <p class="lead" id="report-summary"></p>
+          </div>
+          <ol class="pipeline" id="pipeline"></ol>
+          <div id="report-body" hidden>
+            <div class="grid grid-2 report-cols">
+              <div class="report-card good"><h3>💪 Your strengths</h3><ul id="report-strengths"></ul></div>
+              <div class="report-card warn"><h3>🛠️ Risks and how to fix them</h3><ul id="report-risks"></ul></div>
+            </div>
+            <div id="report-matches-wrap">
+              <div class="report-sub"><h3>🎯 Your best-fit universities</h3><p>From <b id="report-match-count">0</b> matching universities in our database. Match % combines your German grade, subject, fees and budget.</p></div>
+              <div class="match-grid" id="report-matches"></div>
+            </div>
+            <div class="report-sub"><h3>🗓️ Your strategy timeline</h3></div>
+            <ol class="report-timeline" id="report-strategy"></ol>
+            <div class="grid grid-2 report-cols">
+              <div class="report-card"><h3>✍️ Your SOP angle</h3><p id="report-sop"></p></div>
+              <div class="report-card urdu-card" lang="ur"><h3>👨‍👩‍👧 والدین کے لیے</h3><p class="urdu" id="report-urdu"></p></div>
+            </div>
+            <div class="report-sub"><h3>🧭 Your routes into Germany</h3></div>
+            <div class="pathways" id="report-routes"></div>
+            <div class="report-actions">
+              <button class="btn btn-whatsapp btn-lg" data-wa-report type="button">{WA_ICON} Send my report to a counsellor</button>
+              <a class="btn btn-dark btn-lg" href="contact.html">Book free counselling {ARROW}</a>
+              <button class="btn btn-ghost" data-print-report type="button">🖨️ Save as PDF</button>
+            </div>
+            <p class="disclaimer">This report is an indicative estimate to help you plan. It is not an admission or visa decision. Each university sets its own requirements and some use a different minimum passing grade in the formula. Fees and rules change, so a counsellor will confirm everything with you for free.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-white" aria-labelledby="formula-title">
+      <div class="container split">
+        <div class="reveal from-left">
+          <p class="eyebrow">How we calculate</p>
+          <h2 id="formula-title" class="h-xl">CGPA to German grade, <span class="accent">explained</span></h2>
+          <p class="lead">German universities use a 1.0 (best) to 4.0 (pass) scale. To convert Pakistani grades, most of them, and uni-assist, use the <strong>Modified Bavarian Formula</strong>:</p>
+          <div class="panel" style="background:var(--ink);color:#fff;font-family:var(--font-display);font-size:clamp(1.1rem,2.4vw,1.5rem);text-align:center;margin:22px 0">German grade = 1 + 3 × (N<sub>max</sub> − N<sub>d</sub>) ÷ (N<sub>max</sub> − N<sub>min</sub>)</div>
+          <p style="color:var(--muted)"><strong>N<sub>max</sub></strong> = best possible grade (4.0 CGPA or 100%) · <strong>N<sub>d</sub></strong> = your grade · <strong>N<sub>min</sub></strong> = minimum passing grade (we use 2.0 CGPA, or 50% for degrees and 33% for Intermediate).</p>
+        </div>
+        <div class="reveal from-right">
+          <table class="cost-table">
+            <thead><tr><th>Your CGPA (out of 4.0)</th><th style="text-align:right">≈ German grade</th></tr></thead>
+            <tbody>
+              <tr><td>3.70</td><td>1.5 · sehr gut</td></tr>
+              <tr><td>3.30</td><td>2.1 · gut</td></tr>
+              <tr><td>3.00</td><td>2.5 · gut</td></tr>
+              <tr><td>2.80</td><td>2.8 · befriedigend</td></tr>
+              <tr><td>2.50</td><td>3.3 · befriedigend</td></tr>
+              <tr><td>2.20</td><td>3.7 · ausreichend</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:.86rem;color:var(--muted);margin-top:14px">Below 2.5 German? You're not out. Read <a class="link-arrow" href="low-gpa-germany.html">our low-CGPA guide</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="afaq-title">
+      <div class="container-narrow">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Good to know</p>
+          <h2 id="afaq-title" class="h-xl reveal">Analyzer <span class="accent">FAQ</span></h2>
+        </div>
+        <div class="faq">
+          <details><summary>What CGPA is required to study in Germany from Pakistan?</summary><div class="faq-body"><p>There is no single national minimum. Competitive programmes at top universities often look for a German grade of 2.5 or better (around 3.0+ CGPA). Many universities of applied sciences and programmes without strict cutoffs consider applicants with lower grades, especially with relevant experience and a strong SOP.</p></div></details>
+          <details><summary>Is my data saved or shared?</summary><div class="faq-body"><p>No. The analyzer runs entirely in your browser. Nothing is uploaded or stored. Your report is only shared if you choose to send it to a counsellor on WhatsApp.</p></div></details>
+          <details><summary>Is a 14-year bachelor's accepted for a master's in Germany?</summary><div class="faq-body"><p>Usually not. Most German master's programmes require a 16-year education. Completing a 2-year MA/MSc after your 14-year degree, or a BS top-up, is the common solution. A bachelor's in Germany is another option.</p></div></details>
+        </div>
+      </div>
+    </section>

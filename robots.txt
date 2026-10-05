@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /_build/
+Disallow: /server/
+Disallow: /api/
+Disallow: /netlify/
 
 Sitemap: https://www.deutschdreams.pk/sitemap.xml

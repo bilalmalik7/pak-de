@@ -1,0 +1,12 @@
+{
+  "name": "deutschdreams-website",
+  "private": true,
+  "type": "module",
+  "description": "DeutschDreams static site + optional AI analysis function",
+  "scripts": {
+    "build:pages": "python3 _build/gen.py"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+.vercel/
+.netlify/
+.env
+__pycache__/

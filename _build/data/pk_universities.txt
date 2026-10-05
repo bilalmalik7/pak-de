@@ -1,0 +1,215 @@
+# Pakistani universities (HEC-recognised degree-awarding institutions), one per line:
+# name | short | city | province | sector | domain | focus
+# province: Islamabad · Punjab · Sindh · Khyber Pakhtunkhwa · Balochistan · Azad Jammu & Kashmir · Gilgit-Baltistan
+# sector:   pub · priv
+# focus:    E engineering · C computing/IT · B business · M medical/health · G general/multi-discipline
+#           A agriculture/veterinary · R arts/design · L law/languages · T textile · S science/research
+# Partly seeded from the Hipo university-domains-list (MIT licence); curated by hand.
+# Check the HEC website for the current recognised list before relying on it.
+
+## Islamabad
+National University of Sciences & Technology | NUST | Islamabad | Islamabad | pub | nust.edu.pk | EC
+Quaid-i-Azam University | QAU | Islamabad | Islamabad | pub | qau.edu.pk | SG
+COMSATS University Islamabad | CUI | Islamabad | Islamabad | pub | comsats.edu.pk | CEB
+International Islamic University Islamabad | IIUI | Islamabad | Islamabad | pub | iiu.edu.pk | GL
+Air University | AU | Islamabad | Islamabad | pub | au.edu.pk | EC
+Bahria University | BU | Islamabad | Islamabad | pub | bahria.edu.pk | ECBM
+National University of Modern Languages | NUML | Islamabad | Islamabad | pub | numl.edu.pk | LG
+Pakistan Institute of Engineering & Applied Sciences | PIEAS | Islamabad | Islamabad | pub | pieas.edu.pk | ES
+Institute of Space Technology | IST | Islamabad | Islamabad | pub | ist.edu.pk | E
+Allama Iqbal Open University | AIOU | Islamabad | Islamabad | pub | aiou.edu.pk | G
+Federal Urdu University of Arts, Science & Technology | FUUAST | Islamabad | Islamabad | pub | fuuast.edu.pk | G
+National Defence University | NDU | Islamabad | Islamabad | pub | ndu.edu.pk | G
+Pakistan Institute of Development Economics | PIDE | Islamabad | Islamabad | pub | pide.org.pk | B
+Shaheed Zulfikar Ali Bhutto Medical University | SZABMU | Islamabad | Islamabad | pub | szabmu.edu.pk | M
+Health Services Academy | HSA | Islamabad | Islamabad | pub | hsa.edu.pk | M
+Capital University of Science & Technology | CUST | Islamabad | Islamabad | priv | cust.edu.pk | ECB
+Riphah International University | RIU | Islamabad | Islamabad | priv | riphah.edu.pk | MCB
+Shifa Tameer-e-Millat University | STMU | Islamabad | Islamabad | priv | stmu.edu.pk | M
+Foundation University Islamabad | FUI | Islamabad | Islamabad | priv | fui.edu.pk | MCB
+Iqra University Islamabad Campus | IU-ISB | Islamabad | Islamabad | priv | iqra.edu.pk | BC
+SZABIST Islamabad Campus | SZABIST-ISB | Islamabad | Islamabad | priv | szabist-isb.edu.pk | BC
+NUTECH – National University of Technology | NUTECH | Islamabad | Islamabad | pub | nutech.edu.pk | E
+
+## Punjab
+University of the Punjab | PU | Lahore | Punjab | pub | pu.edu.pk | G
+University of Engineering & Technology Lahore | UET Lahore | Lahore | Punjab | pub | uet.edu.pk | E
+Government College University Lahore | GCU Lahore | Lahore | Punjab | pub | gcu.edu.pk | SG
+Lahore University of Management Sciences | LUMS | Lahore | Punjab | priv | lums.edu.pk | BCSL
+FAST – National University of Computer & Emerging Sciences | FAST-NUCES | Lahore | Punjab | priv | nu.edu.pk | CEB
+Information Technology University | ITU | Lahore | Punjab | pub | itu.edu.pk | CE
+University of Management & Technology | UMT | Lahore | Punjab | priv | umt.edu.pk | BCE
+University of Central Punjab | UCP | Lahore | Punjab | priv | ucp.edu.pk | BCL
+The University of Lahore | UOL | Lahore | Punjab | priv | uol.edu.pk | MECB
+Lahore College for Women University | LCWU | Lahore | Punjab | pub | lcwu.edu.pk | G
+Kinnaird College for Women | KCW | Lahore | Punjab | priv | kinnaird.edu.pk | G
+Forman Christian College University | FCCU | Lahore | Punjab | priv | fccollege.edu.pk | SG
+Beaconhouse National University | BNU | Lahore | Punjab | priv | bnu.edu.pk | RB
+National College of Arts | NCA | Lahore | Punjab | pub | nca.edu.pk | R
+University of Education | UE | Lahore | Punjab | pub | ue.edu.pk | G
+University of Veterinary & Animal Sciences | UVAS | Lahore | Punjab | pub | uvas.edu.pk | A
+King Edward Medical University | KEMU | Lahore | Punjab | pub | kemu.edu.pk | M
+University of Health Sciences | UHS | Lahore | Punjab | pub | uhs.edu.pk | M
+Fatima Jinnah Medical University | FJMU | Lahore | Punjab | pub | fjmu.edu.pk | M
+Lahore School of Economics | LSE | Lahore | Punjab | priv | lahoreschoolofeconomics.edu.pk | B
+COMSATS University Islamabad, Lahore Campus | CUI Lahore | Lahore | Punjab | pub | lahore.comsats.edu.pk | CEB
+University of South Asia | USA | Lahore | Punjab | priv | usa.edu.pk | BCR
+Superior University | SU | Lahore | Punjab | priv | superior.edu.pk | BCM
+Minhaj University Lahore | MUL | Lahore | Punjab | priv | mul.edu.pk | G
+Hajvery University | HU | Lahore | Punjab | priv | hajvery.edu.pk | BR
+Lahore Garrison University | LGU | Lahore | Punjab | priv | lgu.edu.pk | CB
+Institute of Management Sciences (PAK-AIMS) | PAK-AIMS | Lahore | Punjab | priv | pakaims.edu.pk | BC
+University of Home Economics Lahore | UHE | Lahore | Punjab | pub | uhe.edu.pk | G
+Virtual University of Pakistan | VU | Lahore | Punjab | pub | vu.edu.pk | CB
+University of Engineering & Technology Taxila | UET Taxila | Taxila | Punjab | pub | uettaxila.edu.pk | E
+PMAS Arid Agriculture University Rawalpindi | PMAS-AAUR | Rawalpindi | Punjab | pub | uaar.edu.pk | AC
+Fatima Jinnah Women University | FJWU | Rawalpindi | Punjab | pub | fjwu.edu.pk | G
+Rawalpindi Medical University | RMU | Rawalpindi | Punjab | pub | rmur.edu.pk | M
+Rawalpindi Women University | RWU | Rawalpindi | Punjab | pub |  | G
+HITEC University | HITEC | Taxila | Punjab | priv | hitecuni.edu.pk | E
+University of Wah | UW | Wah Cantt | Punjab | priv | uw.edu.pk | ECB
+COMSATS University Islamabad, Wah Campus | CUI Wah | Wah Cantt | Punjab | pub | wah.comsats.edu.pk | CE
+University of Agriculture Faisalabad | UAF | Faisalabad | Punjab | pub | uaf.edu.pk | A
+Government College University Faisalabad | GCUF | Faisalabad | Punjab | pub | gcuf.edu.pk | G
+National Textile University | NTU | Faisalabad | Punjab | pub | ntu.edu.pk | TE
+The University of Faisalabad | TUF | Faisalabad | Punjab | priv | tuf.edu.pk | MEB
+Faisalabad Medical University | FMU | Faisalabad | Punjab | pub | fmu.edu.pk | M
+Government College Women University Faisalabad | GCWUF | Faisalabad | Punjab | pub | gcwuf.edu.pk | G
+Bahauddin Zakariya University | BZU | Multan | Punjab | pub | bzu.edu.pk | G
+Muhammad Nawaz Sharif University of Engineering & Technology | MNS-UET | Multan | Punjab | pub | mnsuet.edu.pk | E
+MNS University of Agriculture Multan | MNSUAM | Multan | Punjab | pub | mnsuam.edu.pk | A
+Women University Multan | WUM | Multan | Punjab | pub | wum.edu.pk | G
+Nishtar Medical University | NMU | Multan | Punjab | pub | nmu.edu.pk | M
+Emerson University Multan | EUM | Multan | Punjab | pub |  | G
+NFC Institute of Engineering & Technology | NFC-IET | Multan | Punjab | pub | nfciet.edu.pk | E
+The Islamia University of Bahawalpur | IUB | Bahawalpur | Punjab | pub | iub.edu.pk | G
+Cholistan University of Veterinary & Animal Sciences | CUVAS | Bahawalpur | Punjab | pub | cuvas.edu.pk | A
+The Government Sadiq College Women University | GSCWU | Bahawalpur | Punjab | pub | gscwu.edu.pk | G
+Khwaja Fareed University of Engineering & IT | KFUEIT | Rahim Yar Khan | Punjab | pub | kfueit.edu.pk | EC
+University of Sargodha | UOS | Sargodha | Punjab | pub | uos.edu.pk | G
+University of Gujrat | UOG | Gujrat | Punjab | pub | uog.edu.pk | G
+University of Sialkot | USKT | Sialkot | Punjab | priv | uskt.edu.pk | BCM
+Government College Women University Sialkot | GCWUS | Sialkot | Punjab | pub | gcwus.edu.pk | G
+Ghazi University | GU | Dera Ghazi Khan | Punjab | pub | gudgk.edu.pk | G
+University of Okara | UO | Okara | Punjab | pub | uo.edu.pk | G
+University of Sahiwal | UOSAHIWAL | Sahiwal | Punjab | pub | uosahiwal.edu.pk | G
+University of Jhang | UOJ | Jhang | Punjab | pub | uoj.edu.pk | G
+University of Narowal | UON | Narowal | Punjab | pub | uon.edu.pk | G
+University of Chakwal | UOC | Chakwal | Punjab | pub | uoc.edu.pk | G
+University of Mianwali | UMW | Mianwali | Punjab | pub | umw.edu.pk | G
+University of Layyah | UL | Layyah | Punjab | pub |  | G
+GIFT University | GIFT | Gujranwala | Punjab | priv | gift.edu.pk | BCE
+Thal University Bhakkar | TUB | Bhakkar | Punjab | pub |  | G
+Baba Guru Nanak University | BGNU | Nankana Sahib | Punjab | pub | bgnu.edu.pk | G
+NUR International University | NIU | Lahore | Punjab | priv | niu.edu.pk | MB
+Lahore Leads University | LLU | Lahore | Punjab | priv | leads.edu.pk | BC
+University of Child Health Sciences | UCHS | Lahore | Punjab | pub |  | M
+Punjab Tianjin University of Technology | PTUT | Lahore | Punjab | pub | ptut.edu.pk | E
+
+## Sindh
+University of Karachi | UoK | Karachi | Sindh | pub | uok.edu.pk | G
+NED University of Engineering & Technology | NEDUET | Karachi | Sindh | pub | neduet.edu.pk | E
+Institute of Business Administration Karachi | IBA | Karachi | Sindh | pub | iba.edu.pk | BC
+Aga Khan University | AKU | Karachi | Sindh | priv | aku.edu | M
+Dow University of Health Sciences | DUHS | Karachi | Sindh | pub | duhs.edu.pk | M
+Sir Syed University of Engineering & Technology | SSUET | Karachi | Sindh | priv | ssuet.edu.pk | EC
+FAST – NUCES Karachi Campus | FAST-KHI | Karachi | Sindh | priv | khi.nu.edu.pk | CEB
+Habib University | HU | Karachi | Sindh | priv | habib.edu.pk | CEG
+SZABIST University | SZABIST | Karachi | Sindh | priv | szabist.edu.pk | BCM
+Iqra University | IU | Karachi | Sindh | priv | iqra.edu.pk | BC
+Institute of Business Management (IoBM) | IoBM | Karachi | Sindh | priv | iobm.edu.pk | BC
+Karachi Institute of Economics & Technology (PAF-KIET) | KIET | Karachi | Sindh | priv | pafkiet.edu.pk | ECB
+Hamdard University | HU-KHI | Karachi | Sindh | priv | hamdard.edu.pk | MECB
+Ziauddin University | ZU | Karachi | Sindh | priv | zu.edu.pk | M
+Baqai Medical University | BMU | Karachi | Sindh | priv | baqai.edu.pk | M
+Jinnah Sindh Medical University | JSMU | Karachi | Sindh | pub | jsmu.edu.pk | M
+Jinnah University for Women | JUW | Karachi | Sindh | priv | juw.edu.pk | G
+Mohammad Ali Jinnah University | MAJU | Karachi | Sindh | priv | jinnah.edu | BC
+DHA Suffa University | DSU | Karachi | Sindh | priv | dsu.edu.pk | EC
+Indus University | IU-KHI | Karachi | Sindh | priv | indus.edu.pk | ECB
+Dawood University of Engineering & Technology | DUET | Karachi | Sindh | pub | duet.edu.pk | E
+Sindh Madressatul Islam University | SMIU | Karachi | Sindh | pub | smiu.edu.pk | BCL
+Federal Urdu University, Karachi Campus | FUUAST-KHI | Karachi | Sindh | pub | fuuast.edu.pk | G
+Bahria University Karachi Campus | BU-KHI | Karachi | Sindh | pub | bahria.edu.pk | ECBM
+Benazir Bhutto Shaheed University Lyari | BBSUL | Karachi | Sindh | pub | bbsul.edu.pk | G
+Shaheed Benazir Bhutto Dewan University | SBBDU | Karachi | Sindh | priv |  | ECB
+Greenwich University | GU | Karachi | Sindh | priv | greenwich.edu.pk | BC
+Textile Institute of Pakistan | TIP | Karachi | Sindh | priv | tip.edu.pk | TB
+Karachi School of Business & Leadership | KSBL | Karachi | Sindh | priv | ksbl.edu.pk | B
+Mehran University of Engineering & Technology | MUET | Jamshoro | Sindh | pub | muet.edu.pk | E
+University of Sindh | US | Jamshoro | Sindh | pub | usindh.edu.pk | G
+Liaquat University of Medical & Health Sciences | LUMHS | Jamshoro | Sindh | pub | lumhs.edu.pk | M
+Sindh Agriculture University | SAU | Tandojam | Sindh | pub | sau.edu.pk | A
+Isra University | ISRA | Hyderabad | Sindh | priv | isra.edu.pk | MB
+Sukkur IBA University | IBA Sukkur | Sukkur | Sindh | pub | iba-suk.edu.pk | BCE
+Shah Abdul Latif University | SALU | Khairpur | Sindh | pub | salu.edu.pk | G
+Quaid-e-Awam University of Engineering, Science & Technology | QUEST | Nawabshah | Sindh | pub | quest.edu.pk | E
+Shaheed Benazir Bhutto University | SBBU | Shaheed Benazirabad | Sindh | pub | sbbusba.edu.pk | G
+Peoples University of Medical & Health Sciences for Women | PUMHSW | Shaheed Benazirabad | Sindh | pub | pumhs.edu.pk | M
+Shaheed Mohtarma Benazir Bhutto Medical University | SMBBMU | Larkana | Sindh | pub | smbbmu.edu.pk | M
+Begum Nusrat Bhutto Women University | BNBWU | Sukkur | Sindh | pub | bnbwu.edu.pk | G
+Shaheed Allah Bux Soomro University of Art, Design & Heritage | SABS | Jamshoro | Sindh | pub | sabsu.edu.pk | R
+University of Sufism & Modern Sciences | USMS | Bhit Shah | Sindh | pub | usms.edu.pk | G
+
+## Khyber Pakhtunkhwa
+University of Peshawar | UoP | Peshawar | Khyber Pakhtunkhwa | pub | uop.edu.pk | G
+University of Engineering & Technology Peshawar | UET Peshawar | Peshawar | Khyber Pakhtunkhwa | pub | uetpeshawar.edu.pk | E
+Ghulam Ishaq Khan Institute of Engineering Sciences & Technology | GIKI | Topi | Khyber Pakhtunkhwa | priv | giki.edu.pk | EC
+The University of Agriculture Peshawar | AUP | Peshawar | Khyber Pakhtunkhwa | pub | aup.edu.pk | A
+Khyber Medical University | KMU | Peshawar | Khyber Pakhtunkhwa | pub | kmu.edu.pk | M
+Institute of Management Sciences Peshawar | IMSciences | Peshawar | Khyber Pakhtunkhwa | pub | imsciences.edu.pk | BC
+Islamia College University Peshawar | ICP | Peshawar | Khyber Pakhtunkhwa | pub | icp.edu.pk | G
+Shaheed Benazir Bhutto Women University | SBBWU | Peshawar | Khyber Pakhtunkhwa | pub | sbbwu.edu.pk | G
+FAST – NUCES Peshawar Campus | FAST-PWR | Peshawar | Khyber Pakhtunkhwa | priv | pwr.nu.edu.pk | CE
+CECOS University of IT & Emerging Sciences | CECOS | Peshawar | Khyber Pakhtunkhwa | priv | cecos.edu.pk | ECB
+City University of Science & Information Technology | CUSIT | Peshawar | Khyber Pakhtunkhwa | priv | cusit.edu.pk | ECB
+Abasyn University | ABASYN | Peshawar | Khyber Pakhtunkhwa | priv | abasyn.edu.pk | CBM
+Sarhad University of Science & IT | SUIT | Peshawar | Khyber Pakhtunkhwa | priv | suit.edu.pk | ECB
+Qurtuba University of Science & IT | QUSIT | Dera Ismail Khan | Khyber Pakhtunkhwa | priv | qurtuba.edu.pk | G
+Iqra National University | INU | Peshawar | Khyber Pakhtunkhwa | priv | inu.edu.pk | ECB
+Gomal University | GU | Dera Ismail Khan | Khyber Pakhtunkhwa | pub | gu.edu.pk | G
+Hazara University | HU | Mansehra | Khyber Pakhtunkhwa | pub | hu.edu.pk | G
+COMSATS University Islamabad, Abbottabad Campus | CUI ATD | Abbottabad | Khyber Pakhtunkhwa | pub | cuiatd.edu.pk | CEB
+Abbottabad University of Science & Technology | AUST | Havelian | Khyber Pakhtunkhwa | pub | aust.edu.pk | ECG
+Kohat University of Science & Technology | KUST | Kohat | Khyber Pakhtunkhwa | pub | kust.edu.pk | SG
+University of Malakand | UOM | Chakdara | Khyber Pakhtunkhwa | pub | uom.edu.pk | G
+University of Swat | UOSWAT | Swat | Khyber Pakhtunkhwa | pub | uswat.edu.pk | G
+Abdul Wali Khan University Mardan | AWKUM | Mardan | Khyber Pakhtunkhwa | pub | awkum.edu.pk | G
+University of Engineering & Technology Mardan | UET Mardan | Mardan | Khyber Pakhtunkhwa | pub | uetmardan.edu.pk | E
+Bacha Khan University | BKUC | Charsadda | Khyber Pakhtunkhwa | pub | bkuc.edu.pk | G
+University of Science & Technology Bannu | USTB | Bannu | Khyber Pakhtunkhwa | pub | ustb.edu.pk | SG
+University of Swabi | UOSWABI | Swabi | Khyber Pakhtunkhwa | pub | uoswabi.edu.pk | G
+Women University Swabi | WUS | Swabi | Khyber Pakhtunkhwa | pub |  | G
+University of Haripur | UOH | Haripur | Khyber Pakhtunkhwa | pub | uoh.edu.pk | G
+Shaheed Benazir Bhutto University Sheringal | SBBU | Dir Upper | Khyber Pakhtunkhwa | pub | sbbu.edu.pk | G
+University of Buner | UOBUNER | Buner | Khyber Pakhtunkhwa | pub |  | G
+University of Chitral | UOCH | Chitral | Khyber Pakhtunkhwa | pub | uoch.edu.pk | G
+University of Lakki Marwat | ULM | Lakki Marwat | Khyber Pakhtunkhwa | pub | ulm.edu.pk | G
+Khushal Khan Khattak University | KKKUK | Karak | Khyber Pakhtunkhwa | pub | kkkuk.edu.pk | G
+University of Technology Nowshera | UTN | Nowshera | Khyber Pakhtunkhwa | pub |  | E
+Northern University | NU | Nowshera | Khyber Pakhtunkhwa | priv | northern.edu.pk | BC
+Pak-Austria Fachhochschule: Institute of Applied Sciences & Technology | PAF-IAST | Haripur | Khyber Pakhtunkhwa | pub | paf-iast.edu.pk | EC
+
+## Balochistan
+University of Balochistan | UOB | Quetta | Balochistan | pub | uob.edu.pk | G
+Balochistan University of IT, Engineering & Management Sciences | BUITEMS | Quetta | Balochistan | pub | buitms.edu.pk | ECB
+Sardar Bahadur Khan Women's University | SBKWU | Quetta | Balochistan | pub | sbkwu.edu.pk | G
+Balochistan University of Engineering & Technology | BUET Khuzdar | Khuzdar | Balochistan | pub | buetk.edu.pk | E
+Lasbela University of Agriculture, Water & Marine Sciences | LUAWMS | Uthal | Balochistan | pub | luawms.edu.pk | AS
+University of Turbat | UOT | Turbat | Balochistan | pub | uot.edu.pk | G
+University of Loralai | UOL-BL | Loralai | Balochistan | pub |  | G
+Bolan University of Medical & Health Sciences | BUMHS | Quetta | Balochistan | pub | bumhs.edu.pk | M
+Al-Hamd Islamic University | AIU | Quetta | Balochistan | priv |  | G
+
+## Azad Jammu & Kashmir
+University of Azad Jammu & Kashmir | UAJK | Muzaffarabad | Azad Jammu & Kashmir | pub | ajku.edu.pk | G
+Mirpur University of Science & Technology | MUST | Mirpur | Azad Jammu & Kashmir | pub | must.edu.pk | EC
+University of Poonch Rawalakot | UPR | Rawalakot | Azad Jammu & Kashmir | pub | upr.edu.pk | AG
+Women University of Azad Jammu & Kashmir Bagh | WUAJK | Bagh | Azad Jammu & Kashmir | pub | wuajk.edu.pk | G
+University of Kotli | UOKAJK | Kotli | Azad Jammu & Kashmir | pub | uokajk.edu.pk | G
+Mohi-ud-Din Islamic University | MIU | Nerian Sharif | Azad Jammu & Kashmir | priv | miu.edu.pk | G
+Al-Khair University | AKU-AJK | Bhimber | Azad Jammu & Kashmir | priv | alkhair.edu.pk | G
+
+## Gilgit-Baltistan
+Karakoram International University | KIU | Gilgit | Gilgit-Baltistan | pub | kiu.edu.pk | G
+University of Baltistan | UOBS | Skardu | Gilgit-Baltistan | pub | uobs.edu.pk | G
