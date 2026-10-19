@@ -1,0 +1,1612 @@
+# Degree programmes at German universities that international (Pakistani) students commonly apply to,
+# grouped by university. Mostly English-taught; German-taught entries are marked "de".
+#
+# @ <university>        short code from de_universities.txt, or the full name when the short code is shared
+# degree | programme | language | flags
+#
+# degree:   MSc · MA · MEng · MBA · LLM · MRes · MPH · BSc · BA · BEng · BBA
+# language: en · de · en/de (taught in both / bilingual)
+# flags:    sel (very competitive, typical German grade 2.0 or better) · open (known to admit a wide range of grades)
+#           fee (tuition fees even at a public university) · ects210 (usually asks for 210+ ECTS / a 4-year bachelor)
+#
+# Hand-curated from university and DAAD listings. Names change and programmes close, so every
+# programme links to the university and to a live DAAD search. Review every intake.
+
+## Baden-Württemberg
+@ UHD
+MSc | Molecular Biosciences | en | sel
+MSc | Physics | en |
+MSc | Scientific Computing | en | sel
+MSc | Data and Computer Science | en | sel
+MA | Health and Society in South Asia | en |
+MSc | International Health | en | fee
+MA | Transcultural Studies | en |
+MSc | Medical Physics | en |
+MSc | Molecular and Cellular Biology | en |
+
+@ UFR
+MSc | Renewable Energy Engineering and Management | en |
+MSc | Environmental Governance | en |
+MSc | Embedded Systems Engineering | en |
+MSc | Sustainable Systems Engineering | en |
+MSc | Computer Science | en |
+MSc | Microsystems Engineering | en |
+MSc | Forest Ecology and Management | en |
+MA | Global Studies | en |
+
+@ University of Tübingen
+MSc | Machine Learning | en | sel
+MSc | Neural and Behavioural Sciences | en | sel
+MSc | Economics and Finance | en |
+MSc | Medical Informatics | en |
+MSc | Geoscience | en |
+MA | International Economics | en |
+MSc | Cognitive Science | en |
+
+@ KIT
+MSc | Energy Engineering and Management | en |
+MSc | Optics and Photonics | en |
+MSc | Remote Sensing and Geoinformatics | en |
+MSc | Electrical Engineering and Information Technology | en/de |
+MSc | Mechanical Engineering | en/de |
+MSc | Computer Science | de |
+MSc | Resources Engineering | en |
+MSc | Water Science and Engineering | en |
+MSc | Financial Engineering | en | fee
+MSc | Mobility Systems Engineering and Management | en |
+
+@ USTU
+MSc | Infrastructure Planning | en |
+MSc | Information Technology (INFOTECH) | en |
+MSc | Computational Mechanics of Materials and Structures (COMMAS) | en |
+MSc | Water Resources Engineering and Management (WAREM) | en |
+MSc | Air Quality Control, Solid Waste and Waste Water Process Engineering (WASTE) | en |
+MSc | Electrical Engineering | en |
+MSc | Computer Science | en |
+MSc | Integrated Urbanism and Sustainable Design | en |
+MSc | Computational Linguistics | en |
+MSc | Autonomous Systems | en |
+MSc | Physics | en |
+MSc | Materials Science | en |
+
+@ UULM
+MSc | Advanced Materials | en |
+MSc | Communications Technology | en |
+MSc | Energy Science and Technology | en |
+MSc | Molecular and Translational Neuroscience | en |
+MSc | Artificial Intelligence | en |
+MSc | Finance | en |
+MSc | Physics | en |
+
+@ UMA
+MSc | Mannheim Master in Management | en | sel
+MA | Economics | en | sel
+MSc | Data Science | en |
+MSc | Business Informatics | en |
+MA | Political Science | en |
+MA | Sociology | en |
+
+@ UKN
+MSc | Computer and Information Science | en |
+MSc | Social and Economic Data Science | en |
+MSc | Biological Sciences | en |
+MA | Politics and Public Administration | en |
+MSc | Life Science | en |
+MSc | Collective Behaviour | en |
+
+@ UHOH
+MSc | Agricultural Sciences in the Tropics and Subtropics | en |
+MSc | Environmental Protection and Agricultural Food Production | en |
+MSc | Bioeconomy | en |
+MSc | Organic Agriculture and Food Systems | en |
+MSc | Sustainable Agriculture and Food Systems | en |
+MSc | Crop Sciences | en |
+MSc | Food Science and Engineering | en |
+MSc | Earth and Climate System Science | en |
+
+@ HSAA
+MSc | Advanced Materials and Manufacturing | en |
+MSc | Photonics | en |
+MBA | International Sales Management and Technology | en | fee
+MSc | Data Science | en |
+
+@ HSAS
+MSc | Systems Engineering | en |
+MSc | Biomedical Sciences | en |
+
+@ HE
+MEng | Automotive Systems | en |
+MEng | Design and Development in Automotive and Mechanical Engineering | en |
+MSc | Applied Computer Science | en |
+MEng | Mechatronics | en |
+
+@ HFU
+MSc | Biomedical Engineering | en |
+MBA | International Business Management | en |
+MSc | Smart Systems | en |
+MSc | Advanced Precision Engineering | en |
+MSc | Mobile Systems | en |
+MSc | Sustainable Business and Technology | en |
+
+@ HHN
+MSc | Mechanical and Electrical Engineering | en |
+MA | International Business and Intercultural Management | en |
+MSc | Software Engineering and Management | en |
+MSc | Electrical Engineering and Management | en |
+
+@ HKA
+MSc | Sensor Systems Technology | en |
+MSc | Mechatronics | en |
+MSc | Computer Science | en |
+MSc | Construction Management | en |
+
+@ HTWG
+MSc | Mechatronics | en |
+MSc | Business Administration | en |
+MSc | Automotive Systems Engineering | en |
+MSc | Legal Management | en |
+
+@ HSO
+MSc | Communication and Media Engineering | en | open
+MSc | Energy Conversion and Management | en | open
+MSc | Mechanical Engineering | en |
+MBA | International Business Consulting | en |
+MSc | Electrical Engineering | en |
+MSc | Biomedical Engineering | en |
+
+@ HSPF
+MSc | Engineering and Management | en |
+MBA | International Management | en |
+MSc | Information Systems | en |
+MSc | Controlling, Finance and Accounting | en |
+MSc | Life Cycle and Sustainability | en |
+
+@ RU
+MSc | International Management | en |
+MSc | Human-Centered Computing | en |
+MSc | Decentralised Systems Engineering | en |
+MSc | Biomedical Sciences | en |
+MSc | Operations Management | en |
+
+@ HFR
+MSc | Resource Efficient Wood Engineering | en |
+MSc | Sustainable Energy Competence (SENCE) | en |
+
+@ RWU
+MSc | Mechatronics | en |
+MSc | Electrical Engineering and Embedded Systems | en |
+MSc | Technology Management | en |
+MSc | Computer Science | en |
+
+@ HFT
+MSc | Photogrammetry and Geoinformatics | en |
+MSc | International Project Management | en |
+MSc | Software Technology | en |
+MSc | Smart City Solutions | en |
+
+@ THU
+MSc | Intelligent Systems | en |
+MSc | Energy Engineering | en |
+
+@ DHBW
+BEng | Mechanical Engineering (dual) | de |
+BSc | Business Informatics (dual) | de |
+BEng | Electrical Engineering (dual) | de |
+
+@ ZU
+MA | Corporate Management and Economics | en | fee
+MA | Politics, Administration and International Relations | en | fee
+
+@ KHS
+BA | International Business | en | fee
+MA | International Management | en | fee
+
+@ SRH
+MSc | Applied Computer Science | en | fee open
+MSc | Big Data and Artificial Intelligence | en | fee open
+MBA | International Business | en | fee open
+MSc | International Business and Engineering | en | fee open
+MSc | Information Technology | en | fee open
+BSc | Computer Science | en | fee open
+MSc | Water Technology | en | fee open
+
+## Bavaria
+@ TUM
+MSc | Informatics | en | sel
+MSc | Data Engineering and Analytics | en | sel
+MSc | Mechanical Engineering | en |
+MSc | Management and Technology | en | sel
+MSc | Robotics, Cognition, Intelligence | en | sel
+MSc | Electrical Engineering and Information Technology | en |
+MSc | Communications Engineering | en |
+MSc | Aerospace | en |
+MSc | Automotive Engineering | en |
+MSc | Environmental Engineering | en |
+MSc | Civil Engineering | en |
+MSc | Sustainable Resource Management | en |
+MSc | Biomedical Computing | en | sel
+MSc | Mathematics in Data Science | en | sel
+MSc | Industrial Chemistry | en |
+MSc | Computational Science and Engineering | en |
+MSc | Architecture | en |
+MSc | Energy and Process Engineering | en |
+MSc | Transportation Systems | en |
+MSc | Management | en | sel
+MSc | Neuroengineering | en |
+MSc | Power Engineering | en |
+MSc | Quantum Science and Technology | en |
+MSc | Agricultural Biosciences | en |
+MSc | Food Technology and Biotechnology | en |
+BSc | Management and Technology | en | sel
+BSc | Electrical Engineering and Information Technology | en |
+BSc | Aerospace | en |
+
+@ LMU
+MSc | Data Science | en | sel
+MSc | Physics | en |
+MSc | Neurosciences | en | sel
+MSc | Economics | en | sel
+MSc | Media Informatics | en |
+MSc | Theoretical and Mathematical Physics | en |
+MSc | Molecular and Cellular Biology | en |
+MA | Logic and Philosophy of Science | en |
+MSc | Epidemiology | en |
+MSc | Geosciences | en |
+
+@ FAU
+MSc | Computational Engineering | en |
+MSc | Artificial Intelligence | en |
+MSc | Communications and Multimedia Engineering | en | open
+MSc | Advanced Signal Processing and Communications Engineering | en |
+MSc | Medical Engineering | en |
+MSc | Data Science | en |
+MSc | Advanced Materials and Processes | en |
+MSc | Chemical Engineering – Nachhaltige Chemische Technologien | en |
+MSc | Mechanical Engineering | en/de |
+MSc | Physics | en |
+MSc | International Information Systems | en |
+MSc | Energy Technology | en |
+MA | Human Rights | en |
+
+@ JMU
+MSc | Satellite Technology | en |
+MSc | Space Science and Technology (SpaceMaster) | en |
+MSc | Nanostructure Technology | en |
+MSc | Functional Materials | en |
+MSc | Biology | en |
+MSc | Business Management | en |
+MSc | Artificial Intelligence | en |
+
+@ University of Regensburg
+MSc | Physics | en |
+MSc | Data Science | en |
+MSc | Chemistry | en |
+MA | East European Studies | en |
+MSc | Economics | en |
+
+@ UBT
+MSc | Environmental Geography | en |
+MSc | Global Change Ecology | en |
+MSc | Polymer Science | en |
+MSc | Biofabrication | en |
+MA | Development Studies | en |
+MSc | Molecular Ecology | en |
+MSc | Philosophy and Economics | en |
+
+@ UNIA
+MSc | Materials Science | en |
+MSc | Environmental Ethics | en |
+MSc | Software Engineering | en |
+MSc | Finance and Information Management | en |
+
+@ University of Passau
+MSc | Computer Science | en |
+MA | Development Studies | en |
+MSc | Artificial Intelligence Engineering | en |
+MSc | International Economics and Business | en |
+MA | Caritas Science | en |
+MA | Governance and Public Policy | en |
+MSc | Business Administration | en |
+
+@ UBA
+MSc | International Software Systems Science | en |
+MSc | European Economic Studies | en |
+MSc | Computing in the Humanities | en |
+MSc | Survey Statistics | en |
+
+@ KU
+MA | Inclusive Education | en |
+MSc | Environmental Science | en |
+MA | Journalism | de |
+
+@ HM
+MSc | Mechatronics and Robotics | en |
+MSc | Software Engineering | de |
+MSc | Applied Research in Engineering Sciences | en |
+MA | International Business | de |
+
+@ OTH R
+MSc | Electrical and Microsystems Engineering | en |
+MSc | Software Engineering | de |
+MA | International Relations and Management | en |
+MSc | Computer Science | de |
+
+@ THN
+MSc | International Marketing | en |
+MSc | Mechanical Engineering | en |
+MEng | Energy Process Engineering | en |
+MSc | Computer Science | de |
+
+@ THWS
+MSc | Artificial Intelligence | en |
+MEng | Integrated Innovative Engineering | en |
+MSc | Logistics | en |
+MEng | Energy Engineering | en |
+BEng | Mechatronics | en |
+BEng | Robotics | en |
+BSc | Business and Engineering | en |
+
+@ THI
+MEng | Automotive Production Engineering | en | open
+MSc | International Automotive Engineering | en | open
+MEng | Computer Science | en |
+MEng | Renewable Energy Systems | en | open
+MEng | Electrical Engineering | en |
+MA | International Management | en |
+MEng | Applied Computer Science | en |
+MSc | User Experience Design | en |
+
+@ THD
+MEng | Mechatronic and Cyber-Physical Systems | en | open
+MSc | Artificial Intelligence and Data Science | en | open
+MEng | Electrical Engineering and Information Technology | en | open
+MSc | Global Public Health | en | open
+MSc | Industrial Engineering | en | open
+MBA | International Management | en | open
+MSc | Cyber Security | en | open
+MSc | Medical Informatics | en | open
+MSc | High Performance Computing | en | open
+MSc | Life Science Analytics | en | open
+MEng | Health Informatics | en | open
+BEng | Industrial Engineering | en | open
+BSc | Artificial Intelligence | en | open
+BSc | Business Informatics | en | open
+BSc | Health Informatics | en | open
+
+@ TH RO
+MSc | Applied Artificial Intelligence | en |
+MEng | Wood Technology | en |
+MSc | Plastics Technology | de |
+
+@ THA
+MSc | Business Information Systems | en |
+MEng | Computer Engineering | en |
+MSc | International Business and Finance | en |
+
+@ HAW LA
+MEng | Electrical Engineering | en |
+MSc | Applied Computer Science | de |
+MEng | Mechanical Engineering | de |
+
+@ HS CO
+MSc | Analytical Instrumentation, Measurement and Sensor Technology | en |
+MSc | Financial Management | en |
+BEng | Bioanalytics | de |
+
+@ HOF
+MEng | Sustainable Water Management and Engineering | en | open
+MSc | Software Engineering for Industrial Applications | en | open
+MA | International Management and Leadership | en | open
+MSc | Sustainable Textiles | en |
+MSc | Digital Marketing | en |
+BSc | Computer Science | en | open
+BA | International Business | en | open
+
+@ HNU
+MA | Advanced Management | en |
+MSc | Information Management and Corporate Communications | en |
+MSc | Strategic Healthcare Management | en |
+
+@ HS AN
+MEng | Applied Research in Engineering | en |
+MA | International Management | de |
+
+@ TH AB
+MEng | Electrical Engineering and Information Technology | en |
+MSc | Information Systems | de |
+
+@ OTH AW
+MEng | Applied Research in Engineering Sciences | en |
+MSc | Industrial Management | en |
+MSc | Artificial Intelligence for Industrial Applications | en |
+
+@ HSWT
+MSc | Agricultural Management | en |
+MSc | Horticultural Science | en |
+MSc | Renewable Resources | de |
+
+@ UniBw M
+MSc | Computer Science | de |
+
+@ MBS
+MA | International Business | en | fee
+MBA | General Management | en | fee
+MSc | International Marketing and Brand Management | en | fee
+
+## Berlin
+@ FU
+MSc | Computer Science | en |
+MSc | Data Science | en |
+MA | North American Studies | en |
+MSc | Bioinformatics | en |
+MA | Global History | en |
+MSc | Polymer Science | en |
+MA | Public Policy and Management | en |
+MSc | Geographical Sciences | en |
+
+@ HU
+MSc | Statistics | en |
+MSc | Economics and Management Science | en |
+MA | Social Sciences | en |
+MSc | Integrated Natural Resource Management | en |
+MSc | Mathematics | en |
+MSc | Horticultural Science | en |
+
+@ TUB
+MSc | Computer Science | en |
+MSc | Computer Engineering | en |
+MSc | Electrical Engineering | en |
+MSc | Information Systems Management | en |
+MSc | Urban Design | en |
+MSc | Urban Ecosystem Sciences | en |
+MSc | Energy Engineering | en |
+MSc | Biotechnology | en |
+MSc | Mechanical Engineering | de |
+MSc | Industrial Engineering and Management | en/de |
+MSc | Global Production Engineering | en | fee
+MSc | Water Engineering | de |
+MA | Urban Management | en | fee
+
+@ CHA
+MSc | Molecular Medicine | en | sel
+MPH | Public Health | en |
+MSc | Epidemiology | en | fee
+MSc | International Health | en | fee
+
+@ HTW
+MSc | Business Intelligence and Process Management | en |
+MSc | International Media and Computing | en | open
+MSc | Industrial Engineering | en |
+MA | International Business Law | en |
+MBA | Business Administration | de |
+MSc | Project Management and Data Science | en |
+MSc | Environmental Engineering | de |
+
+@ HWR
+MA | International Economics | en |
+MA | International Business Management | en |
+MA | Political Economy of European Integration | en |
+MBA | Business Administration | en | fee
+
+@ BHT
+MEng | Industrial Engineering | en |
+MEng | Urban Management | en |
+MSc | Data Science | en |
+MSc | Medical Engineering | de |
+MSc | Software Engineering | de |
+
+@ ASH
+MA | Social Work as a Human Rights Profession | en | fee
+
+@ HS
+MPP | Public Policy | en | fee sel
+MIA | International Affairs | en | fee sel
+MSc | Data Science for Public Policy | en | fee
+
+@ ESMT
+MBA | Full-time MBA | en | fee sel
+MSc | Master in Management | en | fee sel
+MSc | Global Management | en | fee
+
+@ ESCP
+MSc | Master in Management | en | fee sel
+MSc | Big Data and Business Analytics | en | fee
+MSc | International Sustainability Management | en | fee
+
+@ BCB
+BA | Economics, Politics and Social Thought | en | fee
+BA | Humanities, the Arts and Society | en | fee
+
+@ CODE
+BSc | Software Engineering | en | fee
+BSc | Interaction Design | en | fee
+BSc | Product Management | en | fee
+
+@ BSBI
+MSc | Data Analytics | en | fee open
+MBA | Global MBA | en | fee open
+MA | International Business Management | en | fee open
+MSc | Cyber Security | en | fee open
+BA | International Business Management | en | fee open
+
+@ University of Europe for Applied Sciences
+MA | Innovation and Entrepreneurship | en | fee open
+MSc | Software Engineering | en | fee open
+MSc | Data Science | en | fee open
+MA | Digital Business Management | en | fee open
+BSc | Software Engineering | en | fee open
+BA | Business and Management Studies | en | fee open
+
+@ BI
+MBA | International Management | en | fee open
+MSc | Computer Science | en | fee open
+BSc | Computer Science | en | fee open
+
+@ SHB
+MBA | International Management | en | fee
+MSc | Digital Transformation | en | fee
+
+@ QUA
+MBA | Public Affairs and Leadership | en | fee
+
+@ TOU
+MA | Holocaust Communication and Tolerance | en | fee
+
+@ MAC
+MA | International Management | en | fee open
+MA | Media and Communication | en | fee open
+BA | Business Management | en | fee open
+
+@ MSB
+MSc | Clinical Psychology and Psychotherapy | de | fee
+
+## Brandenburg
+@ University of Potsdam
+MSc | Data Science | en |
+MSc | Cognitive Systems | en |
+MSc | Geoscience | en |
+MSc | Remote Sensing, Geoinformation and Visualization | en |
+MSc | Astrophysics | en |
+MSc | Climate, Earth, Water and Sustainability | en |
+MSc | Cybersecurity (Hasso Plattner Institute) | en |
+MSc | IT Systems Engineering (Hasso Plattner Institute) | en | sel
+
+@ EUV
+MA | European Studies | en |
+MA | International Business Administration | en |
+MA | Intercultural Communication Studies | en |
+MA | Migration Studies | en |
+LLM | International Human Rights and Humanitarian Law | en |
+
+@ BTU
+MSc | Power Engineering | en | open
+MSc | Environmental and Resource Management | en | open
+MSc | Artificial Intelligence | en | open
+MSc | Computer Science | en | open
+MSc | Civil Engineering | en | open
+MSc | Electrical Engineering | en | open
+MSc | Mechanical Engineering | en |
+MSc | World Heritage Studies | en |
+MSc | Cyber Security | en | open
+MSc | Biotechnology | en |
+MA | Heritage Conservation and Site Management | en |
+MSc | Urban Design | en |
+
+@ THW
+MSc | Aviation Management | en | open
+MEng | Photonics | en |
+MEng | Biosystems Engineering | en | open
+MSc | Telematics | en | open
+BEng | Aeronautical Engineering | en |
+MSc | European Management | en |
+
+@ THB
+MSc | Digital Transformation | en |
+MSc | Computer Science | de |
+
+@ FHP
+MA | Urban Futures | en |
+MA | Conservation and Restoration | de |
+
+@ HNEE
+MSc | Forest Information Technology | en |
+MSc | Global Change Management | en |
+MA | Sustainable Tourism Management | en |
+MSc | Strategic Sustainability Management | en | fee
+
+@ GISMA
+MSc | Data Science, AI and Digital Business | en | fee open
+MBA | Global MBA | en | fee open
+MSc | International Business Management | en | fee open
+MSc | Computer Science | en | fee open
+BSc | Computer Science | en | fee open
+BA | Business Management | en | fee open
+
+## Bremen
+@ University of Bremen
+MSc | Space Engineering | en |
+MSc | Information and Automation Engineering | en |
+MSc | Environmental Physics | en |
+MSc | Medical Biometry/Biostatistics | en |
+MSc | Marine Biology | en |
+MSc | Digital Media | en |
+MA | Linguistics | en |
+MSc | Production Engineering | en |
+MSc | Ecology | en |
+MSc | Materials Chemistry and Mineralogy | en |
+MSc | Computer Science | en/de |
+
+@ CU
+MSc | Data Science for Society and Business | en | fee
+MSc | Computer Science | en | fee
+MSc | Supply Chain Engineering and Management | en | fee
+BSc | Computer Science | en | fee
+BSc | Electrical and Computer Engineering | en | fee
+BSc | Industrial Engineering and Management | en | fee
+BA | International Business Administration | en | fee
+BSc | Robotics and Intelligent Systems | en | fee
+BSc | Mathematics, Modeling and Data Analytics | en | fee
+
+@ HSB
+MSc | Dual Degree Master in Business Administration | en |
+MSc | Aeronautical Management | en |
+MA | International Tourism Management | en |
+BSc | International Degree Course Computer Science | en |
+BSc | International Degree Programme Ship and Marine Engineering | en |
+
+@ HS BHV
+MSc | Embedded Systems Design | en |
+MSc | Sustainable Energy Systems | de |
+MA | Digital Health Management | de |
+
+## Hamburg
+@ UHH
+MSc | Physics | en |
+MSc | Intelligent Adaptive Systems | en |
+MSc | Integrated Climate System Sciences | en |
+MSc | Economics | en |
+MSc | Bioprocess Engineering | en |
+MA | Linguistic Diversity | en |
+MSc | Molecular Life Sciences | en |
+MSc | Computer Science | de |
+MSc | Marine Ecosystem and Fisheries Science | en |
+
+@ TUHH
+MSc | Information and Communication Systems | en |
+MSc | Mechatronics | en |
+MSc | Microelectronics and Microsystems | en |
+MSc | Environmental Engineering | en |
+MSc | Water and Environmental Engineering | en |
+MSc | Renewable Energies | en |
+MSc | Aircraft Systems Engineering | en |
+MSc | International Production Management | en |
+MSc | Ship and Offshore Technology | en |
+MSc | Logistics, Infrastructure and Mobility | en |
+MSc | Process Engineering | en |
+MSc | Computer Science | en |
+MSc | Data Science | en |
+MSc | Materials Science | en |
+MSc | Biomedical Engineering | en |
+MSc | Civil Engineering | en |
+MSc | Chemical and Bioprocess Engineering | en |
+
+@ HCU
+MSc | Resource Efficiency in Architecture and Planning | en |
+MSc | Urban Design | de |
+
+@ HAW
+MSc | Renewable Energy Systems – Environmental and Process Engineering | en |
+MSc | Information Engineering | en |
+MSc | Aeronautical Engineering | de |
+MSc | Health Sciences | de |
+
+@ HSU
+MSc | Mechanical Engineering | de |
+
+@ KLU
+MSc | Global Logistics and Supply Chain Management | en | fee
+MSc | Management | en | fee
+MBA | Leadership and Supply Chain Management | en | fee
+
+@ BLS
+LLM | Law and Business | en | fee sel
+
+@ HSBA
+MSc | Business Development | en | fee
+
+@ MSH
+MSc | Clinical Psychology | de | fee
+
+@ BRAND
+MA | Brand Management | de | fee
+
+## Hesse
+@ GU
+MSc | Quantitative Economics | en |
+MSc | Finance | en |
+MSc | Money, Finance and Management | en |
+MSc | Computer Science | en/de |
+MSc | Physics | en |
+MSc | Molecular Biosciences | en |
+MA | International Studies / Peace and Conflict Studies | de |
+MSc | Environmental Sciences | de |
+MSc | Meteorology | en |
+
+@ TUDa
+MSc | Distributed Software Systems | en |
+MSc | Information and Communication Engineering | en |
+MSc | Mechanics | en |
+MSc | Computational Engineering | en |
+MSc | Electrical Power Engineering | en |
+MSc | Tropical Hydrogeology and Environmental Engineering | en |
+MSc | Mechanical and Process Engineering | de |
+MSc | Computer Science | en/de |
+MSc | Autonomous Systems | en |
+MSc | IT Security | en/de |
+MSc | Materials Science | en |
+MSc | Visual Computing | en |
+MSc | Artificial Intelligence and Machine Learning | en | sel
+MSc | Physics | en |
+MSc | Civil Engineering | de |
+
+@ JLU
+MSc | Agrobiotechnology | en |
+MSc | Transition Management | en |
+MSc | Sustainable Food Systems | en |
+MSc | Plant Health Management | en |
+MSc | Environmental and Resource Management | en |
+MA | Political Science | de |
+
+@ UMR
+MSc | Data Science | en |
+MSc | Molecular and Cellular Biology | en |
+MA | Peace and Conflict Studies | en/de |
+MSc | Environmental Geography | de |
+
+@ UNIK
+MSc | Electrical Engineering | en |
+MSc | Organic Agriculture | en |
+MSc | Sustainable International Agriculture | en |
+MSc | Renewable Energy and Energy Efficiency | en |
+MA | Global Political Economy and Development | en |
+MA | Labour Policies and Globalisation | en |
+MSc | Mechatronics | de |
+MSc | Computer Science | de |
+
+@ h_da
+MSc | Computer Science | en/de |
+MSc | Electrical Engineering and Information Technology | en |
+MSc | International Technical Communication | en |
+MSc | Data Science | en |
+MSc | Chemical Engineering | en |
+
+@ Frankfurt UAS
+MSc | High Integrity Systems | en | open
+MEng | Information Technology | en |
+MSc | Barrier-Free Systems | de |
+MSc | Allied Computer Science | en |
+MBA | Aviation Management | de |
+MA | Urban Agglomerations | en |
+MSc | Geotechnical Engineering | en |
+
+@ THM
+MSc | Biomedical Engineering | en |
+MSc | Computer Science | de |
+MEng | Mechatronics | en |
+MSc | Logistics Management | de |
+
+@ HS FD
+MSc | Global Software Development | en |
+MA | Intercultural Communication and European Studies | en |
+MSc | International Food Business and Consumer Studies | en |
+MPH | Public Health | en |
+
+@ HSRM
+MSc | Computer Science | de |
+MA | International Business Administration | en |
+
+@ HGU
+MSc | Vinifera EuroMaster | en | fee
+MSc | Beverage Technology | de |
+
+@ FS
+MSc | Finance | en | fee sel
+MSc | Management | en | fee
+MBA | Full-time MBA | en | fee sel
+MSc | Applied Data Science | en | fee
+
+@ EBS
+MSc | Management | en | fee
+MSc | Finance | en | fee
+MBA | Full-time MBA | en | fee
+
+@ HSF
+MSc | International Business Management | en | fee open
+MA | Digital Management | en | fee
+BA | International Business Management | en | fee open
+
+@ PRO
+MSc | Digital Transformation | en | fee
+
+## Lower Saxony
+@ UGOE
+MSc | Applied Computer Science | en |
+MSc | Sustainable International Agriculture | en |
+MSc | Development Economics | en |
+MSc | Molecular Biology (IMPRS) | en | sel
+MSc | Forest and Ecosystem Sciences | en |
+MSc | Tropical and International Forestry | en |
+MSc | Neurosciences | en | sel
+MA | Modern Indian Studies | en |
+MSc | Physics | en |
+MSc | Agribusiness | en |
+MA | Euroculture | en |
+
+@ LUH
+MSc | Communication Engineering | en |
+MSc | Water Resources and Environmental Management (WATENV) | en |
+MSc | Optical Technologies | en |
+MSc | Power Engineering | en |
+MSc | International Mechanical Engineering | en |
+MSc | Computer Science | de |
+MSc | Geodesy and Geoinformatics | en |
+MSc | Environmental Planning | en |
+MSc | Structural Engineering | en |
+MSc | Internet Technologies and Information Systems | en |
+
+@ TU BS
+MSc | Computational Sciences in Engineering | en |
+MSc | Electrical Engineering | en/de |
+MSc | Data Science | en |
+MSc | Biotechnology | en |
+MSc | Mechanical Engineering | de |
+
+@ UOL
+MSc | Renewable Energy | en |
+MSc | Neuroscience | en |
+MSc | Hearing Technology and Audiology | en |
+MSc | Sustainability Economics and Management | en |
+MSc | Engineering Physics | en |
+MSc | Environmental Modelling | en |
+MSc | Marine Environmental Sciences | en |
+
+@ UOS
+MSc | Cognitive Science | en |
+MSc | Earth System Science | en |
+MA | International Migration and Intercultural Relations | en |
+MSc | Mathematics | en |
+
+@ UHI
+MSc | Data Analytics | en |
+MA | International Communication and Translation | de |
+
+@ LEU
+MSc | Sustainability Science | en |
+MSc | Management and Data Science | en |
+MA | Sustainable Chemistry | en |
+
+@ Clausthal University of Technology
+MSc | Chemical and Energy Engineering | en | open
+MSc | Petroleum Engineering | en | open
+MSc | Mining Engineering | en | open
+MSc | Computer Science | en | open
+MSc | Materials Science and Engineering | en | open
+MSc | Technical Physics | en |
+MSc | Internet Technologies and Information Systems | en |
+MSc | Mechanical Engineering | en |
+MSc | Geoenvironmental Engineering | en |
+MSc | Energy and Raw Materials | en |
+
+@ MHH
+MSc | Biomedicine | en | sel
+MPH | Public Health | de |
+
+@ TiHo
+MSc | Animal Biology and Biomedical Sciences | en |
+
+@ HsH
+MSc | Computer Science | de |
+MSc | Industrial Engineering | de |
+
+@ OST
+MSc | Electrical Engineering | de |
+MSc | Information Technology | en |
+
+@ HAWK
+MSc | Regional Management and Economic Development | en |
+MA | Preventive Conservation | de |
+
+@ JADE
+MSc | Applied Geoinformatics | de |
+MBA | Sustainable Management | en |
+
+@ HSEL
+MSc | Industrial Informatics | en |
+MSc | Energy Efficiency | en |
+MSc | Applied Life Sciences | en |
+
+@ HS OS
+MSc | International Supply Chain Management | en |
+MSc | Agricultural Systems Engineering | en |
+MSc | Applied Mechatronic Systems | de |
+MBA | International Management | en | fee
+
+@ PFH
+MSc | Composite Materials | en | fee
+MBA | General Management | en | fee
+
+## Mecklenburg-Western Pomerania
+@ University of Rostock
+MSc | Computational Engineering | en |
+MSc | Visual Computing | en |
+MSc | Electrical Engineering | de |
+MSc | Agricultural Ecology | en |
+MA | Demography | en |
+MSc | Physics | en |
+
+@ UG
+MSc | Biodiversity, Conservation and Landscape Ecology | en |
+MSc | Molecular Biology and Physiology | en |
+MA | Baltic Sea Region Studies | en |
+
+@ HSWI
+MSc | Integrated Water Management | en |
+MSc | Architectural Lighting Design | en | fee
+MSc | Information and Electrical Engineering | de |
+MBA | Sales and Marketing | en | fee
+MSc | Facility Management | de |
+
+@ HOST
+MSc | Leisure and Tourism Management | en |
+MSc | IT Security | de |
+
+@ HSNB
+MSc | Food Science and Technology | en |
+MSc | Geodesy and Geoinformatics | de |
+
+## North Rhine-Westphalia
+@ RWTH
+MSc | Computer Science | en | sel
+MSc | Data Science | en | sel
+MSc | Electrical Engineering, Information Technology and Computer Engineering | en |
+MSc | Communications Engineering | en |
+MSc | Automotive Engineering and Transport | en |
+MSc | Production Systems Engineering | en |
+MSc | Management and Engineering in Production Systems | en | fee
+MSc | Biomedical Engineering | en |
+MSc | Media Informatics | en |
+MSc | Software Systems Engineering | en |
+MSc | Robotic Systems Engineering | en |
+MSc | Sustainable Energy Supply | en |
+MSc | Metallurgical Engineering | en |
+MSc | Mechanical Engineering | de |
+MSc | Applied Geosciences | en |
+MSc | Georesources Management | en |
+MSc | Physics | en |
+MSc | Computational Engineering Science | en |
+MSc | Aerospace Engineering | en |
+MSc | Chemical Engineering | en |
+MSc | Materials Engineering | en |
+MSc | Transport Engineering and Mobility | en |
+MSc | Molecular and Applied Biotechnology | en |
+
+@ UoC
+MSc | Economics | en |
+MSc | Information Systems | en |
+MSc | Physics | en |
+MSc | Biological Sciences | en |
+MA | Political Science | de |
+MSc | Molecular Medicine | en |
+MSc | Health Economics | en |
+
+@ University of Bonn
+MSc | Computer Science | en |
+MSc | Economics | en | sel
+MSc | Agricultural and Food Economics | en |
+MSc | Neurosciences | en |
+MSc | Life and Medical Sciences | en |
+MSc | Mathematics | en | sel
+MSc | Physics | en |
+MSc | Geography of Environmental Risks and Human Security | en |
+MA | Asian Studies | en |
+MSc | Crop Sciences | en |
+
+@ UM
+MSc | Information Systems | en |
+MSc | Geoinformatics and Spatial Data Science | en |
+MSc | Molecular Biomedicine | en |
+MSc | Mathematics | en |
+MSc | Economics | en |
+MA | National and Transnational Studies | en |
+
+@ RUB
+MSc | Lasers and Photonics | en |
+MSc | Computational Engineering | en |
+MSc | IT Security / Networks and Systems | de |
+MSc | Development Management | en |
+MSc | Subsurface Engineering | en |
+MSc | Civil Engineering | de |
+MSc | Neuroscience | en |
+MA | Economics | en |
+
+@ TU DO
+MSc | Manufacturing Technology | en | open
+MSc | Automation and Robotics | en | open
+MSc | Data Science | en |
+MSc | Spatial Planning for Regions in Growing Economies (SPRING) | en |
+MSc | Chemical Engineering | en |
+MSc | Mechanical Engineering | de |
+MSc | Logistics | de |
+MSc | Computer Science | de |
+
+@ UDE
+MSc | Computer Engineering | en | open
+MSc | Electrical and Electronic Engineering | en | open
+MSc | Mechanical Engineering | en | open
+MSc | Management and Technology of Water and Waste Water | en |
+MSc | Metallurgy and Metal Forming | en | open
+MSc | Automation and Control Engineering | en | open
+MSc | Communications Engineering | en | open
+MSc | Embedded Systems Engineering | en | open
+MSc | Power Engineering | en | open
+MSc | Steel Technology and Metal Forming | en | open
+MSc | Biomedical Engineering | en |
+MSc | Mechatronics | en |
+MSc | Ship and Offshore Technology | en |
+MSc | Nanoengineering | en |
+MA | Development and Governance | en |
+MSc | Transport Systems and Logistics | en |
+MSc | Energy Science | en |
+MSc | Environmental Toxicology | en |
+MSc | Applied Computer Science – Systems Engineering | en |
+
+@ HHU
+MSc | Economics | en |
+MSc | Biochemistry | en |
+MSc | Quantitative Biology | en |
+MSc | Computer Science | de |
+
+@ University of Wuppertal
+MSc | Computer Simulation in Science | en |
+MSc | Applied Mathematics | en |
+MSc | Information Technology | en |
+MA | Economic Policy and Development | en |
+
+@ USI
+MSc | Mechatronics | en | open
+MSc | Computer Science | en | open
+MSc | Electrical Engineering | en | open
+MSc | Mechanical Engineering | en | open
+MSc | Civil Engineering | en | open
+MSc | Business Informatics | en |
+MSc | Medical Physics and Engineering | en |
+MSc | Chemistry | en |
+MSc | Physics | en |
+MSc | International Business | en |
+
+@ UPB
+MSc | Electrical Systems Engineering | en | open
+MSc | Computer Science | en | open
+MSc | Mechanical Engineering | en |
+MSc | Industrial Engineering | de |
+MSc | Computer Engineering | en | open
+MSc | Optoelectronics and Photonics | en |
+MSc | International Economics and Management | en |
+MA | Cultural Studies | de |
+
+@ UNI BI
+MSc | Intelligent Systems | en |
+MSc | Interdisciplinary Media Studies | en |
+MSc | Data Science | en |
+MA | Sociology | en |
+MSc | Genome-Based Systems Biology | en |
+MSc | Economics | en |
+MPH | Public Health | de |
+
+@ FUH
+MSc | Practical Computer Science | de |
+
+@ UW/H
+MSc | Management | en | fee
+MA | Philosophy, Politics and Economics | en | fee
+
+@ DSHS
+MSc | Sport Management | en |
+MSc | Exercise Science and Coaching | en |
+
+@ FHAC
+MEng | Energy Systems | en | open
+MEng | Mechatronics | en |
+MSc | Electrical Engineering | en |
+MEng | Aerospace Engineering | en |
+MSc | Nuclear Applications | en |
+MEng | Biomedical Engineering | en |
+MSc | Applied Polymer Science | en |
+MSc | Mechanical Engineering | de |
+BEng | Mechanical Engineering | en |
+BEng | Electrical Engineering | en |
+BEng | Aerospace Engineering | en |
+
+@ THK
+MSc | Natural Resources Management and Development (ITT) | en |
+MSc | Integrated Water Resources Management | en |
+MEng | Automation and IT | en | open
+MSc | Renewable Energy Management | en |
+MSc | Communication Systems and Networks | en |
+MSc | Digital Sciences | en |
+MSc | Business Information Systems | de |
+MA | Business Administration | en |
+MEng | Mechanical Engineering | de |
+MSc | Pharmaceutical Engineering | en |
+
+@ HSD
+MSc | Simulation and Experimental Technology | de |
+MA | Interior Architecture | en |
+MSc | Electrical and Electronics Engineering | en |
+
+@ H-BRS
+MSc | Autonomous Systems | en |
+MSc | Analytical Chemistry and Quality Assurance | en |
+MSc | Biomedical Sciences | en |
+MSc | Technology and Innovation Communication | en |
+MSc | Electrical Engineering | en |
+MA | Innovation and Information Management | en |
+MSc | Cyber Security | en |
+BSc | Computer Science | de |
+
+@ FH DO
+MSc | Embedded Systems for Mechatronics | en | open
+MSc | Digital Transformation | en | open
+MSc | Computer Science | de |
+MA | Information Technology Management | de |
+
+@ BO
+MSc | International Infrastructure Engineering | en |
+MSc | Sustainable Mobility | en |
+MSc | Mechatronics | de |
+
+@ WH
+MSc | Applied Computer Science | de |
+MSc | Molecular Biology | en |
+MA | International Management | en |
+
+@ FHMS
+MSc | Business Administration | de |
+MSc | Food Science and Nutrition | de |
+MA | International Marketing and Sales | en |
+
+@ HSBI
+MSc | Research in Computer and Systems Engineering | en |
+MSc | Optimization and Simulation | en |
+MSc | Applied Computer Science | de |
+
+@ HSNR
+MSc | Textile and Clothing Management | en |
+MSc | Mechanical Engineering | de |
+MSc | Electrical Engineering | de |
+MSc | Health Care Management | de |
+MBA | International Business | en |
+
+@ TH OWL
+MSc | Information Technology | en |
+MSc | Food Science and Technology | en |
+MSc | Integrated Design | en |
+MA | Architecture | en |
+MSc | Industrial Engineering | de |
+
+@ FH SWF
+MSc | Systems Engineering and Engineering Management | en |
+MSc | Business Information Systems | de |
+MSc | Electrical Engineering | de |
+
+@ HSRW
+MSc | Information Engineering and Computer Science | en | open
+MSc | Mechanical Engineering | en | open
+MSc | Bionics / Biomimetics | en |
+MSc | Sustainable Agriculture | en |
+MA | International Management and Psychology | en |
+MSc | Biomaterials Science | en |
+MSc | Digital Media and Visual Communication | en |
+BSc | Electrical and Electronics Engineering | en | open
+BSc | Mechanical Engineering | en | open
+BSc | Industrial Engineering | en | open
+BSc | International Business and Social Sciences | en | open
+BSc | Bioengineering | en | open
+BSc | Mobile Autonomous Systems | en |
+BSc | Media and Communication Informatics | en |
+BSc | Agribusiness | en |
+BSc | Biomedical Engineering | en |
+BA | Gender and Diversity | en |
+BSc | Environment and Energy | en |
+BSc | Sustainable Agriculture | en |
+
+@ HSHL
+MSc | Product Development and Production | en | open
+MSc | Business and Systems Engineering | en | open
+BSc | Electronic Engineering | en | open
+BSc | Mechatronics | en | open
+BSc | Computer Science and Design | en |
+BSc | Intelligent Systems Design | en |
+
+@ HRW
+MSc | International Mechanical Engineering | en |
+MSc | Energy Systems | de |
+
+@ THGA
+MSc | Geotechnical Engineering and Mining | de |
+MSc | Mineral Resource and Process Engineering | en |
+
+@ RH
+MSc | Industrial Engineering | de | fee
+MBA | International Business | en | fee
+
+@ ISM
+MA | International Management | en | fee open
+MSc | Business Intelligence and Data Science | en | fee open
+MA | Finance | en | fee open
+BA | International Management | en | fee open
+
+@ CBS
+MA | International Business | en | fee open
+MA | International Culture and Tourism Management | en | fee
+BA | International Business | en | fee open
+
+@ FOM
+MBA | General Management | de | fee
+MSc | IT Management | de | fee
+
+@ EUFH
+BA | International Business | en | fee
+
+## Rhineland-Palatinate
+@ JGU
+MSc | Translational Neuroscience | en |
+MSc | Physics | en |
+MSc | Biomedicine | en |
+MA | International Economics and Public Policy | en |
+MSc | Computer Science | de |
+MA | American Studies | en |
+
+@ RPTU
+MSc | Commercial Vehicle Technology | en |
+MSc | Computer Science | en |
+MSc | Electrical and Computer Engineering | en |
+MSc | Mathematics International | en |
+MSc | Software Engineering for Embedded Systems | en | fee
+MSc | Nanobiophysics | en |
+MSc | Ecotoxicology | en |
+MSc | Environmental Sciences | de |
+MSc | Mechanical Engineering | de |
+
+@ Trier University
+MSc | Business Informatics | de |
+MA | Economics | en |
+MSc | Geoinformatics | de |
+MA | Governance | en |
+
+@ UKO
+MSc | Web and Data Science | en |
+MSc | Computer Science | de |
+
+@ HS MZ
+MA | International Business | en |
+MSc | Geoinformatics and Surveying | de |
+
+@ HS TR
+MSc | International Material Flow Management | en |
+MEng | Mechanical Engineering | de |
+MSc | Computer Science | de |
+
+@ HS KO
+MSc | Mechanical Engineering | de |
+MSc | Business Administration | de |
+
+@ HS KL
+MSc | Mechatronics | de |
+MSc | International Management | en |
+
+@ HS WO
+MA | International Business Management | en |
+MSc | Aviation Management | en |
+
+@ TH BI
+MSc | Agricultural Economics | de |
+MSc | Climate Protection and Adaptation | en |
+
+@ HWG LU
+MA | International Management | en |
+MA | Marketing | de |
+
+@ WHU
+MSc | Management | en | fee sel
+MSc | Finance | en | fee sel
+MBA | Full-time MBA | en | fee
+
+## Saarland
+@ UdS
+MSc | Computer Science | en | sel
+MSc | Data Science and Artificial Intelligence | en | sel
+MSc | Visual Computing | en |
+MSc | Embedded Systems | en |
+MSc | Cybersecurity | en |
+MSc | Language Science and Technology | en |
+MSc | Bioinformatics | en |
+MSc | Materials Science and Engineering | en |
+MSc | Physics | en |
+MSc | Systems Engineering | en |
+LLM | European and International Law | en |
+
+@ htw saar
+MSc | Engineering and Management | en |
+MSc | Computer Science and Communications Systems | de |
+MSc | Electrical Engineering | de |
+
+## Saxony
+@ TUD
+MSc | Computational Science and Engineering | en |
+MSc | Nanoelectronic Systems | en |
+MSc | Hydro Science and Engineering | en |
+MSc | Molecular Bioengineering | en |
+MSc | Computational Logic | en |
+MSc | Distributed Systems Engineering | en |
+MSc | Organic and Molecular Electronics | en |
+MSc | Water Management | en |
+MSc | Tropical Forestry | en |
+MSc | Mechanical Engineering | de |
+MSc | Electrical Engineering | de |
+MSc | Computer Science | en/de |
+MSc | Computational Modeling and Simulation | en |
+MSc | Nanobiophysics | en |
+MSc | Molecular Biosciences and Productive Biology | en |
+MSc | Landscape Architecture | de |
+MSc | Hydrobiology | en |
+MSc | Physics | en |
+MA | International Studies in Sustainable Development (CIPSEM) | en |
+MSc | Mathematics in Computer Science | en |
+
+@ Chemnitz University of Technology
+MSc | Automotive Software Engineering | en | open
+MSc | Advanced Manufacturing | en |
+MSc | Embedded Systems | en | open
+MSc | Micro and Nano Systems | en | open
+MSc | Sensors, Signals and Systems | en |
+MSc | Web Engineering | en | open
+MSc | Electromobility | en |
+MSc | Computational Science | en |
+MSc | Mechanical Engineering | en |
+MSc | Mechatronics | en |
+MSc | Lightweight Structures and Hybrid Systems | en |
+MSc | Digital Manufacturing Technologies | en |
+MSc | Data Science | en |
+MSc | Energy and Environmental Management | en |
+MA | Intercultural Communication | en |
+MSc | Organisational and Social Psychology | en |
+MSc | Information and Communication Systems | en | open
+MSc | Biomedical Engineering | en |
+MSc | Industrial Management and Engineering | en |
+MA | English and American Studies | en |
+MSc | Materials Science and Engineering | en |
+
+@ UL
+MSc | Data Science | en |
+MSc | Mathematical Physics | en |
+MSc | Global Studies | en |
+MA | Economics | en |
+MSc | Biochemistry | en |
+MA | Linguistics | en |
+MSc | Structural Chemistry and Spectroscopy | en |
+MA | European Studies | en |
+
+@ TUBAF
+MSc | Computational Materials Science | en | open
+MSc | Sustainable Mining and Remediation Management | en |
+MSc | Advanced Mineral Resource Development | en |
+MSc | Geoscience | en |
+MSc | Groundwater Management | en |
+MSc | International Management of Resources and Environment | en |
+MSc | Metallic Materials Technology | en |
+MSc | Mechanical Engineering | en |
+MSc | Advanced Materials Analysis | en |
+MSc | Chemical Engineering | en |
+MSc | Sustainable and Innovative Natural Resource Management (SINReM) | en |
+
+@ HTWD
+MSc | Mechatronics | de |
+MSc | Applied Computer Science | de |
+MSc | Hydrogeology and Engineering Geology | en |
+
+@ HTWK
+MSc | Engineering of Sustainable Construction | de |
+MSc | Computer Science | de |
+MSc | Electrical Engineering and Information Technology | de |
+
+@ HSMW
+MSc | Industrial Engineering | de |
+MSc | Applied Mathematics in Digital Media | de |
+MSc | Blockchain and Distributed Ledger Technologies | de |
+
+@ WHZ
+MSc | Automotive Engineering | de |
+MSc | Computer Science | de |
+MSc | Industrial Management | en |
+
+@ HSZG
+MSc | Mechatronics | de |
+MSc | Energy Science | de |
+
+@ HHL
+MSc | Management | en | fee
+MBA | Full-time MBA | en | fee
+
+## Saxony-Anhalt
+@ MLU
+MSc | Applied Statistics | en |
+MSc | International Area Studies | en |
+MSc | Crop Science | en |
+MA | Economics | en |
+MSc | Biochemistry | en |
+MSc | Molecular Biosciences | en |
+MSc | Sustainable Development | en |
+
+@ OVGU
+MSc | Digital Engineering | en | open
+MSc | Data and Knowledge Engineering | en | open
+MSc | Electrical Engineering and Information Technology | en | open
+MSc | Mechanical Engineering | en | open
+MSc | Chemical and Energy Engineering | en | open
+MSc | Medical Systems Engineering | en | open
+MSc | Industrial Engineering and Logistics | en | open
+MSc | Computer Science | en | open
+MSc | Electromobility | en |
+MSc | Process Engineering | en |
+MSc | Integrated Design Engineering | en |
+MSc | Neuroscience | en |
+MSc | Visual Computing | en |
+MSc | Financial Economics | en |
+MSc | Medical Neuroscience | en |
+MSc | Mathematics | en |
+MSc | Peace and Conflict Studies | de |
+MSc | Information and Communication Technology | en |
+
+@ H2
+MSc | Water Engineering | en |
+MSc | Engineering Ecology | de |
+MA | International Business | en |
+
+@ HSA
+MSc | Food and Agribusiness | en | open
+MSc | Biomedical Engineering | en | open
+MSc | Data Science | en | open
+MSc | Computer Science and Engineering | en | open
+MSc | Landscape Architecture | en | open
+MSc | Architecture | en |
+MSc | Biotechnology | en | open
+MSc | Electrical and Information Engineering | en | open
+MSc | Information Technology | en | open
+MBA | International Trade | en | open
+MA | Global Production Engineering and Management | en |
+MSc | Industrial Engineering | en |
+MSc | Monument Conservation | de |
+
+@ HS Harz
+MA | Business Consulting | de |
+MSc | Information Technology | de |
+
+@ HoMe
+MSc | Mechatronics | de |
+MSc | Chemistry and Environment | de |
+
+## Schleswig-Holstein
+@ CAU
+MSc | Environmental Management | en |
+MSc | Agricultural Economics | en |
+MSc | Biological Oceanography | en |
+MSc | Quantitative Economics | en |
+MSc | Coastal Geosciences and Engineering | en |
+MSc | Electrical Engineering and Information Technology | en/de |
+MSc | Computer Science | de |
+MSc | Materials Science | en |
+MSc | Climate Physics | en |
+MSc | Sustainability, Society and the Environment | en |
+
+@ UzL
+MSc | Infection Biology | en |
+MSc | Molecular Life Science | en |
+MSc | Medical Informatics | de |
+MSc | Robotics and Autonomous Systems | en |
+
+@ EUF
+MA | European Studies | en |
+MSc | Energy and Environmental Management | en |
+MA | International Management | en |
+
+@ FH Kiel
+MSc | Information Engineering | en |
+MSc | Mechanical Engineering | de |
+MSc | Business Administration | de |
+
+@ THL
+MSc | Biomedical Engineering | en |
+MSc | Environmental Engineering | en |
+MSc | Information Technology | de |
+
+@ HS FL
+MSc | Wind Engineering | en |
+MSc | Business Informatics | de |
+
+@ Wedel University of Applied Sciences
+MSc | Computer Science | de |
+MSc | Data Science and Artificial Intelligence | de |
+
+## Thuringia
+@ FSU
+MSc | Photonics | en |
+MSc | Microbiology | en |
+MSc | Molecular Life Sciences | en |
+MSc | Economics | en |
+MSc | Geoinformatics | en |
+MSc | Evolution, Ecology and Systematics | en |
+MSc | Computational and Data Science | en |
+MSc | Chemical Biology | en |
+
+@ TU IL
+MSc | Research in Computer and Systems Engineering | en | open
+MSc | Communications and Signal Processing | en | open
+MSc | Micro- and Nanotechnologies | en |
+MSc | Electrical Power and Control Engineering | en | open
+MSc | Mechatronics | en |
+MSc | Computer Science | en |
+MSc | Biomedical Engineering | en |
+MSc | Optical Systems Engineering | en |
+MSc | Precision Engineering | en |
+MSc | Media and Communication Science | en |
+MSc | Mathematics | en |
+MSc | Technical Physics | en |
+
+@ Bauhaus-Universität Weimar
+MSc | Digital Engineering | en |
+MSc | Computer Science for Digital Media | en |
+MSc | Integrated Urban Development and Design | en |
+MSc | Natural Hazards and Risks in Structural Engineering | en |
+MSc | Human-Computer Interaction | en |
+MSc | Advanced Urbanism | en |
+MA | Media Architecture | en |
+MSc | Environmental Engineering | en |
+
+@ University of Erfurt
+MA | Public Policy | en | fee
+MA | International Relations | de |
+
+@ FHE
+MSc | Renewable Energies | de |
+MSc | Applied Computer Science | de |
+
+@ EAH
+MSc | Scientific Instrumentation | en |
+MSc | Medical Photonics | en |
+MSc | Mechatronics | de |
+
+@ HSN
+MSc | Renewable Energy Systems | en |
+MA | Social Management | de |
+
+@ HSM
+MSc | International Business and Economics | en |
+MEng | Mechatronics and Robotics | de |
+MSc | Mechanical Engineering | de |
+
+## Online / multi-campus
+@ IU
+MSc | Computer Science | en | fee open
+MSc | Data Science | en | fee open
+MSc | Artificial Intelligence | en | fee open
+MBA | International MBA | en | fee open
+MA | International Management | en | fee open
+MSc | Cyber Security | en | fee open
+MSc | Engineering Management | en | fee open
+MA | Marketing Management | en | fee open
+MSc | Software Engineering | en | fee open
+BSc | Computer Science | en | fee open
+BSc | Data Science | en | fee open
+BA | International Management | en | fee open
+BSc | Software Development | en | fee open

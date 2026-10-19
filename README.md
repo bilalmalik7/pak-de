@@ -1,11 +1,12 @@
 # DeutschDreams: Study in Germany from Pakistan
 
 A fast, animated, SEO-focused website for a study-in-Germany consultancy serving Pakistani students:
-plain HTML, CSS and JavaScript, with an **optional AI Profile Analyzer** powered by Claude.
+plain HTML, CSS and JavaScript, with an **optional AI Profile Analyzer** and an **AI Programme Finder** (transcript
+reading, eligibility and admission chances for 1,148 programmes) powered by Claude.
 
 The site works on any static host (GitHub Pages, Netlify, Vercel). The AI report needs a host that runs
-serverless functions (Vercel or Netlify) plus an Anthropic API key. Without them, the analyzer falls back
-to its built-in engine automatically.
+serverless functions (Vercel or Netlify) plus an Anthropic API key. Without them, the analyzer and the
+programme finder fall back to their built-in engines automatically.
 
 ## Pages
 
@@ -13,6 +14,7 @@ to its built-in engine automatically.
 | --- | --- |
 | `index.html` | Home: hero with the counsellor illustration and an animated flight path from Pakistan to Germany, university marquee, "Why Germany" counters, journey preview, services, "Your GPA doesn't define you", packages, AI analyzer teaser, stories, booklets, an Urdu section and FAQ |
 | `universities.html` | **Explorer of 321 German universities**: search plus filters by state, type, subject, sector, no tuition, popular with Pakistanis, TU9 and medical faculty. Tuition rules, programme examples, and website + DAAD links on every card |
+| `programme-finder.html` | **AI Programme Finder**: search 1,148 programmes at 217 German universities by keyword, describe a degree in one line, or upload a transcript (PDF / photo). Every programme gets a subject fit and an estimated admission chance; AI reviews the top matches; live DAAD results are added to keyword searches. Shortlist and send to WhatsApp |
 | `pakistani-universities.html` | **193 Pakistani universities** by province, field and sector, plus a guide to getting a Pakistani degree accepted in Germany (16-year rule, HEC, anabin, uni-assist) |
 | `profile-analyzer.html` | **AI Profile Analyzer**: a 4-step form, then an animated analysis that converts the CGPA (Modified Bavarian Formula), scores the profile, matches against the German university database and produces a full report: strengths, risks, best-fit universities with match %, a dated strategy, SOP angle, routes, and a note for parents in Urdu. Shareable to WhatsApp and printable as a PDF |
 | `journey.html` | The 10-step journey on a scroll-driven timeline, intakes, and Master's / Bachelor's / Ausbildung tracks |
@@ -32,15 +34,62 @@ to its built-in engine automatically.
    - uses Anthropic's server-side refusal fallback (`fallbacks: "default"`), so a declined request is retried on Anthropic's recommended fallback model.
 3. **Fallback.** If the endpoint is missing, slow or fails, the engine writes the report itself. The badge shows "AI counsellor report" or "Smart engine report".
 
+## How the AI Programme Finder works
+
+`assets/js/finder.js` scores every programme in `assets/data/programmes.json` for one student:
+
+- **Subject fit.** `_build/data/topics.json` defines 38 subject areas, each with a pattern for programme names and one for
+  course titles. Programmes are tagged at build time; a student's degree title and course list are tagged in the browser
+  (course credits add weight). Related areas count as partial fit (`"near"`, e.g. Computer Science → Data Science 0.85).
+  German master's programmes require a "closely related" bachelor's, so a weak fit caps the chance.
+- **Grade.** CGPA or percentage → German grade (Modified Bavarian Formula), compared with what is usually competitive at
+  that kind of university (TU9 ≈ 2.3, research/technical ≈ 2.6, applied sciences ≈ 3.1, private ≈ 3.7; `sel` and `open`
+  programme flags shift it).
+- **Eligibility.** 16-year rule for master's, English score (IELTS 6.5 or equivalent), German C1 for German-taught
+  programmes, Studienkolleg after FSc.
+
+The result is shown as a percentage with a label (Strong / Good / Possible / Reach / Subject mismatch). It is an
+estimate, and the page says so.
+
+Ways in:
+
+1. **Search**: keywords, synonyms (CS, EE, AI, MBA…) and subjects. With `daadEndpoint` set, `/api/daad` also queries
+   DAAD's International Programmes search live and shows those results in their own section, credited to DAAD.
+2. **Describe my degree**: the text is parsed on the device (degree, CGPA/percentage, IELTS/PTE/TOEFL, German level,
+   courses, interests). If the student leaves "Use AI" ticked, `/api/transcript` reads it with Claude for better accuracy.
+3. **Upload transcript**: text PDFs are read on the device with pdf.js (loaded from cdnjs only when needed). Photos and
+   scanned PDFs need the student to tick "Let AI read my transcript": the file goes to `/api/transcript`, where Claude
+   returns the degree, level, CGPA, courses and credits as JSON (never names, roll or CNIC numbers). Nothing is stored.
+
+After an AI-assisted analysis, `/api/programme-advice` sends an anonymous summary plus the top 10 matches to Claude,
+which returns an eligibility review and a verdict per programme (apply / consider / stretch / skip). Notes about
+programmes that weren't in the list are dropped. The finder never calls AI when the student has opted out.
+
+The Profile Analyzer report links to the finder with the student's profile filled in, and every university card links
+to that university's programmes.
+
+### Programme data
+
+`_build/data/programmes.txt` lists programmes per university (`@ <short code or full name>`, then
+`degree | programme | language | flags`). It was curated by hand from university and DAAD listings and covers the
+programmes Pakistani students apply to most, mostly English-taught. Programmes close and get renamed, so review the
+file every intake; each card links to the university and to a DAAD search for that programme.
+
+**Live DAAD search:** DAAD's website loads results from an undocumented JSON endpoint
+(`server/programmes-core.mjs`, override with the `DAAD_SEARCH_URL` environment variable). It is not a versioned public
+API, so the function reads several possible field names and the page simply hides the DAAD section if the call fails.
+**Check that it works after deploying, and read DAAD's terms of use before relying on it.** The data belongs to DAAD,
+and results are shown with credit and links back. To switch it off, set `daadEndpoint: ""` in `assets/js/main.js`.
+
 ### Turn on the AI report
 
-**Vercel:** import the repo (no build command, output directory `.`), then add the environment variable `ANTHROPIC_API_KEY` under *Settings → Environment Variables*. `api/analyze.js` is picked up automatically and `vercel.json` gives it up to 60 seconds.
+**Vercel:** import the repo (no build command, output directory `.`), then add the environment variable `ANTHROPIC_API_KEY` under *Settings → Environment Variables*. The functions in `api/` (`analyze`, `transcript`, `programme-advice`, `daad`) are picked up automatically and `vercel.json` gives the AI ones up to 60 seconds. Vercel limits request bodies to 4.5 MB, so the finder sends PDFs of up to 3 MB and resizes photos before upload.
 
-**Netlify:** import the repo (publish directory `.`, no build command) and add `ANTHROPIC_API_KEY` under *Site configuration → Environment variables*. `netlify/functions/analyze.mjs` serves `/api/analyze`. Netlify's default function timeout is short, so if reports time out, raise the function timeout or use Vercel.
+**Netlify:** import the repo (publish directory `.`, no build command) and add `ANTHROPIC_API_KEY` under *Site configuration → Environment variables*. `netlify/functions/*.mjs` serve `/api/analyze`, `/api/transcript`, `/api/programme-advice` and `/api/daad`. Netlify's default function timeout is short, so if reports time out, raise the function timeout or use Vercel.
 
-Optional: set `ANTHROPIC_MODEL` to use a different Claude model. To switch AI off entirely, set `aiEndpoint: ""` in `assets/js/main.js`.
+Optional: set `ANTHROPIC_MODEL` to use a different Claude model. To switch AI off entirely, set `aiEndpoint`, `transcriptEndpoint` and `adviceEndpoint` to `""` in `assets/js/main.js`.
 
-**Cost and abuse:** each AI report is one Claude API call, typically a few US cents. Set a monthly spend limit in the Anthropic Console, and consider your host's rate limiting or firewall rules for `/api/analyze`.
+**Cost and abuse:** each AI report is one Claude API call, typically a few US cents. A transcript analysis is one call (a multi-page PDF costs more than a typed description), plus one call for the match review. Set a monthly spend limit in the Anthropic Console, and consider your host's rate limiting or firewall rules for `/api/analyze`, `/api/transcript` and `/api/programme-advice`.
 
 ## University data
 
@@ -56,7 +105,7 @@ To edit, change the `.txt` files (the format is documented at the top of each), 
 Pages are plain HTML generated from `_build/pages/*.html` by a small Python script, which adds the shared header, footer, SEO tags and university data:
 
 ```bash
-python3 _build/gen.py   # rebuilds all pages, assets/data/*.json and sitemap.xml
+python3 _build/gen.py   # rebuilds all pages, assets/data/*.json (universities, programmes, topics) and sitemap.xml
 ```
 
 Edit the files in `_build/pages/` (not the generated `.html` at the root), then run the command. GitHub Pages ignores `_build/` automatically, and `robots.txt` keeps crawlers out of it.

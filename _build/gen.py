@@ -17,6 +17,7 @@ NAV = [
     ("journey.html", "Journey"),
     ("packages.html", "Packages"),
     ("universities.html", "Universities"),
+    ("programme-finder.html", "Programmes"),
     ("profile-analyzer.html", "AI Analyzer"),
     ("reviews.html", "Reviews"),
     ("guides.html", "Guides"),
@@ -112,6 +113,8 @@ def footer():
         ("packages.html", "Study in Germany consultancy fees"),
         ("profile-analyzer.html", "Check eligibility for Germany"),
         ("profile-analyzer.html", "AI university matcher for Germany"),
+        ("programme-finder.html", "Masters programmes in Germany in English"),
+        ("programme-finder.html#transcript", "Check eligibility from transcript"),
         ("universities.html", "List of universities in Germany"),
         ("pakistani-universities.html", "HEC recognised universities list"),
         ("pakistani-universities.html#ready-title", "Pakistani degree recognition in Germany"),
@@ -132,6 +135,7 @@ def footer():
             <li><a href="journey.html">Your Journey</a></li>
             <li><a href="packages.html">Packages &amp; Fees</a></li>
             <li><a href="universities.html">Universities in Germany</a></li>
+            <li><a href="programme-finder.html">AI Programme Finder</a></li>
             <li><a href="pakistani-universities.html">Pakistani Universities</a></li>
             <li><a href="profile-analyzer.html">AI Profile Analyzer</a></li>
             <li><a href="reviews.html">Student Stories</a></li>
@@ -290,12 +294,12 @@ def build(src, ph):
 
 
 if __name__ == "__main__":
-    de, pk = data.write_json(OUT)
-    ph = data.placeholders(de, pk)
+    de, pk, progs, topics = data.write_json(OUT)
+    ph = data.placeholders(de, pk, progs, topics)
     built = [build(p, ph) for p in sorted(glob.glob(os.path.join(HERE, "pages", "*.html")))]
-    print(f"data: {len(de)} German, {len(pk)} Pakistani universities")
+    print(f"data: {len(de)} German, {len(pk)} Pakistani universities, {len(progs)} programmes")
     # sitemap
-    prio = {"index.html": "1.0", "study-in-germany-from-pakistan.html": "0.9", "profile-analyzer.html": "0.9", "packages.html": "0.9", "low-gpa-germany.html": "0.9", "universities.html": "0.9", "pakistani-universities.html": "0.9"}
+    prio = {"index.html": "1.0", "study-in-germany-from-pakistan.html": "0.9", "profile-analyzer.html": "0.9", "programme-finder.html": "0.9", "packages.html": "0.9", "low-gpa-germany.html": "0.9", "universities.html": "0.9", "pakistani-universities.html": "0.9"}
     urls = []
     for path, meta in built:
         if path == "404.html":
