@@ -6,7 +6,10 @@
   var SITE = {
     whatsapp: "4915563342092", // international format, no "+" or spaces
     email: "hello@deutschdreams.pk",
-    aiEndpoint: "/api/analyze" // AI Profile Analyzer endpoint; set to "" to always use the on-device report
+    aiEndpoint: "/api/analyze", // AI Profile Analyzer endpoint; set to "" to always use the on-device report
+    transcriptEndpoint: "/api/transcript", // Programme Finder: AI transcript reading; "" = on-device reading only
+    adviceEndpoint: "/api/programme-advice", // Programme Finder: AI review of the top matches; "" = off
+    daadEndpoint: "/api/daad" // Programme Finder: live DAAD search; "" = our catalogue only
   };
   window.DD_SITE = SITE;
 

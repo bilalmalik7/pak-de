@@ -3,6 +3,7 @@ import hashlib
 import html
 import json
 import os
+import re
 import urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -83,13 +84,76 @@ def load_pk():
     ]
 
 
+DEGREES = {"MSc", "MA", "MEng", "MBA", "LLM", "MRes", "MPH", "MPP", "MIA", "BSc", "BA", "BEng", "BBA"}
+LANGS = {"en", "de", "en/de"}
+PROG_FLAGS = {"sel", "open", "fee", "ects210"}
+
+
+def load_topics():
+    with open(os.path.join(HERE, "data", "topics.json"), encoding="utf-8") as f:
+        return json.load(f)
+
+
+def tag_topics(name, topics):
+    """Topic ids whose programme regex matches the name, earliest match first (the first one is the primary subject)."""
+    hits = []
+    for t in topics:
+        m = re.search(t["p"], name, re.I)
+        if m:
+            hits.append((m.start(), -(m.end() - m.start()), t["id"]))
+    return [tid for _, _, tid in sorted(hits)]
+
+
+def load_programmes(de, topics):
+    """Parse programmes.txt: '@ <university>' header lines, then 'degree | name | language | flags' rows."""
+    by_key = {}
+    for u in de:
+        for key in (u["s"], u["n"], u["id"]):
+            by_key.setdefault(key, []).append(u)
+    progs, uni, seen = [], None, set()
+    for line in open(os.path.join(HERE, "data", "programmes.txt"), encoding="utf-8"):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("@"):
+            key = line[1:].strip()
+            found = by_key.get(key, [])
+            if len(found) != 1:
+                raise ValueError(f"programmes.txt: university {key!r} is {'ambiguous' if found else 'unknown'}; use its full name")
+            uni = found[0]
+            continue
+        parts = [p.strip() for p in line.split("|")]
+        if uni is None or len(parts) != 4:
+            raise ValueError(f"programmes.txt: bad line {line!r}")
+        degree, name, lang, flags = parts
+        flags = flags.split()
+        if degree not in DEGREES or lang not in LANGS or not set(flags) <= PROG_FLAGS:
+            raise ValueError(f"programmes.txt: bad degree, language or flag in {line!r}")
+        pid = uni["id"] + "--" + slug(f"{name} {degree}")
+        if pid in seen:
+            raise ValueError(f"programmes.txt: duplicate {line!r}")
+        seen.add(pid)
+        progs.append({
+            "id": pid, "u": uni["id"], "n": name, "dg": degree, "lv": "b" if degree.startswith("B") else "m",
+            "l": lang, "t": tag_topics(name, topics), "f": flags,
+        })
+    return progs
+
+
 def write_json(out_dir):
     os.makedirs(os.path.join(out_dir, "assets", "data"), exist_ok=True)
     de, pk = load_de(), load_pk()
-    for fname, data in (("universities-de.json", de), ("universities-pk.json", pk)):
+    topics = load_topics()
+    progs = load_programmes(de, topics["topics"])
+    counts = {}
+    for p in progs:
+        counts[p["u"]] = counts.get(p["u"], 0) + 1
+    for u in de:
+        u["np"] = counts.get(u["id"], 0)
+    for fname, data in (("universities-de.json", de), ("universities-pk.json", pk), ("programmes.json", progs), ("topics.json", topics)):
         with open(os.path.join(out_dir, "assets", "data", fname), "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
-    return de, pk
+    return de, pk, progs, topics
 
 
 def e(s):
@@ -116,6 +180,8 @@ def de_card(u):
     links = []
     if u["d"]:
         links.append(f'<a href="https://{e(u["d"])}" target="_blank" rel="noopener nofollow">Website ↗</a>')
+    if u.get("np"):
+        links.append(f'<a href="programme-finder.html?uni={u["id"]}">{u["np"]} programmes: check my chances →</a>')
     links.append(f'<a href="{e(daad_url(u))}" target="_blank" rel="noopener nofollow">English programmes (DAAD) ↗</a>')
     return (
         f'<article class="card uni-card" id="{u["id"]}" data-state="{e(u["st"])}" data-kind="{u["k"]}" '
@@ -144,7 +210,23 @@ def options(values):
     return "".join(f'<option value="{e(v)}">{e(v)}</option>' for v in values)
 
 
-def placeholders(de, pk):
+def programme_index(de, progs, topics):
+    """Crawlable index of every programme, grouped by primary subject (the finder renders the interactive results)."""
+    unis = {u["id"]: u for u in de}
+    groups = []
+    for t in topics["topics"]:
+        rows = sorted((p for p in progs if p["t"] and p["t"][0] == t["id"]), key=lambda p: (p["lv"] != "m", p["n"], unis[p["u"]]["n"]))
+        if not rows:
+            continue
+        items = "".join(
+            f'<li><a href="programme-finder.html?p={p["id"]}">{e(p["dg"])} {e(p["n"])}</a> · {e(unis[p["u"]]["n"])}, {e(unis[p["u"]]["c"])}'
+            f'{" · German-taught" if p["l"] == "de" else ""}</li>' for p in rows
+        )
+        groups.append(f'<details class="prog-index-group"><summary>{e(t["label"])} <span>{len(rows)}</span></summary><ul>{items}</ul></details>')
+    return "\n".join(groups)
+
+
+def placeholders(de, pk, progs, topics):
     states = sorted({u["st"] for u in de})
     provinces = ["Islamabad", "Punjab", "Sindh", "Khyber Pakhtunkhwa", "Balochistan", "Azad Jammu & Kashmir", "Gilgit-Baltistan"]
     de_schema = {
@@ -184,4 +266,10 @@ def placeholders(de, pk):
         "{{PK_FOCUS_OPTIONS}}": "".join(f'<option value="{k}">{e(v)}</option>' for k, v in PK_FOCUS.items()),
         "{{PK_DATALIST}}": "".join(f'<option value="{e(u["n"])}">' for u in pk),
         "{{PK_SCHEMA}}": json.dumps(pk_schema, ensure_ascii=False, separators=(",", ":")),
+        "{{PROG_COUNT}}": f"{len(progs):,}",
+        "{{TOPIC_COUNT}}": str(len(topics["topics"])),
+        "{{PROG_EN_COUNT}}": f'{sum(p["l"] != "de" for p in progs):,}',
+        "{{PROG_UNI_COUNT}}": str(len({p["u"] for p in progs})),
+        "{{PROG_INDEX}}": programme_index(de, progs, topics),
+        "{{TOPIC_OPTIONS}}": "".join(f'<option value="{t["id"]}">{e(t["label"])}</option>' for t in sorted(topics["topics"], key=lambda t: t["label"])),
     }

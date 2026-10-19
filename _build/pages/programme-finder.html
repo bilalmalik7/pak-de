@@ -1,0 +1,227 @@
+<!--meta
+{
+  "path": "programme-finder.html",
+  "crumb": "Programme Finder",
+  "title": "AI Programme Finder: Master's in Germany & Your Admission Chances",
+  "description": "Search {{PROG_COUNT}} degree programmes at {{PROG_UNI_COUNT}} German universities, or upload your transcript: our AI checks eligibility and estimates your chances.",
+  "keywords": "masters in Germany for Pakistani students, English taught masters Germany list, check eligibility for masters in Germany, transcript evaluation Germany, admission chances Germany calculator, MS in Germany after BS electrical engineering, MS computer science Germany requirements, DAAD programme search, German university course finder, which university in Germany can I get admission with my CGPA",
+  "scripts": ["assets/js/finder.js"],
+  "schema": [{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "DeutschDreams AI Programme Finder",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any (web browser)",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "PKR"},
+    "description": "Free AI tool for Pakistani students: search degree programmes in Germany, upload a transcript or describe a degree, and get eligibility checks and estimated admission chances for each programme."
+  }]
+}
+-->
+    <section class="page-hero grain">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="stars-bg" aria-hidden="true"></div>
+      <div class="container">
+        <ol class="breadcrumbs reveal"><li><a href="index.html">Home</a></li><li>Programme Finder</li></ol>
+        <p class="eyebrow reveal">AI programme finder · Free</p>
+        <h1 data-split>Find your programme. <span class="accent">Know your chances.</span></h1>
+        <p class="lead reveal" style="--d:.4s">Search {{PROG_COUNT}} programmes by keyword, describe your degree in one line, or upload your transcript. Our AI reads your courses and CGPA, checks which programmes you're eligible for, and estimates your chances at each one.</p>
+        <div class="hero-chips reveal" style="--d:.55s"><span class="chip">🎓 {{PROG_COUNT}} programmes · {{PROG_UNI_COUNT}} universities</span><span class="chip">📄 Transcript analysis</span><span class="chip">📊 Chance for every programme</span><span class="chip">🌐 Live DAAD search</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Programme finder" style="padding-top:48px">
+      <div class="container finder" id="finder">
+        <div class="finder-tabs reveal" role="tablist" aria-label="How do you want to search?">
+          <button type="button" role="tab" id="tab-search" aria-controls="mode-search" aria-selected="true" data-mode="search"><em aria-hidden="true">🔎</em><span>Search programmes<small>Keywords, subjects, cities</small></span></button>
+          <button type="button" role="tab" id="tab-describe" aria-controls="mode-describe" aria-selected="false" data-mode="describe" tabindex="-1"><em aria-hidden="true">✍️</em><span>Describe my degree<small>"BS Electrical, 3.1 CGPA…"</small></span></button>
+          <button type="button" role="tab" id="tab-transcript" aria-controls="mode-transcript" aria-selected="false" data-mode="transcript" tabindex="-1"><em aria-hidden="true">📄</em><span>Upload transcript<small>PDF or photo, AI reads it</small></span></button>
+        </div>
+
+        <div class="finder-grid">
+          <div class="finder-input panel reveal">
+            <!-- Mode 1: keyword search -->
+            <form class="finder-mode" id="mode-search" role="tabpanel" aria-labelledby="tab-search" data-mode-panel="search">
+              <label class="search-box finder-search"><span aria-hidden="true">🔎</span><span class="sr-only">Search programmes</span><input type="search" name="q" id="f-q" autocomplete="off" placeholder="e.g. renewable energy, data science Munich, embedded…"><button class="btn btn-primary btn-sm" type="submit">Search</button></label>
+              <div class="finder-suggest" aria-label="Popular searches">
+                <span>Popular:</span>
+                <button type="button" data-q="computer science">Computer Science</button>
+                <button type="button" data-q="data science">Data Science</button>
+                <button type="button" data-q="electrical engineering">Electrical</button>
+                <button type="button" data-q="mechanical engineering">Mechanical</button>
+                <button type="button" data-q="renewable energy">Renewable Energy</button>
+                <button type="button" data-q="business management">Business &amp; MBA</button>
+                <button type="button" data-q="civil engineering">Civil</button>
+                <button type="button" data-q="public health">Public Health</button>
+                <button type="button" data-q="agriculture">Agriculture</button>
+              </div>
+            </form>
+
+            <!-- Mode 2: describe -->
+            <form class="finder-mode" id="mode-describe" role="tabpanel" aria-labelledby="tab-describe" data-mode-panel="describe" hidden>
+              <div class="field"><label for="f-describe">Tell us about your education and what you want to study</label>
+                <textarea class="textarea" id="f-describe" name="describe" maxlength="3000" placeholder="e.g. BS Electrical Engineering from UET Lahore, CGPA 3.1, IELTS 6.5. Courses I liked: power systems, control systems, power electronics. I want to do my master's in renewable energy."></textarea>
+                <small>Mention your degree, CGPA or percentage, English test and the subjects you enjoyed. You can also paste the course list from your transcript.</small></div>
+              <label class="consent"><input type="checkbox" name="useAi" checked> <span>Use AI to read my description more accurately (no name needed; nothing is stored)</span></label>
+              <button class="btn btn-primary" type="submit">Find my programmes ✨</button>
+            </form>
+
+            <!-- Mode 3: transcript -->
+            <form class="finder-mode" id="mode-transcript" role="tabpanel" aria-labelledby="tab-transcript" data-mode-panel="transcript" hidden>
+              <label class="dropzone" for="f-file" data-dropzone>
+                <input type="file" id="f-file" name="file" accept="application/pdf,image/jpeg,image/png,image/webp,.pdf,.jpg,.jpeg,.png,.webp">
+                <span class="dz-ico" aria-hidden="true">📄</span>
+                <b data-dz-title>Drop your transcript here or tap to choose</b>
+                <small data-dz-sub>PDF, JPG or PNG · up to 10 MB · degree transcript, mark sheet or CV</small>
+              </label>
+              <label class="consent"><input type="checkbox" name="useAi" id="f-ai-consent"> <span><b>Let AI read my transcript.</b> Needed for photos and scanned PDFs. The file is sent securely to our AI provider for this one analysis. It is not stored, and names and ID numbers are not extracted. Without this, text PDFs are read on your device only.</span></label>
+              <button class="btn btn-primary" type="submit">Analyse my transcript ✨</button>
+              <details class="paste-alt"><summary>No file? Paste your course list instead</summary>
+                <textarea class="textarea" name="pasted" maxlength="30000" placeholder="Paste the text of your transcript: course titles, credit hours, grades, CGPA…"></textarea>
+              </details>
+            </form>
+
+            <!-- Shared profile -->
+            <div class="finder-profile" id="finder-profile">
+              <div class="fp-head"><h3>🧑‍🎓 Your profile</h3><p data-profile-note>Optional for search. Add it to see your chances.</p></div>
+              <div class="fp-grid">
+                <label class="fp-field"><span>Applying for</span>
+                  <select class="select" name="target" data-p="target"><option value="master">Master's</option><option value="bachelor">Bachelor's</option></select></label>
+                <label class="fp-field"><span>Your qualification</span>
+                  <select class="select" name="qual" data-p="qual">
+                    <option value="">Not set</option>
+                    <option value="bs16">16-year Bachelor's (BS / BE / BBA)</option>
+                    <option value="ms18">MS / MPhil (18 years)</option>
+                    <option value="ba14">14-year BA / BSc</option>
+                    <option value="fsc">FSc / ICS / ICom</option>
+                    <option value="alevels">A-Levels</option>
+                  </select></label>
+                <label class="fp-field"><span>CGPA / %</span>
+                  <span class="fp-grade"><input class="input" name="grade" data-p="grade" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="3.10"><select class="select" name="scale" data-p="scale" aria-label="Grading scale"><option value="4">/ 4.0</option><option value="100">%</option></select></span></label>
+                <label class="fp-field"><span>English</span>
+                  <span class="fp-grade"><select class="select" name="english" data-p="english" aria-label="English test"><option value="">Not set</option><option value="ielts">IELTS</option><option value="pte">PTE</option><option value="toefl">TOEFL</option><option value="duolingo">Duolingo</option><option value="moi">MOI letter</option><option value="none">No test yet</option></select><input class="input" name="engScore" data-p="engScore" type="number" inputmode="decimal" min="0" max="160" step="0.5" placeholder="6.5" aria-label="English score"></span></label>
+                <label class="fp-field"><span>German</span>
+                  <select class="select" name="german" data-p="german"><option value="none">None</option><option value="a1">A1</option><option value="a2">A2</option><option value="b1">B1</option><option value="b2">B2</option><option value="c1">C1+</option></select></label>
+                <label class="fp-field"><span>Field of your degree</span>
+                  <select class="select" name="field" data-p="field"><option value="">Detect from text</option>{{TOPIC_OPTIONS}}</select></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- What we understood -->
+          <aside class="finder-insight panel reveal" id="finder-insight" aria-live="polite">
+            <div data-insight-empty>
+              <span class="big-emoji" aria-hidden="true">🧭</span>
+              <h3>Your eligibility snapshot</h3>
+              <p>Describe your degree or upload a transcript and we'll show your German grade, your strongest subjects and how many programmes you qualify for.</p>
+              <ul class="insight-how">
+                <li><b>1</b> We read your degree, courses and CGPA</li>
+                <li><b>2</b> We convert your grade with the Modified Bavarian Formula</li>
+                <li><b>3</b> We score subject fit and chances for {{PROG_COUNT}} programmes</li>
+                <li><b>4</b> AI reviews your best matches</li>
+              </ul>
+            </div>
+            <div data-insight-body hidden>
+              <span class="report-badge" data-insight-source>⚡ Read on your device</span>
+              <h3 data-insight-degree>—</h3>
+              <p class="insight-inst" data-insight-inst></p>
+              <div class="grade-box">
+                <div><b data-insight-gg>—</b><small>German grade</small></div>
+                <div><b data-insight-eligible>—</b><small>Programmes you can apply to</small></div>
+              </div>
+              <p class="insight-label">Your strongest subject areas</p>
+              <div class="insight-topics" data-insight-topics></div>
+              <p class="insight-notes" data-insight-notes></p>
+              <details class="insight-courses" data-insight-courses-wrap hidden><summary>Courses we read (<span data-insight-course-count>0</span>)</summary><ul data-insight-courses></ul></details>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Results -->
+        <div class="finder-results" id="finder-results">
+          <div class="results-bar">
+            <div class="explorer-selects">
+              <label><span class="sr-only">Subject</span><select class="select" data-filter="topic"><option value="">All subjects</option>{{TOPIC_OPTIONS}}</select></label>
+              <label><span class="sr-only">State</span><select class="select" data-filter="state"><option value="">All states</option>{{DE_STATE_OPTIONS}}</select></label>
+              <label><span class="sr-only">University type</span><select class="select" data-filter="kind"><option value="">All university types</option><option value="TU">Research &amp; technical universities</option><option value="H">Universities of Applied Sciences</option><option value="B">Private universities</option></select></label>
+              <label><span class="sr-only">Sort</span><select class="select" data-filter="sort"><option value="chance">Sort: best chance</option><option value="fit">Sort: best subject fit</option><option value="name">Sort: A–Z</option></select></label>
+            </div>
+            <div class="explorer-toggles">
+              <label class="toggle-chip"><input type="checkbox" data-filter="english" checked><span>🇬🇧 English-taught</span></label>
+              <label class="toggle-chip"><input type="checkbox" data-filter="free"><span>💶 No tuition</span></label>
+              <label class="toggle-chip"><input type="checkbox" data-filter="eligible"><span>✅ Good chance only</span></label>
+              <label class="toggle-chip"><input type="checkbox" data-filter="shortlist"><span>⭐ My shortlist <b data-shortlist-count>0</b></span></label>
+              <button type="button" class="link-reset" data-reset>Reset</button>
+            </div>
+            <p class="explorer-count" aria-live="polite" data-results-count>Loading {{PROG_COUNT}} programmes…</p>
+          </div>
+
+          <!-- AI review -->
+          <div class="advice" data-advice hidden>
+            <div class="advice-head"><span class="report-badge is-ai">✨ AI counsellor review</span><h3 data-advice-headline>Reviewing your best matches…</h3><p data-advice-summary></p></div>
+            <ol class="pipeline" data-advice-pipeline><li class="is-running"><span class="pl-dot" aria-hidden="true"></span><span>Comparing your courses with the top programmes</span></li></ol>
+            <div class="grid grid-2 report-cols" data-advice-body hidden>
+              <div class="report-card good"><h3>✅ Eligibility</h3><ul data-advice-eligibility></ul></div>
+              <div class="report-card warn"><h3>🧩 Gaps and next steps</h3><ul data-advice-steps></ul></div>
+            </div>
+          </div>
+
+          <div class="prog-grid" data-results></div>
+          <p class="empty-state" data-results-empty hidden>No programmes match. Try fewer filters or other words, or <a class="link-arrow" href="contact.html">ask a counsellor</a>.</p>
+          <div class="center" style="margin-top:28px"><button type="button" class="btn btn-dark" data-results-more hidden>Show more programmes</button></div>
+
+          <div class="daad-live" data-daad hidden>
+            <div class="report-sub"><h3>🌐 Live from the DAAD database</h3><p>More programmes matching "<span data-daad-q></span>" from DAAD's International Programmes search (<span data-daad-total>0</span> found). Results and details belong to DAAD; open each one to check requirements and deadlines.</p></div>
+            <div class="prog-grid" data-daad-results></div>
+          </div>
+
+          <div class="finder-actions" data-actions hidden>
+            <button class="btn btn-whatsapp btn-lg" type="button" data-wa-shortlist>{WA_ICON} Send my matches to a counsellor</button>
+            <a class="btn btn-dark btn-lg" href="profile-analyzer.html">Get my full profile report {ARROW}</a>
+          </div>
+          <p class="disclaimer">Chances are indicative estimates from your German grade, subject fit, language and the usual competitiveness of each university type, not admission decisions. Requirements, deadlines and fees change every intake, so confirm on the university's page and DAAD before you apply. A counsellor will check your shortlist for free.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">How it works</p>
+          <h2 id="how-title" class="h-xl reveal">How we estimate <span class="accent">your chances</span></h2>
+        </div>
+        <div class="grid grid-3" data-stagger="0.1">
+          <article class="card reveal tilt"><div class="card-icon bg-sky">📚</div><h3>Subject fit</h3><p>German master's programmes want a "closely related" bachelor's. We map your courses and degree to {{TOPIC_COUNT}} subject areas, then compare them with each programme. Related fields (Electrical → Energy, CS → Data Science) count as partial fit.</p></article>
+          <article class="card reveal tilt"><div class="card-icon bg-gold">🧮</div><h3>Grade competitiveness</h3><p>Your CGPA becomes a German grade with the Modified Bavarian Formula. We compare it with what is typical for each kind of university: TU9 and research universities are stricter, universities of applied sciences and private universities more flexible.</p></article>
+          <article class="card reveal tilt"><div class="card-icon bg-coral">🗣️</div><h3>Eligibility rules</h3><p>The 16-year rule for master's, IELTS 6.5 for most English-taught programmes and German C1 for German-taught ones. AI then reads your actual courses and flags missing prerequisites programme by programme.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pfaq-title">
+      <div class="container-narrow">
+        <div class="section-head center">
+          <p class="eyebrow reveal">FAQ</p>
+          <h2 id="pfaq-title" class="h-xl reveal">Programme finder <span class="accent">FAQ</span></h2>
+        </div>
+        <div class="faq">
+          <details><summary>Where do the programmes come from?</summary><div class="faq-body"><p>Our counsellors curate {{PROG_COUNT}} programmes at {{PROG_UNI_COUNT}} German universities that Pakistani students apply to most, mostly taught in English. When you search, we also query the DAAD International Programmes database live and show those results separately, with links back to DAAD.</p></div></details>
+          <details><summary>Is my transcript safe?</summary><div class="faq-body"><p>Text PDFs and pasted text are read on your device. If you tick "Let AI read my transcript", the file is sent securely to our AI provider for that one analysis and is not stored by us. We never extract names, roll numbers or CNIC numbers, and nothing is shared unless you send your matches to a counsellor on WhatsApp.</p></div></details>
+          <details><summary>Can I get admission in Germany with a 2.5 CGPA?</summary><div class="faq-body"><p>Yes, at many programmes. A 2.5 CGPA is about 3.3 on the German scale, which is below the typical cutoff at TU9 universities but realistic at many universities of applied sciences and private universities, especially with a strong subject match, IELTS 6.5 and work experience. Filter by "Good chance only" to see them.</p></div></details>
+          <details><summary>Do I need a 16-year degree for a master's in Germany?</summary><div class="faq-body"><p>Almost always. German master's programmes expect a bachelor's with about 240 ECTS. A 4-year BS/BE from an HEC-recognised university fits; a 2-year BA/BSc (14 years) usually does not. The finder checks this for you.</p></div></details>
+          <details><summary>How accurate are the chances?</summary><div class="faq-body"><p>They are estimates to help you shortlist, based on patterns rather than official cutoffs. Universities decide individually and many weigh your SOP, projects and work experience. Use the result to build a balanced list of safe, target and ambitious programmes, then let a counsellor confirm it.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-labelledby="index-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Browse</p>
+          <h2 id="index-title" class="h-xl reveal">All {{PROG_COUNT}} programmes <span class="accent">by subject</span></h2>
+          <p class="lead reveal">Every programme in our finder, grouped by subject. Click one to see your chances.</p>
+        </div>
+        <div class="prog-index">
+{{PROG_INDEX}}
+        </div>
+      </div>
+    </section>

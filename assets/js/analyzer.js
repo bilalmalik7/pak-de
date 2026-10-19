@@ -468,6 +468,20 @@
     document.getElementById("pipeline").hidden = true;
   }
 
+  // Carry this profile over to the Programme Finder (programme-level chances).
+  function finderLink(r) {
+    var d = r.d, q = new URLSearchParams();
+    q.set("target", r.target === "bachelor" ? "bachelor" : "master");
+    if (d.qual && /^(bs16|ms18|ba14|fsc|alevels)$/.test(d.qual)) q.set("qual", d.qual);
+    if (!isNaN(d.grade)) { q.set("grade", d.grade); q.set("scale", d.gradeType === "percent" ? "100" : "4"); }
+    if (d.english) q.set("english", d.english);
+    if (d.engScore) q.set("score", d.engScore);
+    q.set("german", d.german);
+    var topic = { cs: "cs", business: "bus", medicine: "med" }[d.field];
+    if (topic) q.set("field", topic);
+    return "programme-finder.html?" + q.toString();
+  }
+
   /* ---------- Submit ---------- */
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -480,6 +494,7 @@
       var r = analyse();
       lastAnalysis = r;
       renderPanel(r);
+      document.querySelectorAll("[data-finder-link]").forEach(function (a) { a.href = finderLink(r); a.hidden = r.target === "ausbildung"; });
       reportSec.hidden = false;
       reportSec.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
       var ai = askAI(r).catch(function () { return null; }); // handled now, so a failure never surfaces as an unhandled rejection
