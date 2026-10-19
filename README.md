@@ -18,7 +18,7 @@ programme finder fall back to their built-in engines automatically.
 | `pakistani-universities.html` | **193 Pakistani universities** by province, field and sector, plus a guide to getting a Pakistani degree accepted in Germany (16-year rule, HEC, anabin, uni-assist) |
 | `profile-analyzer.html` | **AI Profile Analyzer**: a 4-step form, then an animated analysis that converts the CGPA (Modified Bavarian Formula), scores the profile, matches against the German university database and produces a full report: strengths, risks, best-fit universities with match %, a dated strategy, SOP angle, routes, and a note for parents in Urdu. Shareable to WhatsApp and printable as a PDF |
 | `journey.html` | The 10-step journey on a scroll-driven timeline, intakes, and Master's / Bachelor's / Ausbildung tracks |
-| `packages.html` | 4 packages with a Master's / Bachelor's / Ausbildung price toggle (PKR), a comparison table, add-ons and payment FAQ |
+| `packages.html` | 4 packages (€200, €300, €500, €800, same price for every track), a comparison table, add-ons (PKR) and payment FAQ |
 | `reviews.html` | Story cards and testimonials (sample content, see below) |
 | `guides.html` | 3D flip-through booklet (printable) and long-form guides: visa checklist, blocked account, without IELTS, Studienkolleg, Ausbildung, Opportunity Card |
 | `study-in-germany-from-pakistan.html` | Main SEO page for the core keyword, with city sections |
@@ -115,7 +115,7 @@ Edit the files in `_build/pages/` (not the generated `.html` at the root), then 
 1. **Email.** WhatsApp is set to **+49 155 63342092** everywhere. The email `hello@deutschdreams.pk` is still a placeholder: change it in `SITE` in `assets/js/main.js` and in `_build/gen.py` (`EMAIL`), then rebuild.
 2. **Domain.** Change `BASE` in `_build/gen.py` and the sitemap line in `robots.txt`, then rebuild.
 3. **Student reviews.** Testimonials are **sample content**. Replace them with real, consented reviews and photos, then remove the "Sample stories…" notes. Don't publish invented reviews: it's misleading, it breaks Google's guidelines and it can cause consumer-protection problems.
-4. **Prices.** Package prices are examples (`_build/pages/packages.html`, the home page, and the `Offer` structured data).
+4. **Prices.** Packages are €200 / €300 / €500 / €800 (`_build/pages/packages.html`, the home page, and the `Offer` structured data). Add-on prices are still example PKR values.
 5. **Offices and social links.** Real addresses in `contact.html`, and social URLs in `_build/gen.py`.
 6. **Facts.** The blocked-account amount (~€11,904/year), visa fee (€75) and tuition rules change. Check them every intake.
 

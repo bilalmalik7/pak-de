@@ -46,7 +46,7 @@ ORG_SCHEMA = {
             "image": BASE + "/assets/img/og-image.png",
             "email": EMAIL,
             "telephone": PHONE,
-            "priceRange": "PKR",
+            "priceRange": "€200–€800",
             "address": {"@type": "PostalAddress", "addressLocality": "Lahore", "addressRegion": "Punjab", "addressCountry": "PK"},
             "areaServed": [{"@type": "Country", "name": "Pakistan"}] + [
                 {"@type": "City", "name": c} for c in ["Lahore", "Karachi", "Islamabad", "Rawalpindi", "Faisalabad", "Multan", "Peshawar", "Sialkot", "Gujranwala", "Quetta", "Hyderabad", "Bahawalpur"]
