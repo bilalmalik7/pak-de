@@ -5,7 +5,7 @@ import data
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)
-BASE = "https://www.deutschdreams.pk"
+BASE = "https://german-dreams.info"
 BRAND = "DeutschDreams"
 PHONE = "+49 155 67783533"
 EMAIL = "hello@deutschdreams.pk"
@@ -307,6 +307,6 @@ if __name__ == "__main__":
         if path == "404.html":
             continue
         loc = BASE + "/" + ("" if path == "index.html" else path)
-        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>2026-10-05</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>{prio.get(path, '0.8')}</priority>\n  </url>")
+        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>2026-10-20</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>{prio.get(path, '0.8')}</priority>\n  </url>")
     open(os.path.join(OUT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n")
     print("built:", ", ".join(p for p, _ in built))

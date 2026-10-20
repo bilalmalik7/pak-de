@@ -5,4 +5,4 @@ Disallow: /server/
 Disallow: /api/
 Disallow: /netlify/
 
-Sitemap: https://www.deutschdreams.pk/sitemap.xml
+Sitemap: https://german-dreams.info/sitemap.xml
