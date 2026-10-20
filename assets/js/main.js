@@ -108,6 +108,25 @@
     });
   }
 
+  /* ---------- Mobile action bar (free check + WhatsApp), shown after a little scroll ---------- */
+  var waFloat = $(".wa-float");
+  if (waFloat) {
+    var onAnalyzer = /profile-analyzer\.html$/.test(location.pathname);
+    var bar = document.createElement("div");
+    bar.className = "m-bar no-print";
+    bar.innerHTML = (onAnalyzer ? "" : '<a class="m-check" href="profile-analyzer.html">Free eligibility check</a>') +
+      '<a class="m-wa" data-wa href="#">' + (waFloat.querySelector("svg") ? waFloat.querySelector("svg").outerHTML : "") + "WhatsApp</a>";
+    document.body.appendChild(bar);
+    doc.classList.add("has-m-bar");
+    var barShown = false;
+    var syncBar = function () {
+      var show = window.scrollY > 240;
+      if (show !== barShown) { barShown = show; bar.classList.toggle("is-shown", show); }
+    };
+    window.addEventListener("scroll", syncBar, { passive: true });
+    syncBar();
+  }
+
   /* ---------- WhatsApp / email links ---------- */
   $all("[data-wa]").forEach(function (a) {
     a.href = window.ddWhatsAppLink(a.getAttribute("data-wa") || "Assalam o Alaikum! I want to study in Germany. Please guide me.");
