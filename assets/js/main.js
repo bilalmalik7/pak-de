@@ -4,7 +4,7 @@
 
   // Edit these once and every WhatsApp / email link on the site updates.
   var SITE = {
-    whatsapp: "4915563342092", // international format, no "+" or spaces
+    whatsapp: "4915567783533", // international format, no "+" or spaces
     email: "hello@deutschdreams.pk",
     aiEndpoint: "/api/analyze", // AI Profile Analyzer endpoint; set to "" to always use the on-device report
     transcriptEndpoint: "/api/transcript", // Programme Finder: AI transcript reading; "" = on-device reading only

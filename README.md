@@ -112,7 +112,7 @@ Edit the files in `_build/pages/` (not the generated `.html` at the root), then 
 
 ## ⚠️ Before you launch: replace the placeholders
 
-1. **Email.** WhatsApp is set to **+49 155 63342092** everywhere. The email `hello@deutschdreams.pk` is still a placeholder: change it in `SITE` in `assets/js/main.js` and in `_build/gen.py` (`EMAIL`), then rebuild.
+1. **Email.** WhatsApp is set to **+49 155 67783533** everywhere. The email `hello@deutschdreams.pk` is still a placeholder: change it in `SITE` in `assets/js/main.js` and in `_build/gen.py` (`EMAIL`), then rebuild.
 2. **Domain.** Change `BASE` in `_build/gen.py` and the sitemap line in `robots.txt`, then rebuild.
 3. **Student reviews.** Testimonials are **sample content**. Replace them with real, consented reviews and photos, then remove the "Sample stories…" notes. Don't publish invented reviews: it's misleading, it breaks Google's guidelines and it can cause consumer-protection problems.
 4. **Prices.** Packages are €200 / €300 / €500 / €800 (`_build/pages/packages.html`, the home page, and the `Offer` structured data).
