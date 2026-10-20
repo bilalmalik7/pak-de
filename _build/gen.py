@@ -7,7 +7,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)
 BASE = "https://www.deutschdreams.pk"
 BRAND = "DeutschDreams"
-PHONE = "+49 155 63342092"
+PHONE = "+49 155 67783533"
 EMAIL = "hello@deutschdreams.pk"
 
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
@@ -154,7 +154,7 @@ def footer():
         <div>
           <h4>Talk to us</h4>
           <ul>
-            <li><a data-wa href="https://wa.me/4915563342092">WhatsApp: {PHONE}</a></li>
+            <li><a data-wa href="https://wa.me/4915567783533">WhatsApp: {PHONE}</a></li>
             <li><a data-email href="mailto:{EMAIL}">{EMAIL}</a></li>
             <li>Lahore · Islamabad · Karachi</li>
             <li>Mon–Sat · 10:00–19:00 PKT</li>
@@ -173,7 +173,7 @@ def footer():
     </div>
   </footer>
 
-  <a class="wa-float" data-wa href="https://wa.me/4915563342092" aria-label="Chat with a counsellor on WhatsApp">{WA_ICON}<span class="wa-tip">Chat with a counsellor 👋</span></a>'''
+  <a class="wa-float" data-wa href="https://wa.me/4915567783533" aria-label="Chat with a counsellor on WhatsApp">{WA_ICON}<span class="wa-tip">Chat with a counsellor 👋</span></a>'''
 
 
 def breadcrumb_schema(path, name):
@@ -274,6 +274,8 @@ def build(src, ph):
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@500&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 {ld}
+  <script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   {header(path)}
