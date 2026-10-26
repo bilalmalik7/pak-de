@@ -603,7 +603,7 @@ ul { padding-left: 1.2em; }
 .choice input:focus-visible + span { outline: 3px solid var(--coral); outline-offset: 2px; }
 .range { width: 100%; accent-color: var(--coral); }
 .range-value { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--ink); }
-.form-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 26px; }
+.form-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 26px; }
 .form-error { color: var(--red); font-size: 0.86rem; font-weight: 600; min-height: 1.2em; }
 
 .score-ring { position: relative; width: 210px; height: 210px; margin: 0 auto 10px; }
